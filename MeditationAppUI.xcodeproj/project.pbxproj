@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BAA672B6C62C200B49752 /* MeditationAppUIApp.swift */; };
-		FA7BAA6A2B6C62C200B49752 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BAA692B6C62C200B49752 /* ContentView.swift */; };
 		FA7BAA6C2B6C62C300B49752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7BAA6B2B6C62C300B49752 /* Assets.xcassets */; };
 		FA7BAA6F2B6C62C300B49752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7BAA6E2B6C62C300B49752 /* Preview Assets.xcassets */; };
-		FA7BAA712B6C62C300B49752 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BAA702B6C62C300B49752 /* Persistence.swift */; };
 		FA7BAA742B6C62C300B49752 /* MeditationAppUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA7BAA722B6C62C300B49752 /* MeditationAppUI.xcdatamodeld */; };
 		FA7BAA7E2B6C62C300B49752 /* MeditationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BAA7D2B6C62C300B49752 /* MeditationAppUITests.swift */; };
 		FA7BAA882B6C62C300B49752 /* MeditationAppUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BAA872B6C62C300B49752 /* MeditationAppUIUITests.swift */; };
 		FA7BAA8A2B6C62C300B49752 /* MeditationAppUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BAA892B6C62C300B49752 /* MeditationAppUIUITestsLaunchTests.swift */; };
+		FA8DCDEF2B6F1FAF00D872B5 /* SignUpAndSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8DCDEE2B6F1FAF00D872B5 /* SignUpAndSignView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,16 +37,16 @@
 /* Begin PBXFileReference section */
 		FA7BAA642B6C62C200B49752 /* MeditationAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7BAA672B6C62C200B49752 /* MeditationAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationAppUIApp.swift; sourceTree = "<group>"; };
-		FA7BAA692B6C62C200B49752 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA7BAA6B2B6C62C300B49752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7BAA6E2B6C62C300B49752 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FA7BAA702B6C62C300B49752 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FA7BAA732B6C62C300B49752 /* MeditationAppUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeditationAppUI.xcdatamodel; sourceTree = "<group>"; };
 		FA7BAA792B6C62C300B49752 /* MeditationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7BAA7D2B6C62C300B49752 /* MeditationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationAppUITests.swift; sourceTree = "<group>"; };
 		FA7BAA832B6C62C300B49752 /* MeditationAppUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditationAppUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7BAA872B6C62C300B49752 /* MeditationAppUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationAppUIUITests.swift; sourceTree = "<group>"; };
 		FA7BAA892B6C62C300B49752 /* MeditationAppUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationAppUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA7BAA962B6C71BF00B49752 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA8DCDEE2B6F1FAF00D872B5 /* SignUpAndSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAndSignView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +74,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA7841A62B6D8A6200322926 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA7BAA722B6C62C300B49752 /* MeditationAppUI.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FA7841A82B6D8A6F00322926 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FA8DCDEE2B6F1FAF00D872B5 /* SignUpAndSignView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FA7841A92B6D8A7500322926 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA7BAA672B6C62C200B49752 /* MeditationAppUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		FA7BAA5B2B6C62C200B49752 = {
 			isa = PBXGroup;
 			children = (
+				FA7BAA962B6C71BF00B49752 /* README.md */,
 				FA7BAA662B6C62C200B49752 /* MeditationAppUI */,
 				FA7BAA7C2B6C62C300B49752 /* MeditationAppUITests */,
 				FA7BAA862B6C62C300B49752 /* MeditationAppUIUITests */,
@@ -98,11 +122,10 @@
 		FA7BAA662B6C62C200B49752 /* MeditationAppUI */ = {
 			isa = PBXGroup;
 			children = (
-				FA7BAA672B6C62C200B49752 /* MeditationAppUIApp.swift */,
-				FA7BAA692B6C62C200B49752 /* ContentView.swift */,
+				FA7841A92B6D8A7500322926 /* App */,
+				FA7841A82B6D8A6F00322926 /* Presentation */,
+				FA7841A62B6D8A6200322926 /* Data */,
 				FA7BAA6B2B6C62C300B49752 /* Assets.xcassets */,
-				FA7BAA702B6C62C300B49752 /* Persistence.swift */,
-				FA7BAA722B6C62C300B49752 /* MeditationAppUI.xcdatamodeld */,
 				FA7BAA6D2B6C62C300B49752 /* Preview Content */,
 			);
 			path = MeditationAppUI;
@@ -263,10 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7BAA712B6C62C300B49752 /* Persistence.swift in Sources */,
 				FA7BAA742B6C62C300B49752 /* MeditationAppUI.xcdatamodeld in Sources */,
-				FA7BAA6A2B6C62C200B49752 /* ContentView.swift in Sources */,
 				FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */,
+				FA8DCDEF2B6F1FAF00D872B5 /* SignUpAndSignView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -412,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -445,6 +467,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.MeditationAppUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -474,6 +499,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.MeditationAppUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,10 +517,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.MeditationAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -509,10 +540,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.MeditationAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,6 +565,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.MeditationAppUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -549,6 +586,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronaldo.MeditationAppUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
