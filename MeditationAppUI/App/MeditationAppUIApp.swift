@@ -11,7 +11,7 @@ import SwiftUI
 struct MeditationAppUIApp: App {
     var body: some Scene {
         WindowGroup {
-            SignUpAndSignView()
+            SilentMoonView()
         }
     }
 }
