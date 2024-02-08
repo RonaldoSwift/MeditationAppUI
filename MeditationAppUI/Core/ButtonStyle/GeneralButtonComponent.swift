@@ -18,5 +18,4 @@ func generalButtonComponent(onClickInSitioWeb: @escaping () -> Void, textoDelBut
                     .background(Color.colorButton)
                     .cornerRadius(40)
     })
-    .padding(.top, 100)
 }

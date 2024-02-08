@@ -22,10 +22,10 @@ struct SilentMoonView: View {
                         Text("M o o n")
                             .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                     }
-                    .padding(.bottom, 10)
+                    .padding(.bottom, 30)
                     Image(ImageResource.imagenInici)
                 }
-                .padding(.bottom, 10)
+                .padding(.bottom, 20)
             }
             
             Spacer()
@@ -49,6 +49,7 @@ struct SilentMoonView: View {
                     },
                     textoDelButton: "SIGN UP"
                 )
+                .padding(.top,70)
                 
                 HStack {
                     Text("ALREADY HAVE AN ACCOUNT?")
@@ -64,7 +65,7 @@ struct SilentMoonView: View {
                 }
                 .padding(.top, 20)
             }
-            .padding(.bottom, 110)
+            .padding(.bottom, 80)
             .padding()
         }
     }
