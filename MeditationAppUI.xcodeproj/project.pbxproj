@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71AEA62B72EBE9009820E0 /* SignInView.swift */; };
 		FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BAA672B6C62C200B49752 /* MeditationAppUIApp.swift */; };
 		FA7BAA6C2B6C62C300B49752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7BAA6B2B6C62C300B49752 /* Assets.xcassets */; };
 		FA7BAA6F2B6C62C300B49752 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7BAA6E2B6C62C300B49752 /* Preview Assets.xcassets */; };
@@ -90,6 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA71AEA62B72EBE9009820E0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA7BAA642B6C62C200B49752 /* MeditationAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7BAA672B6C62C200B49752 /* MeditationAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationAppUIApp.swift; sourceTree = "<group>"; };
 		FA7BAA6B2B6C62C300B49752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA71AEA52B72EBCB009820E0 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				FA71AEA62B72EBE9009820E0 /* SignInView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		FA7841A62B6D8A6200322926 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +170,7 @@
 		FA7841A82B6D8A6F00322926 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FA71AEA52B72EBCB009820E0 /* SignIn */,
 				FA80F68E2B71593000B7796E /* SilentMoon */,
 			);
 			path = Presentation;
@@ -479,6 +490,7 @@
 				FA7BAA742B6C62C300B49752 /* MeditationAppUI.xcdatamodeld in Sources */,
 				FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */,
 				FA80F68D2B7150C600B7796E /* SilentMoonView.swift in Sources */,
+				FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
