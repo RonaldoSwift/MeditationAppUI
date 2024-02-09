@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct SignInView: View {
+    
+    @EnvironmentObject private var appRootManager: AppRootManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button {
+            withAnimation(.spring) {
+                appRootManager.currentRoot = .principal
+            }
+        } label: {
+            Text("SIGN IN")
+        }
     }
 }
 

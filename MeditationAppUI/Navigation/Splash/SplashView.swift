@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct SplashView: View {
+    
+    @EnvironmentObject private var appRootManager: AppRootManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("SPLASH")
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    withAnimation(.spring) {
+                        appRootManager.currentRoot = .authentication
+                    }
+                }
+            }
     }
 }
 
