@@ -1,5 +1,5 @@
 //
-//  SignInView.swift
+//  LoginView.swift
 //  MeditationAppUI
 //
 //  Created by Carlos Leonardo Camilo Vargas Huaman on 8/02/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SignInView: View {
+struct LoginView: View {
     
     @EnvironmentObject private var appRootManager: AppRootManager
     
@@ -17,11 +17,11 @@ struct SignInView: View {
                 appRootManager.currentRoot = .principal
             }
         } label: {
-            Text("SIGN IN")
+            Text("LOGIN")
         }
     }
 }
 
 #Preview {
-    SignInView()
+    LoginView()
 }
