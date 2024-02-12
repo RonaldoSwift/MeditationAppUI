@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PrincipalRootView: View {
     var body: some View {
-        HomeView()
+        ViewA()
     }
 }
 

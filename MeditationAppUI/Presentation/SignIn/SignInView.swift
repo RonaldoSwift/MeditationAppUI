@@ -1,0 +1,114 @@
+//
+//  SignInView.swift
+//  MeditationAppUI
+//
+//  Created by Ronaldo Andre on 6/02/24.
+//
+
+import SwiftUI
+
+struct SignInView: View {
+    
+    @State var emailTextField: String = ""
+    @State var passwordTextField: String = ""
+    
+    var body: some View {
+        VStack(alignment: .center) {
+            ZStack {
+                Image(ImageResource.signInFondo)
+                    .ignoresSafeArea()
+                VStack {
+                    Text("Welcome Back!")
+                        .font(.custom("HelveticaNeueCyr-Bold", size: 28))
+                        .padding(.bottom, 10)
+                    
+                    Button(action: {
+                        print("Button Facebook")
+                    }, label: {
+                        HStack(alignment: .center) {
+                            Image(ImageResource.logoFacebook)
+                                .padding(.trailing,40)
+                            Text("CONTINUE WITH FACEBOOK")
+                        }
+                        .padding(EdgeInsets(top: 20, leading: 55, bottom: 20, trailing: 55))
+                        .font(.custom("HelveticaNeueCyr-Bold", size: 14))
+                        .foregroundColor(.white)
+                        .background(Color.colorButtonFacebook)
+                        .cornerRadius(40)
+                        
+                    })
+                    
+                    Button(action: {
+                        print("Button Googler")
+
+                    }, label: {
+                        HStack{
+                            Image(ImageResource.logoGoogle)
+                                .padding(.trailing,30)
+                            Text("CONTINUE WITH GOOGLE")
+                                .padding(.trailing,30)
+                        }
+                        .padding(EdgeInsets(top: 20, leading: 45, bottom: 20, trailing: 45))
+                        .font(.custom("HelveticaNeueCyr-Medium", size: 14))
+                        .foregroundColor(.black)
+                        .overlay(
+                            Capsule(style: .circular)
+                                .stroke(Color.colorButtonGoogle, style: StrokeStyle(lineWidth: 2))
+                        )
+                    })
+                    .padding(.top,10)
+                }
+                .padding(.top,60)
+            }
+            
+            Spacer()
+            
+            VStack {
+                Text("OR LOG IN WITH EMAIL")
+                    .font(.custom("HelveticaNeueCyr-Medium", size: 14))
+                    .foregroundStyle(Color.colorLetras)
+                    .padding(.bottom,40)
+
+                TextField("Email address", text: $emailTextField)
+                    .padding()
+                    .background(Color.colorSignInTextField)
+                    .cornerRadius(10)  
+                    .padding(.bottom,10)
+
+                TextField("Password", text: $passwordTextField)
+                    .padding()
+                    .background(Color.colorSignInTextField)
+                    .cornerRadius(10)
+                    .padding(.bottom,20)
+
+                generalButtonComponent(onClickInSitioWeb: {
+                    print("Click Log In")
+                }, textoDelButton: "Log In              ")
+                
+                Text("Forgot Password?")
+                    .font(.custom("HelveticaNeueCyr-Medium", size: 14))
+                    .padding(.top,10)
+
+                HStack {
+                    Text("ALREADY HAVE AN ACCOUNT?")
+                        .font(.custom("HelveticaNeueCyr-Medium", size: 16))
+                        .foregroundStyle(Color.colorLetras)
+                    Button(action: {
+                        print("click Next Sign Up")
+                    }, label: {
+                        Text("SIGN UP")
+                            .font(.custom("HelveticaNeueCyr-Medium", size: 16))
+                            .foregroundColor(Color.colorButton)
+                    })
+                }
+                .padding(.top, 90)
+                .padding(.bottom,35)
+            }
+            .padding()
+        }
+    }
+}
+
+#Preview {
+    SignInView()
+}
