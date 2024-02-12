@@ -7,7 +7,45 @@
 		<key>MeditationAppUI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MeditationDarkAppUI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FA7BAA632B6C62C200B49752</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA7BAA782B6C62C300B49752</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA7BAA822B6C62C300B49752</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAB106062B79A06300D1C783</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAB1061A2B79A06400D1C783</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FAB106242B79A06400D1C783</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

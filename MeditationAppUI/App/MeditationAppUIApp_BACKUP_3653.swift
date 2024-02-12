@@ -14,6 +14,7 @@ struct MeditationAppUIApp: App {
     
     var body: some Scene {
         WindowGroup {
+<<<<<<< HEAD
             Group {
                 switch appRootManager.currentRoot {
                 case .splash:
@@ -25,6 +26,9 @@ struct MeditationAppUIApp: App {
                 }
             }
             .environmentObject(appRootManager)
+=======
+            SilentMoonView()
+>>>>>>> main
         }
     }
 }
