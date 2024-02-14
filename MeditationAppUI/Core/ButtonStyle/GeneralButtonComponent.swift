@@ -13,7 +13,7 @@ func generalButtonComponent(onClickInSitioWeb: @escaping () -> Void, textoDelBut
         onClickInSitioWeb()
     }, label: {
         Text(textoDelButton)
-            .padding(EdgeInsets(top: 20, leading: 130, bottom: 20, trailing: 130))
+            .padding(EdgeInsets(top: 20, leading: 120, bottom: 20, trailing: 120))
                     .foregroundColor(.white)
                     .background(Color.colorButton)
                     .cornerRadius(40)

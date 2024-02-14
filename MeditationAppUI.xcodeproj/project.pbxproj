@@ -179,6 +179,7 @@
 		FA80F6A62B71B86300B7796E /* HelveticaNeueCyr-UltraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueCyr-UltraLightItalic.ttf"; sourceTree = "<group>"; };
 		FA80F6A72B71B86300B7796E /* HelveticaNeueCyr-Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueCyr-Roman.ttf"; sourceTree = "<group>"; };
 		FA80F6DE2B71B90600B7796E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA9AC7092B755E99008945AA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FAB106072B79A06300D1C783 /* MeditationDarkAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationDarkAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationDarkAppUIApp.swift; sourceTree = "<group>"; };
 		FAB1060B2B79A06300D1C783 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -328,6 +329,7 @@
 		FA7841A82B6D8A6F00322926 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FA9AC7082B755E7E008945AA /* SignUp */,
 				FA71AEA52B72EBCB009820E0 /* SignIn */,
 				FA80F68E2B71593000B7796E /* SilentMoon */,
 			);
@@ -466,6 +468,14 @@
 				FA80F6A62B71B86300B7796E /* HelveticaNeueCyr-UltraLightItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA9AC7082B755E7E008945AA /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				FA9AC7092B755E99008945AA /* SignUpView.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		FAB106082B79A06300D1C783 /* MeditationDarkAppUI */ = {
@@ -799,6 +809,7 @@
 				246717342B75A3A5002570DC /* ViewB.swift in Sources */,
 				246068472B75DF57003FD34E /* AppRootManager.swift in Sources */,
 				FA80F68D2B7150C600B7796E /* SilentMoonView.swift in Sources */,
+				FA9AC70A2B755E99008945AA /* SignUpView.swift in Sources */,
 				FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

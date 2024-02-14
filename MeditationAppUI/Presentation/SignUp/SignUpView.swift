@@ -1,16 +1,20 @@
 //
-//  SignInView.swift
+//  SignUpView.swift
 //  MeditationAppUI
 //
-//  Created by Ronaldo Andre on 6/02/24.
+//  Created by Ronaldo Andre on 8/02/24.
 //
 
 import SwiftUI
 
-struct SignInView: View {
+struct SignUpView: View {
     
+    @State var nameTextField: String = ""
     @State var emailTextField: String = ""
     @State var passwordTextField: String = ""
+    
+    @State private var precionarCkeck = false
+    
     
     var body: some View {
         VStack(alignment: .center) {
@@ -18,7 +22,7 @@ struct SignInView: View {
                 Image(ImageResource.signInFondo)
                     .ignoresSafeArea()
                 VStack {
-                    Text("Welcome Back!")
+                    Text("Create your account")
                         .font(.custom("HelveticaNeueCyr-Bold", size: 28))
                         .padding(.bottom, 10)
                     
@@ -40,7 +44,7 @@ struct SignInView: View {
                     
                     Button(action: {
                         print("Button Googler")
-
+                        
                     }, label: {
                         HStack{
                             Image(ImageResource.logoGoogle)
@@ -58,51 +62,95 @@ struct SignInView: View {
                     })
                     .padding(.top,10)
                 }
-                .padding(.top,60)
+                .padding(.top,100)
             }
             
             Spacer()
             
-            VStack {
+            
+            VStack{
                 Text("OR LOG IN WITH EMAIL")
                     .font(.custom("HelveticaNeueCyr-Medium", size: 14))
                     .foregroundStyle(Color.colorLetras)
                     .padding(.bottom,40)
-
+                
+                TextField("Name", text: $nameTextField)
+                    .padding()
+                    .background(Color.colorSignInTextField)
+                    .cornerRadius(10)
+                    .padding(.bottom,10)
+                    .overlay(
+                        HStack(alignment: .center) {
+                            Spacer()
+                            Image(ImageResource.checkSinUp)
+                                .resizable()
+                                .frame(width: 20,height: 15)
+                                .foregroundColor(Color.colorCheck)
+                                .padding(.trailing, 20)
+                        }
+                    )
+                
                 TextField("Email address", text: $emailTextField)
                     .padding()
                     .background(Color.colorSignInTextField)
-                    .cornerRadius(10)  
+                    .cornerRadius(10)
                     .padding(.bottom,10)
-
+                    .overlay(
+                        HStack(alignment: .center) {
+                            Spacer()
+                            Image(ImageResource.checkSinUp)
+                                .resizable()
+                                .frame(width: 20,height: 15)
+                                .foregroundColor(Color.colorCheck)
+                                .padding(.trailing, 20)
+                        }
+                    )
+                
                 SecureField("Password", text: $passwordTextField)
                     .padding()
                     .background(Color.colorSignInTextField)
                     .cornerRadius(10)
-                    .padding(.bottom,20)
-
-                generalButtonComponent(onClickInSitioWeb: {
-                    print("Click Log In")
-                }, textoDelButton: "Log In              ")
+                    .padding(.bottom,10)
+                    .overlay(
+                        HStack(alignment: .center) {
+                            Spacer()
+                            Image(ImageResource.tabSignUp)
+                                .resizable()
+                                .frame(width: 20,height: 15)
+                                .padding(.trailing, 20)
+                        }
+                    )
                 
-                Text("Forgot Password?")
-                    .font(.custom("HelveticaNeueCyr-Medium", size: 14))
-                    .padding(.top,10)
-
-                HStack {
-                    Text("ALREADY HAVE AN ACCOUNT?")
+                HStack(alignment: .center) {
+                    Text("i have read the")
                         .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                         .foregroundStyle(Color.colorLetras)
                     Button(action: {
                         print("click Next Sign Up")
                     }, label: {
-                        Text("SIGN UP")
+                        Text("Privace Policy")
                             .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                             .foregroundColor(Color.colorButton)
                     })
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        precionarCkeck.toggle()
+                    }) {
+                        Image(systemName: precionarCkeck ? "checkmark.square.fill" : "square")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                            .foregroundColor(precionarCkeck ? .green : Color.colorLetras)
+                    }
                 }
-                .padding(.top, 90)
+                .padding(.top, 10)
                 .padding(.bottom,35)
+                
+                generalButtonComponent(onClickInSitioWeb: {
+                    print("Get Stared")
+                }, textoDelButton: "GET STARTED")
+                .padding(.bottom,60)
             }
             .padding()
         }
@@ -110,5 +158,5 @@ struct SignInView: View {
 }
 
 #Preview {
-    SignInView()
+    SignUpView()
 }
