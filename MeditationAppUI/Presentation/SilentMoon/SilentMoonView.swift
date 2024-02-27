@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SilentMoonView: View {
+    
+    var onClickSignUp: () -> Void
+    var onClickSignIn: () -> Void
+    
     var body: some View {
         VStack {
             ZStack {
@@ -45,7 +49,9 @@ struct SilentMoonView: View {
                 
                 generalButtonComponent(
                     onClickInSitioWeb: {
-                        print("Click next!!! Sign Up")
+                        
+                        onClickSignUp()
+                        
                     },
                     textoDelButton: "SIGN UP"
                 )
@@ -56,7 +62,9 @@ struct SilentMoonView: View {
                         .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                         .foregroundStyle(Color.colorLetras)
                     Button(action: {
-                        print("click Next Log In")
+                        
+                        onClickSignIn()
+                        
                     }, label: {
                         Text("LOG IN")
                             .font(.custom("HelveticaNeueCyr-Medium", size: 16))
@@ -72,5 +80,5 @@ struct SilentMoonView: View {
 }
 
 #Preview {
-    SilentMoonView()
+    SilentMoonView(onClickSignUp: {}, onClickSignIn: {})
 }

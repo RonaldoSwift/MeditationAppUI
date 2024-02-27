@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct AuthenticationRootView: View {
+    
+    @State var isActiveSignUp: Bool = false
+    @State var isActiveSignIn: Bool = false
+    
     var body: some View {
-        LoginView()
+        NavigationView{
+            SilentMoonView {
+                isActiveSignUp = true
+            } onClickSignIn: {
+                isActiveSignIn = true
+            }
+            .navigation(SignUpView(), $isActiveSignUp)
+            .navigation(SignInView(), $isActiveSignIn)
+            
+        }
     }
 }
 

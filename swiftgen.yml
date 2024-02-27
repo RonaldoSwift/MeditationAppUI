@@ -1,0 +1,27 @@
+input_dir: MeditationAppUI/
+output_dir: MeditationAppUI/Generated/
+
+fonts:
+  inputs:
+    - Resources/Fonts
+  outputs:
+    - templateName: swift5
+      params:
+        enumName: Fonts
+        forceProvidesNamespaces: true
+        publicAccess: true
+      output: Fonts.swift
+
+json:
+  inputs:
+   - Resources/JSON
+  outputs:
+   - templateName: runtime-swift4
+     output: JSON.swift
+
+strings:
+  inputs:
+    - Resources/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: Strings.swift
