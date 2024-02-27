@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  MeditationAppUI
+
+  Created by Ronaldo Andre on 26/02/24.
+  
+*/
+
+"Login.Hello" = "Hello";

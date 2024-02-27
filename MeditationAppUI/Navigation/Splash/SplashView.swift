@@ -12,14 +12,26 @@ struct SplashView: View {
     @EnvironmentObject private var appRootManager: AppRootManager
     
     var body: some View {
-        Text("SPLASH")
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    withAnimation(.spring) {
-                        appRootManager.currentRoot = .authentication
-                    }
+        ZStack {
+            Color.colorButton.edgesIgnoringSafeArea(.all)
+            VStack{
+                Image("Logo")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50,height: 50)
+                Text("Silent Moon")
+                    .font(.custom("HelveticaNeueCyr-Medium", size: 16))
+                    .foregroundColor(Color.white)
+            }
+           
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                withAnimation(.spring) {
+                    appRootManager.currentRoot = .authentication
                 }
             }
+        }
     }
 }
 

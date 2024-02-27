@@ -12,6 +12,10 @@ struct SignInView: View {
     @State var emailTextField: String = ""
     @State var passwordTextField: String = ""
     
+    @State var isActiveSignUp : Bool = false
+    
+    @EnvironmentObject private var appRootManager: AppRootManager
+    
     var body: some View {
         VStack(alignment: .center) {
             ZStack {
@@ -82,7 +86,9 @@ struct SignInView: View {
                     .padding(.bottom,20)
 
                 generalButtonComponent(onClickInSitioWeb: {
-                    print("Click Log In")
+                    
+                    appRootManager.currentRoot = .principal
+                    
                 }, textoDelButton: "Log In              ")
                 
                 Text("Forgot Password?")
@@ -94,7 +100,9 @@ struct SignInView: View {
                         .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                         .foregroundStyle(Color.colorLetras)
                     Button(action: {
-                        print("click Next Sign Up")
+                        
+                        isActiveSignUp = true
+                        
                     }, label: {
                         Text("SIGN UP")
                             .font(.custom("HelveticaNeueCyr-Medium", size: 16))
@@ -106,6 +114,7 @@ struct SignInView: View {
             }
             .padding()
         }
+        .navigation(SignUpView(), $isActiveSignUp)
     }
 }
 
