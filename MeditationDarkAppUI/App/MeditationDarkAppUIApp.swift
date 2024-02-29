@@ -12,7 +12,7 @@ struct MeditationDarkAppUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ViewD()
+            WelcomeView()
         }
     }
 }

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    
+    @EnvironmentObject private var appRootManager: AppRootManager
+    
     var body: some View {
         ZStack {
             Color.accentBackground1
@@ -19,13 +22,8 @@ struct WelcomeView: View {
             }
             
             VStack(alignment: .center) {
-                HStack {
-                    Text("S i l e n t")
-                        .font(.custom("HelveticaNeueCyr-Medium", size: 16))
-                    Image(ImageResource.logo)
-                    Text("M o o n")
-                        .font(.custom("HelveticaNeueCyr-Medium", size: 16))
-                }.padding(.bottom, 40)
+                SilentMoonLogoView(textColor: Color.primaryLabel, logoImageResource: ImageResource.logo)
+                    .padding(.bottom, 40)
                 
                 
                 Text("Hi Asfar, Welcome")
@@ -44,17 +42,13 @@ struct WelcomeView: View {
                 
                 Spacer()
                 
-                generalButtonComponent(
-                    onClickInSitioWeb: {
-                    
-                    },
-                    textoDelButton: "GET STARTED"
-                )
-                
+                PrimaryButton(text: "GET STARTED",
+                              textColor: Color.primaryLabel,
+                              backgroundColor: Color.accentBackground2) {
+                    appRootManager.currentRoot = .authentication
+                }
             }
             .padding(EdgeInsets(top: 5, leading: 30, bottom: 30, trailing: 30))
-            
-       
         }
     }
 }
