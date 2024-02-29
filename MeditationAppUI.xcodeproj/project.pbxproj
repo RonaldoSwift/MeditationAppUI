@@ -157,6 +157,7 @@
 		24A5B6472B90F12D0041D7FA /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		24A5B64B2B90F2430041D7FA /* SharedColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedColors.xcassets; sourceTree = "<group>"; };
 		24A5B64E2B9107850041D7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		24A5B66A2B911D190041D7FA /* swift.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swift.yml; sourceTree = "<group>"; };
 		FA4DB2382B859B4700EFBB38 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FA71AEA62B72EBE9009820E0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -395,6 +396,22 @@
 			path = SharedResources;
 			sourceTree = "<group>";
 		};
+		24A5B6682B911D190041D7FA /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				24A5B6692B911D190041D7FA /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		24A5B6692B911D190041D7FA /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				24A5B66A2B911D190041D7FA /* swift.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
 		FA71AEA52B72EBCB009820E0 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +466,7 @@
 		FA7BAA5B2B6C62C200B49752 = {
 			isa = PBXGroup;
 			children = (
+				24A5B6682B911D190041D7FA /* .github */,
 				FA4DB2382B859B4700EFBB38 /* swiftgen.yml */,
 				246068592B75F031003FD34E /* .gitignore */,
 				FA7BAA962B6C71BF00B49752 /* README.md */,
