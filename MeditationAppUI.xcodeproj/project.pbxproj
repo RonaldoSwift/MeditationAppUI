@@ -157,6 +157,7 @@
 		24A5B6472B90F12D0041D7FA /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		24A5B64B2B90F2430041D7FA /* SharedColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedColors.xcassets; sourceTree = "<group>"; };
 		24A5B64E2B9107850041D7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		24A5B6642B9118EC0041D7FA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		FA4DB2382B859B4700EFBB38 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FA71AEA62B72EBE9009820E0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -449,6 +450,7 @@
 		FA7BAA5B2B6C62C200B49752 = {
 			isa = PBXGroup;
 			children = (
+				24A5B6642B9118EC0041D7FA /* .swiftlint.yml */,
 				FA4DB2382B859B4700EFBB38 /* swiftgen.yml */,
 				246068592B75F031003FD34E /* .gitignore */,
 				FA7BAA962B6C71BF00B49752 /* README.md */,
@@ -647,6 +649,7 @@
 				FA7BAA602B6C62C200B49752 /* Sources */,
 				FA7BAA612B6C62C200B49752 /* Frameworks */,
 				FA7BAA622B6C62C200B49752 /* Resources */,
+				24A5B6632B9117CB0041D7FA /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -894,6 +897,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24A5B6632B9117CB0041D7FA /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA7BAA602B6C62C200B49752 /* Sources */ = {
@@ -1150,6 +1174,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MeditationAppUI/Preview Content\"";
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MeditationAppUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1183,6 +1208,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MeditationAppUI/Preview Content\"";
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MeditationAppUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

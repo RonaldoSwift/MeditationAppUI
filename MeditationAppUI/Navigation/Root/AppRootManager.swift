@@ -8,11 +8,13 @@
 import Foundation
 
 final class AppRootManager: ObservableObject {
-    @Published var currentRoot: eAppRoots = .splash
     
-    enum eAppRoots {
+    @Published var currentRoot: AppRoots = .splash
+    
+    enum AppRoots {
         case splash
         case authentication
         case principal
     }
+    
 }
