@@ -22,7 +22,7 @@
 		246717352B75A3A5002570DC /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467172E2B75A3A5002570DC /* View+Extension.swift */; };
 		246717372B75A406002570DC /* RootPresentationModeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246717362B75A406002570DC /* RootPresentationModeKey.swift */; };
 		2496130F2B8FA97D003FF94E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496130E2B8FA97D003FF94E /* WelcomeView.swift */; };
-		24A5B6302B90E26E0041D7FA /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B62F2B90E26E0041D7FA /* WelcomeView.swift */; };
+		24A5B6302B90E26E0041D7FA /* DarkWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B62F2B90E26E0041D7FA /* DarkWelcomeView.swift */; };
 		24A5B6342B90E6C60041D7FA /* Colores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A5B6332B90E6C60041D7FA /* Colores.xcassets */; };
 		24A5B6372B90E87B0041D7FA /* SilentMoonLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B6362B90E87B0041D7FA /* SilentMoonLogoView.swift */; };
 		24A5B63A2B90EA420041D7FA /* SilentMoonLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B6362B90E87B0041D7FA /* SilentMoonLogoView.swift */; };
@@ -32,7 +32,6 @@
 		24A5B6452B90ED630041D7FA /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B6442B90ED630041D7FA /* AuthenticationRootView.swift */; };
 		24A5B6462B90EE880041D7FA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9879C2B8D4738007292EB /* Fonts.swift */; };
 		24A5B6482B90F12D0041D7FA /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B6472B90F12D0041D7FA /* PrimaryButton.swift */; };
-		24A5B6492B90F1B60041D7FA /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B6472B90F12D0041D7FA /* PrimaryButton.swift */; };
 		24A5B64C2B90F2430041D7FA /* SharedColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A5B64B2B90F2430041D7FA /* SharedColors.xcassets */; };
 		24A5B64D2B90F2BE0041D7FA /* SharedColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A5B64B2B90F2430041D7FA /* SharedColors.xcassets */; };
 		24A5B64F2B9108650041D7FA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB987A62B8D4CA3007292EB /* Localizable.strings */; };
@@ -54,6 +53,7 @@
 		24A5B65F2B9108CF0041D7FA /* HelveticaNeueCyr-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6A02B71B86300B7796E /* HelveticaNeueCyr-ThinItalic.ttf */; };
 		24A5B6602B9108CF0041D7FA /* HelveticaNeueCyr-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6992B71B86300B7796E /* HelveticaNeueCyr-Light.ttf */; };
 		24A5B6612B9108CF0041D7FA /* HelveticaNeueCyr-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6A12B71B86300B7796E /* HelveticaNeueCyr-UltraLight.ttf */; };
+		24A5B6622B910BFF0041D7FA /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B6472B90F12D0041D7FA /* PrimaryButton.swift */; };
 		FA5F00B62B79A70500F2AD0F /* ViewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246717282B75A3A4002570DC /* ViewD.swift */; };
 		FA5F00B72B79A76700F2AD0F /* MeditationDarkAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */; };
 		FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71AEA62B72EBE9009820E0 /* SignInView.swift */; };
@@ -148,7 +148,7 @@
 		2467172E2B75A3A5002570DC /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		246717362B75A406002570DC /* RootPresentationModeKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresentationModeKey.swift; sourceTree = "<group>"; };
 		2496130E2B8FA97D003FF94E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		24A5B62F2B90E26E0041D7FA /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		24A5B62F2B90E26E0041D7FA /* DarkWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkWelcomeView.swift; sourceTree = "<group>"; };
 		24A5B6332B90E6C60041D7FA /* Colores.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colores.xcassets; sourceTree = "<group>"; };
 		24A5B6362B90E87B0041D7FA /* SilentMoonLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentMoonLogoView.swift; sourceTree = "<group>"; };
 		24A5B6402B90ED2A0041D7FA /* WelcomeRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRootView.swift; sourceTree = "<group>"; };
@@ -322,17 +322,17 @@
 		24A5B62D2B90E2200041D7FA /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				24A5B62E2B90E2280041D7FA /* Welcome */,
+				24A5B62E2B90E2280041D7FA /* DarkWelcome */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		24A5B62E2B90E2280041D7FA /* Welcome */ = {
+		24A5B62E2B90E2280041D7FA /* DarkWelcome */ = {
 			isa = PBXGroup;
 			children = (
-				24A5B62F2B90E26E0041D7FA /* WelcomeView.swift */,
+				24A5B62F2B90E26E0041D7FA /* DarkWelcomeView.swift */,
 			);
-			path = Welcome;
+			path = DarkWelcome;
 			sourceTree = "<group>";
 		};
 		24A5B6312B90E67C0041D7FA /* Resources */ = {
@@ -951,11 +951,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB106132B79A06400D1C783 /* Persistence.swift in Sources */,
-				24A5B6302B90E26E0041D7FA /* WelcomeView.swift in Sources */,
+				24A5B6302B90E26E0041D7FA /* DarkWelcomeView.swift in Sources */,
 				FAB1060C2B79A06300D1C783 /* ContentView.swift in Sources */,
 				24A5B63A2B90EA420041D7FA /* SilentMoonLogoView.swift in Sources */,
 				24A5B6462B90EE880041D7FA /* Fonts.swift in Sources */,
-				24A5B6492B90F1B60041D7FA /* PrimaryButton.swift in Sources */,
+				24A5B6622B910BFF0041D7FA /* PrimaryButton.swift in Sources */,
 				FA5F00B72B79A76700F2AD0F /* MeditationDarkAppUIApp.swift in Sources */,
 				FA5F00B62B79A70500F2AD0F /* ViewD.swift in Sources */,
 				FAB106162B79A06400D1C783 /* MeditationDarkAppUI.xcdatamodeld in Sources */,

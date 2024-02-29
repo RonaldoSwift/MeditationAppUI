@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WelcomeView: View {
+struct DarkWelcomeView: View {
     
     @EnvironmentObject private var appRootManager: AppRootManager
     
@@ -50,5 +50,5 @@ struct WelcomeView: View {
 }
 
 #Preview {
-    WelcomeView()
+    DarkWelcomeView()
 }
