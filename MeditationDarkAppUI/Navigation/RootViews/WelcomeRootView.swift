@@ -10,7 +10,7 @@ import SwiftUI
 
 struct WelcomeRootView: View {
     var body: some View {
-        WelcomeView()
+        DarkWelcomeView()
     }
 }
 
