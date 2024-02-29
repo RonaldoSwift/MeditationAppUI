@@ -8,14 +8,19 @@
 import Foundation
 import SwiftUI
 
+@ViewBuilder
 func generalButtonComponent(onClickInSitioWeb: @escaping () -> Void, textoDelButton: String) -> some View {
     Button(action: {
         onClickInSitioWeb()
     }, label: {
         Text(textoDelButton)
-            .padding(EdgeInsets(top: 20, leading: 120, bottom: 20, trailing: 120))
-                    .foregroundColor(.white)
-                    .background(Color.colorButton)
-                    .cornerRadius(40)
+            .frame(maxWidth: .infinity)
+            .font(Fonts.HelveticaNeueCyr.medium.swiftUIFont(size: 14))
+            .padding(.all, 20)
+            .foregroundStyle(.primaryLabel)
+            .background(Color.accentBackground2)
+            .cornerRadius(40)
+        
     })
+    
 }
