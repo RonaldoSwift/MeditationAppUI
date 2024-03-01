@@ -9,8 +9,8 @@ import SwiftUI
 
 struct PrimaryButton: View {
     var text: String
-    var textColor: Color = .sharedAccentLabel
-    var backgroundColor: Color = .sharedPrimaryFill
+    var textColor: Color = Color.sharedAccentLabel
+    var backgroundColor: Color = Color.sharedPrimaryFill
     var onClick: () -> Void
 
     var body: some View {
