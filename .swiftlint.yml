@@ -7,7 +7,9 @@ excluded:
 - Carthage
 - Pods
 - SwiftLint/Common/3rdPartyLib
+- MeditationAppUI/Generated/Strings.swift
 - MeditationAppUI/Generated/Fonts.swift
+- MeditationAppUI/Generated/JSON.swift
 line_length:
     warning: 150
     error: 200
