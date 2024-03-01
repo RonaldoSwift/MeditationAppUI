@@ -24,7 +24,6 @@ jobs:
 
     - name: Build
       run: |
-        cd MeditationAppUI
         xcodebuild build -project MeditationAppUI.xcodeproj -scheme MeditationAppUI clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
 
     - name: Build and Test
