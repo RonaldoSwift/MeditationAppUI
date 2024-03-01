@@ -23,10 +23,10 @@ jobs:
         xcode-version: '14.1'
 
     - name: Build and Test
-        run: |
-          xcodebuild \
-           -project MeditationAppUI.xcodeproj \
-           -scheme MeditationAppUI \
-           -sdk iphonesimulator \
-           -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' \
-            test || exit 1
+      run: |
+        xcodebuild \
+         -project MeditationAppUI.xcodeproj \
+         -scheme MeditationAppUI \
+         -sdk iphonesimulator \
+         -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' \
+         test || exit 1
