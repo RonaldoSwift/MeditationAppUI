@@ -20,19 +20,16 @@ struct PrincipalView: View {
                     Image(ImageResource.lunaIcon)
                     Text("Sleep")
                 }
-            
             HomeView()
                 .tabItem {
                     Image(ImageResource.meditateIcon)
                     Text("Meditate")
                 }
-            
             HomeView()
                 .tabItem {
                     Image(ImageResource.musicIcon)
                     Text("Music")
                 }
-            
             HomeView()
                 .tabItem {
                     Image(ImageResource.personIcon)
