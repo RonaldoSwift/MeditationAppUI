@@ -15,6 +15,11 @@ jobs:
     runs-on: macos-13
 
     steps:
+    
+    #Ensure the xcode version is available
+    - name: List Xcode installations
+      run: sudo ls -1 /Applications | grep "Xcode"
+    
     - uses: actions/checkout@v4
     
     - name: Xcode Setup
