@@ -40,10 +40,11 @@ struct WelcomeView: View {
 
                 Spacer()
 
-                PrimaryButton(text: "GET STARTED",
-                              textColor: Color.primaryLabel,
-                              backgroundColor: Color.accentBackground2)
-                {
+                PrimaryButton(
+                    text: "GET STARTED",
+                    textColor: Color.primaryLabel,
+                    backgroundColor: Color.accentBackground2
+                ) {
                     appRootManager.currentRoot = .authentication
                 }
             }

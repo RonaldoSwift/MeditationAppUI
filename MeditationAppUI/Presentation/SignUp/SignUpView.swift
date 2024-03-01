@@ -134,12 +134,12 @@ struct SignUpView: View {
 
                     Button(action: {
                         precionarCkeck.toggle()
-                    }) {
+                    }, label: {
                         Image(systemName: precionarCkeck ? "checkmark.square.fill" : "square")
                             .resizable()
                             .frame(width: 24, height: 24)
                             .foregroundColor(precionarCkeck ? .green : Color.colorLetras)
-                    }
+                    })
                 }
                 .padding(.top, 10)
                 .padding(.bottom, 35)
