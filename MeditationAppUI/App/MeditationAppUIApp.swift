@@ -9,9 +9,8 @@ import SwiftUI
 
 @main
 struct MeditationAppUIApp: App {
-    
     @StateObject private var appRootManager = AppRootManager()
-    
+
     var body: some Scene {
         WindowGroup {
             Group {

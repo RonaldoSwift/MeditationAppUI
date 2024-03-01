@@ -15,12 +15,11 @@ struct AuthenticationRootView: View {
 }
 
 #if DEBUG
-struct AuthenticationRootView_Previews: PreviewProvider {
-
-    static var previews: some View {
-        Preview {
-            AuthenticationRootView()
+    struct AuthenticationRootView_Previews: PreviewProvider {
+        static var previews: some View {
+            Preview {
+                AuthenticationRootView()
+            }
         }
     }
-}
 #endif

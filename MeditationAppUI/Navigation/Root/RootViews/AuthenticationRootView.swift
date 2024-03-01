@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct AuthenticationRootView: View {
-    
     @State var isActiveSignUp: Bool = false
     @State var isActiveSignIn: Bool = false
-    
+
     var body: some View {
-        NavigationView{
+        NavigationView {
             SilentMoonView {
                 isActiveSignUp = true
             } onClickSignIn: {
@@ -21,18 +20,16 @@ struct AuthenticationRootView: View {
             }
             .navigation(SignUpView(), $isActiveSignUp)
             .navigation(SignInView(), $isActiveSignIn)
-            
         }
     }
 }
 
 #if DEBUG
-struct AuthenticationRootView_Previews: PreviewProvider {
-
-    static var previews: some View {
-        Preview {
-            AuthenticationRootView()
+    struct AuthenticationRootView_Previews: PreviewProvider {
+        static var previews: some View {
+            Preview {
+                AuthenticationRootView()
+            }
         }
     }
-}
 #endif

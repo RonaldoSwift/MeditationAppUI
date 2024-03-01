@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct MeditationDarkAppUIApp: App {
-
     var body: some Scene {
         WindowGroup {
             DarkWelcomeView()

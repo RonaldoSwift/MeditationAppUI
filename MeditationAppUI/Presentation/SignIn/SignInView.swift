@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct SignInView: View {
-    
     @State var emailTextField: String = ""
     @State var passwordTextField: String = ""
-    
-    @State var isActiveSignUp : Bool = false
-    
+
+    @State var isActiveSignUp: Bool = false
+
     @EnvironmentObject private var appRootManager: AppRootManager
-    
+
     var body: some View {
         VStack(alignment: .center) {
             ZStack {
@@ -25,13 +24,13 @@ struct SignInView: View {
                     Text("Welcome Back!")
                         .font(.custom("HelveticaNeueCyr-Bold", size: 28))
                         .padding(.bottom, 10)
-                    
+
                     Button(action: {
                         print("Button Facebook")
                     }, label: {
                         HStack(alignment: .center) {
                             Image(ImageResource.logoFacebook)
-                                .padding(.trailing,40)
+                                .padding(.trailing, 40)
                             Text("CONTINUE WITH FACEBOOK")
                         }
                         .padding(EdgeInsets(top: 20, leading: 55, bottom: 20, trailing: 55))
@@ -39,18 +38,18 @@ struct SignInView: View {
                         .foregroundColor(.white)
                         .background(Color.colorButtonFacebook)
                         .cornerRadius(40)
-                        
+
                     })
-                    
+
                     Button(action: {
                         print("Button Googler")
 
                     }, label: {
-                        HStack{
+                        HStack {
                             Image(ImageResource.logoGoogle)
-                                .padding(.trailing,30)
+                                .padding(.trailing, 30)
                             Text("CONTINUE WITH GOOGLE")
-                                .padding(.trailing,30)
+                                .padding(.trailing, 30)
                         }
                         .padding(EdgeInsets(top: 20, leading: 45, bottom: 20, trailing: 45))
                         .font(.custom("HelveticaNeueCyr-Medium", size: 14))
@@ -60,49 +59,47 @@ struct SignInView: View {
                                 .stroke(Color.colorButtonGoogle, style: StrokeStyle(lineWidth: 2))
                         )
                     })
-                    .padding(.top,10)
+                    .padding(.top, 10)
                 }
-                .padding(.top,60)
+                .padding(.top, 60)
             }
-            
+
             Spacer()
-            
+
             VStack {
                 Text("OR LOG IN WITH EMAIL")
                     .font(.custom("HelveticaNeueCyr-Medium", size: 14))
                     .foregroundStyle(Color.colorLetras)
-                    .padding(.bottom,40)
+                    .padding(.bottom, 40)
 
                 TextField("Email address", text: $emailTextField)
                     .padding()
                     .background(Color.colorSignInTextField)
-                    .cornerRadius(10)  
-                    .padding(.bottom,10)
+                    .cornerRadius(10)
+                    .padding(.bottom, 10)
 
                 SecureField("Password", text: $passwordTextField)
                     .padding()
                     .background(Color.colorSignInTextField)
                     .cornerRadius(10)
-                    .padding(.bottom,20)
+                    .padding(.bottom, 20)
 
                 generalButtonComponent(onClickInSitioWeb: {
-                    
                     appRootManager.currentRoot = .principal
-                    
+
                 }, textoDelButton: "Log In              ")
-                
+
                 Text("Forgot Password?")
                     .font(.custom("HelveticaNeueCyr-Medium", size: 14))
-                    .padding(.top,10)
+                    .padding(.top, 10)
 
                 HStack {
                     Text("ALREADY HAVE AN ACCOUNT?")
                         .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                         .foregroundStyle(Color.colorLetras)
                     Button(action: {
-                        
                         isActiveSignUp = true
-                        
+
                     }, label: {
                         Text("SIGN UP")
                             .font(.custom("HelveticaNeueCyr-Medium", size: 16))
@@ -110,7 +107,7 @@ struct SignInView: View {
                     })
                 }
                 .padding(.top, 90)
-                .padding(.bottom,35)
+                .padding(.bottom, 35)
             }
             .padding()
         }
@@ -119,12 +116,11 @@ struct SignInView: View {
 }
 
 #if DEBUG
-struct SignInView_Previews: PreviewProvider {
-
-    static var previews: some View {
-        Preview {
-            SignInView()
+    struct SignInView_Previews: PreviewProvider {
+        static var previews: some View {
+            Preview {
+                SignInView()
+            }
         }
     }
-}
 #endif

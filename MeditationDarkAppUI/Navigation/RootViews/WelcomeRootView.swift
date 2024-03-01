@@ -15,12 +15,11 @@ struct WelcomeRootView: View {
 }
 
 #if DEBUG
-struct WelcomeRootView_Previews: PreviewProvider {
-
-    static var previews: some View {
-        Preview {
-            WelcomeRootView()
+    struct WelcomeRootView_Previews: PreviewProvider {
+        static var previews: some View {
+            Preview {
+                WelcomeRootView()
+            }
         }
     }
-}
 #endif

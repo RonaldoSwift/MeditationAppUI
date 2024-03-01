@@ -5,11 +5,10 @@
 //  Created by Ronaldo Andre on 1/02/24.
 //
 
-import XCTest
 @testable import MeditationAppUI
+import XCTest
 
 final class MeditationAppUITests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -28,9 +27,8 @@ final class MeditationAppUITests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

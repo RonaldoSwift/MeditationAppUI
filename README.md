@@ -12,20 +12,6 @@ Esta aplicación permite al usuario iniciar sesión, registrarse, verificar sald
     <img src="Screenshots/MainLogo.png" alt="icon" width="80%"/>
 </p>
 
-#  Arquitectura de la aplicación Servidor
-<p align="center">
-    <img src="Screenshots/ServerLogo.png" alt="icon" width="80%"/>
-</p>
-
-## Running the server
-
-1. Install node
-2. Move to the `server` folder 
-3. To install libraries, run `npm install`
-3. To start the server just run: `node index.js`
-4. To stop the server just type: `control + c`
-
-
 ## Running the app
 
 ### Prerequisites
@@ -59,7 +45,13 @@ swiftlint --version
 0.53.0
 ```
 
-7. Instala Sourcery
+7. Instalar swiftformat
+```
+brew install swiftformat
+```
+
+
+8. Instala Sourcery
 
 ```sh
 brew install sourcery
@@ -71,6 +63,7 @@ brew install sourcery
 
 * SwiftGen
 * SwiftLint - Installed with homebrew, and used in Build Phases (https://isnihal.medium.com/simple-guide-to-adding-swiftlint-to-your-xcode-project-11d2ed20da26)
+* SwiftFormat - https://timothyobeisun.medium.com/installing-swiftformat-in-your-ios-app-6f80135a2ea0
 * netfox
 * Sourcery
 * ShowTime

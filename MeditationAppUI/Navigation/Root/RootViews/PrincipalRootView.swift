@@ -14,12 +14,11 @@ struct PrincipalRootView: View {
 }
 
 #if DEBUG
-struct PrincipalRootView_Previews: PreviewProvider {
-
-    static var previews: some View {
-        Preview {
-            PrincipalRootView()
+    struct PrincipalRootView_Previews: PreviewProvider {
+        static var previews: some View {
+            Preview {
+                PrincipalRootView()
+            }
         }
     }
-}
 #endif

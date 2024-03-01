@@ -161,6 +161,7 @@
 		24A5B6642B9118EC0041D7FA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		24A5B66A2B911D190041D7FA /* swift.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swift.yml; sourceTree = "<group>"; };
 		24A5B66C2B916AAF0041D7FA /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		24A5B6702B9189F50041D7FA /* MainLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainLogo.png; sourceTree = "<group>"; };
 		FA4DB2382B859B4700EFBB38 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FA71AEA62B72EBE9009820E0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -422,6 +423,14 @@
 			path = Preview;
 			sourceTree = "<group>";
 		};
+		24A5B66F2B9189780041D7FA /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				24A5B6702B9189F50041D7FA /* MainLogo.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		FA71AEA52B72EBCB009820E0 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +485,7 @@
 		FA7BAA5B2B6C62C200B49752 = {
 			isa = PBXGroup;
 			children = (
+				24A5B66F2B9189780041D7FA /* Screenshots */,
 				24A5B6682B911D190041D7FA /* .github */,
 				24A5B6642B9118EC0041D7FA /* .swiftlint.yml */,
 				FA4DB2382B859B4700EFBB38 /* swiftgen.yml */,
@@ -677,6 +687,7 @@
 				FA7BAA612B6C62C200B49752 /* Frameworks */,
 				FA7BAA622B6C62C200B49752 /* Resources */,
 				24A5B6632B9117CB0041D7FA /* Run SwiftLint */,
+				24A5B6712B918B050041D7FA /* Run SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -943,6 +954,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		24A5B6712B918B050041D7FA /* Run SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftformat > /dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -20,7 +20,6 @@ func generalButtonComponent(onClickInSitioWeb: @escaping () -> Void, textoDelBut
             .foregroundStyle(.primaryLabel)
             .background(Color.accentBackground2)
             .cornerRadius(40)
-        
+
     })
-    
 }

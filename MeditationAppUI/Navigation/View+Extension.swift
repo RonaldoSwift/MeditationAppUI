@@ -9,18 +9,15 @@ import Foundation
 import SwiftUI
 
 extension View {
-    
     func navigation(_ view: any View, _ isActive: Binding<Bool>) -> some View {
-        return self.modifier(
+        return modifier(
             NavigationModifier(destinationView: AnyView(view), isActive: isActive)
         )
     }
-    
+
     func sheet(_ view: any View, _ isPresented: Binding<Bool>) -> some View {
-        return self.modifier(
+        return modifier(
             SheetModifier(presentingView: AnyView(view), isPresented: isPresented)
         )
     }
-
-    
 }

@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct SilentMoonLogoView: View {
-    
     var textColor: Color
     var logoImageResource: ImageResource
-    
+
     var body: some View {
         HStack {
             Text("S i l e n t")
@@ -26,12 +25,11 @@ struct SilentMoonLogoView: View {
 }
 
 #if DEBUG
-struct SilentMoonLogoView_Previews: PreviewProvider {
-
-    static var previews: some View {
-        Preview {
-            SilentMoonLogoView(textColor: Color.accentColor, logoImageResource: ImageResource.logo)
+    struct SilentMoonLogoView_Previews: PreviewProvider {
+        static var previews: some View {
+            Preview {
+                SilentMoonLogoView(textColor: Color.accentColor, logoImageResource: ImageResource.logo)
+            }
         }
     }
-}
 #endif

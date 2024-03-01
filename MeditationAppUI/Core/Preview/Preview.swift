@@ -9,9 +9,8 @@ import Foundation
 import SwiftUI
 
 public struct Preview<Content: View>: View {
-    
     let content: Content
-    
+
     public var body: some View {
         Group {
             content
@@ -19,7 +18,7 @@ public struct Preview<Content: View>: View {
                 .preferredColorScheme(.light)
                 .previewDevice("iPhone 14 Pro")
                 .previewDisplayName("Pro - Light mode")
-            
+
             content
                 .environment(\.colorScheme, .dark)
                 .preferredColorScheme(.dark)
@@ -27,7 +26,7 @@ public struct Preview<Content: View>: View {
                 .previewDisplayName("Pro - Dark mode")
         }
     }
-    
+
     public init(@ViewBuilder _ content: () -> Content) {
         self.content = content()
     }

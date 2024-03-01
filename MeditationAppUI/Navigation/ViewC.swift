@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ViewC: View {
-    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Environment(\.rootPresentationMode) private var rootPresentationMode
-    
-    @State var isModalActive : Bool = false
-    
+
+    @State var isModalActive: Bool = false
+
     var body: some View {
         VStack {
             Button("BACK") {
@@ -28,6 +27,5 @@ struct ViewC: View {
         }
         .navigationTitle("VIEW C")
         .sheet(ViewD(), $isModalActive)
-        
     }
 }

@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct SignUpView: View {
-    
     @State var nameTextField: String = ""
     @State var emailTextField: String = ""
     @State var passwordTextField: String = ""
-    
+
     @State private var precionarCkeck = false
-    
-    
+
     var body: some View {
         VStack(alignment: .center) {
             ZStack {
@@ -25,13 +23,13 @@ struct SignUpView: View {
                     Text("Create your account")
                         .font(.custom("HelveticaNeueCyr-Bold", size: 28))
                         .padding(.bottom, 10)
-                    
+
                     Button(action: {
                         print("Button Facebook")
                     }, label: {
                         HStack(alignment: .center) {
                             Image(ImageResource.logoFacebook)
-                                .padding(.trailing,40)
+                                .padding(.trailing, 40)
                             Text("CONTINUE WITH FACEBOOK")
                         }
                         .padding(EdgeInsets(top: 20, leading: 55, bottom: 20, trailing: 55))
@@ -39,18 +37,18 @@ struct SignUpView: View {
                         .foregroundColor(.white)
                         .background(Color.colorButtonFacebook)
                         .cornerRadius(40)
-                        
+
                     })
-                    
+
                     Button(action: {
                         print("Button Googler")
-                        
+
                     }, label: {
-                        HStack{
+                        HStack {
                             Image(ImageResource.logoGoogle)
-                                .padding(.trailing,30)
+                                .padding(.trailing, 30)
                             Text("CONTINUE WITH GOOGLE")
-                                .padding(.trailing,30)
+                                .padding(.trailing, 30)
                         }
                         .padding(EdgeInsets(top: 20, leading: 45, bottom: 20, trailing: 45))
                         .font(.custom("HelveticaNeueCyr-Medium", size: 14))
@@ -60,67 +58,66 @@ struct SignUpView: View {
                                 .stroke(Color.colorButtonGoogle, style: StrokeStyle(lineWidth: 2))
                         )
                     })
-                    .padding(.top,10)
+                    .padding(.top, 10)
                 }
-                .padding(.top,100)
+                .padding(.top, 100)
             }
-            
+
             Spacer()
-            
-            
-            VStack{
+
+            VStack {
                 Text("OR LOG IN WITH EMAIL")
                     .font(.custom("HelveticaNeueCyr-Medium", size: 14))
                     .foregroundStyle(Color.colorLetras)
-                    .padding(.bottom,40)
-                
+                    .padding(.bottom, 40)
+
                 TextField("Name", text: $nameTextField)
                     .padding()
                     .background(Color.colorSignInTextField)
                     .cornerRadius(10)
-                    .padding(.bottom,10)
+                    .padding(.bottom, 10)
                     .overlay(
                         HStack(alignment: .center) {
                             Spacer()
                             Image(ImageResource.checkSinUp)
                                 .resizable()
-                                .frame(width: 20,height: 15)
+                                .frame(width: 20, height: 15)
                                 .foregroundColor(Color.colorCheck)
                                 .padding(.trailing, 20)
                         }
                     )
-                
+
                 TextField("Email address", text: $emailTextField)
                     .padding()
                     .background(Color.colorSignInTextField)
                     .cornerRadius(10)
-                    .padding(.bottom,10)
+                    .padding(.bottom, 10)
                     .overlay(
                         HStack(alignment: .center) {
                             Spacer()
                             Image(ImageResource.checkSinUp)
                                 .resizable()
-                                .frame(width: 20,height: 15)
+                                .frame(width: 20, height: 15)
                                 .foregroundColor(Color.colorCheck)
                                 .padding(.trailing, 20)
                         }
                     )
-                
+
                 SecureField("Password", text: $passwordTextField)
                     .padding()
                     .background(Color.colorSignInTextField)
                     .cornerRadius(10)
-                    .padding(.bottom,10)
+                    .padding(.bottom, 10)
                     .overlay(
                         HStack(alignment: .center) {
                             Spacer()
                             Image(ImageResource.tabSignUp)
                                 .resizable()
-                                .frame(width: 20,height: 15)
+                                .frame(width: 20, height: 15)
                                 .padding(.trailing, 20)
                         }
                     )
-                
+
                 HStack(alignment: .center) {
                     Text("i have read the")
                         .font(.custom("HelveticaNeueCyr-Medium", size: 16))
@@ -132,9 +129,9 @@ struct SignUpView: View {
                             .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                             .foregroundColor(Color.colorButton)
                     })
-                    
+
                     Spacer()
-                    
+
                     Button(action: {
                         precionarCkeck.toggle()
                     }) {
@@ -145,12 +142,12 @@ struct SignUpView: View {
                     }
                 }
                 .padding(.top, 10)
-                .padding(.bottom,35)
-                
+                .padding(.bottom, 35)
+
                 generalButtonComponent(onClickInSitioWeb: {
                     print("Get Stared")
                 }, textoDelButton: "GET STARTED")
-                .padding(.bottom,60)
+                    .padding(.bottom, 60)
             }
             .padding()
         }
@@ -158,12 +155,11 @@ struct SignUpView: View {
 }
 
 #if DEBUG
-struct SignUpView_Previews: PreviewProvider {
-
-    static var previews: some View {
-        Preview {
-            SignUpView()
+    struct SignUpView_Previews: PreviewProvider {
+        static var previews: some View {
+            Preview {
+                SignUpView()
+            }
         }
     }
-}
 #endif

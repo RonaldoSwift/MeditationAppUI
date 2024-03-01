@@ -1,5 +1,5 @@
 //
-//  Veamos.swift
+//  RootPresentationModeKey.swift
 //  DemoSwiftUI
 //
 //  Created by Carlos Leonardo Camilo Vargas Huaman on 8/02/24.
@@ -19,9 +19,8 @@ extension EnvironmentValues {
     }
 }
 
-extension Bool {
-    
-    public mutating func dismiss() {
-        self.toggle()
+public extension Bool {
+    mutating func dismiss() {
+        toggle()
     }
 }
