@@ -78,3 +78,8 @@ brew install sourcery
 
 1. Soporte iOS version: 16.0
 2. Soporte para plataformas iPhone y iPad
+
+## Common issues
+
+* Avoid using names for colors like `secondaryLabel` because it already exists and you'll get an error in the `GeneratedAssetSymbols` file.
+* Remember to setup your `.github/workflow/swift` in a similar way as your local environment (same macos-version, same xcode-version, available emulators, etc) to avoid issues in github actions.
