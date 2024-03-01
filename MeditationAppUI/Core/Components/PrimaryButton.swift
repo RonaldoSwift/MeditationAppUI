@@ -30,8 +30,13 @@ struct PrimaryButton: View {
     }
 }
 
-#Preview {
-    PrimaryButton(text: "Demo") {
-        
+#if DEBUG
+struct PrimaryButton_Previews: PreviewProvider {
+
+    static var previews: some View {
+        Preview {
+            PrimaryButton(text: "Demo") {}
+        }
     }
 }
+#endif

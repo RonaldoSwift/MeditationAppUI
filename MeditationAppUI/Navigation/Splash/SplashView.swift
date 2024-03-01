@@ -35,6 +35,13 @@ struct SplashView: View {
     }
 }
 
-#Preview {
-    SplashView()
+#if DEBUG
+struct SplashView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        Preview {
+            SplashView()
+        }
+    }
 }
+#endif

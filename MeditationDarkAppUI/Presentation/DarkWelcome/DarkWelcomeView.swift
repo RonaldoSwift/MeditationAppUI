@@ -49,6 +49,13 @@ struct DarkWelcomeView: View {
     }
 }
 
-#Preview {
-    DarkWelcomeView()
+#if DEBUG
+struct DarkWelcomeView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        Preview {
+            DarkWelcomeView()
+        }
+    }
 }
+#endif

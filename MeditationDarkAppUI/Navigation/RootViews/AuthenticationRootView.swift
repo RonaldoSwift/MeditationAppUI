@@ -14,6 +14,13 @@ struct AuthenticationRootView: View {
     }
 }
 
-#Preview {
-    AuthenticationRootView()
+#if DEBUG
+struct AuthenticationRootView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        Preview {
+            AuthenticationRootView()
+        }
+    }
 }
+#endif

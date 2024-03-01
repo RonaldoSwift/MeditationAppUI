@@ -26,7 +26,3 @@ struct ViewB: View {
         .navigation(ViewC(), $isActiveB)
     }
 }
-
-#Preview {
-    ViewB()
-}

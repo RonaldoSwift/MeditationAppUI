@@ -31,7 +31,3 @@ struct ViewC: View {
         
     }
 }
-
-#Preview {
-    ViewC()
-}

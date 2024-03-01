@@ -23,7 +23,3 @@ struct ViewA: View {
         }.environment(\.rootPresentationMode, self.$isActiveA)
     }
 }
-
-#Preview {
-    ViewA()
-}

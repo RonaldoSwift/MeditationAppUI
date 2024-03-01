@@ -79,6 +79,13 @@ struct SilentMoonView: View {
     }
 }
 
-#Preview {
-    SilentMoonView(onClickSignUp: {}, onClickSignIn: {})
+#if DEBUG
+struct SilentMoonView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        Preview {
+            SilentMoonView(onClickSignUp: {}, onClickSignIn: {})
+        }
+    }
 }
+#endif

@@ -12,7 +12,3 @@ struct ViewD: View {
         Text("THIS IS A MODAL")
     }
 }
-
-#Preview {
-    ViewD()
-}

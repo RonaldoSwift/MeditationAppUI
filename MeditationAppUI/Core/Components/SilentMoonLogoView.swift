@@ -25,6 +25,13 @@ struct SilentMoonLogoView: View {
     }
 }
 
-#Preview {
-    SilentMoonLogoView(textColor: Color.accentColor, logoImageResource: ImageResource.logo)
+#if DEBUG
+struct SilentMoonLogoView_Previews: PreviewProvider {
+
+    static var previews: some View {
+        Preview {
+            SilentMoonLogoView(textColor: Color.accentColor, logoImageResource: ImageResource.logo)
+        }
+    }
 }
+#endif
