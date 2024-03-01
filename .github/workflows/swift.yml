@@ -37,11 +37,6 @@ jobs:
       run: |
         xcodebuild build -project MeditationAppUI.xcodeproj -scheme MeditationAppUI clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
 
-    - name: Build and Test
+    - name: Run tests
       run: |
-        xcodebuild \
-         -project MeditationAppUI.xcodeproj \
-         -scheme MeditationAppUI \
-         -sdk iphonesimulator \
-         -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.1' \
-         test || exit 1
+        xcodebuild test -project MeditationAppUI.xcodeproj -scheme MeditationAppUI clean build -sdk iphoneos -destination "platform=iOS Simulator,OS=16.1,name=iPhone 14 Pro Max" CODE_SIGNING_ALLOWED=No

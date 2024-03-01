@@ -9,14 +9,14 @@ import SwiftUI
 
 struct SilentMoonLogoView: View {
     var textColor: Color
-    var logoImageResource: Image
+    var logoImageResource: ImageResource
 
     var body: some View {
         HStack {
             Text("S i l e n t")
                 .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                 .foregroundStyle(textColor)
-            logoImageResource
+            Image(logoImageResource)
             Text("M o o n")
                 .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                 .foregroundStyle(textColor)
@@ -28,7 +28,7 @@ struct SilentMoonLogoView: View {
     struct SilentMoonLogoView_Previews: PreviewProvider {
         static var previews: some View {
             Preview {
-                SilentMoonLogoView(textColor: Color.accentColor, logoImageResource: Image(ImageResource.logo))
+                SilentMoonLogoView(textColor: Color.accentColor, logoImageResource: ImageResource.logo)
             }
         }
     }

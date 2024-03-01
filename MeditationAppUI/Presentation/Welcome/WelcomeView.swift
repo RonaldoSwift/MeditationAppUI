@@ -21,7 +21,7 @@ struct WelcomeView: View {
             }
 
             VStack(alignment: .center) {
-                SilentMoonLogoView(textColor: Color.primaryLabel, logoImageResource: Image(ImageResource.logo))
+                SilentMoonLogoView(textColor: Color.primaryLabel, logoImageResource: ImageResource.logo)
                     .padding(.bottom, 40)
 
                 Text("Hi Asfar, Welcome")
