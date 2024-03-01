@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct SilentMoonView: View {
-    
     var onClickSignUp: () -> Void
     var onClickSignIn: () -> Void
-    
+
     var body: some View {
         VStack {
             ZStack {
                 Image(ImageResource.fondoSilentMoon)
                     .ignoresSafeArea()
-                
+
                 VStack(alignment: .center) {
                     HStack {
                         Text("S i l e n t")
@@ -31,14 +30,14 @@ struct SilentMoonView: View {
                 }
                 .padding(.bottom, 20)
             }
-            
+
             Spacer()
-            
+
             VStack {
                 Text("We are what we do")
                     .font(.custom("HelveticaNeueCyr-Bold", size: 30))
                     .padding(.bottom, 10)
-                
+
                 VStack {
                     Text("Thousand of people are usign silent moon")
                         .padding(.bottom, 5)
@@ -46,25 +45,23 @@ struct SilentMoonView: View {
                 }
                 .font(.custom("HelveticaNeueCyr-Thin", size: 16))
                 .foregroundStyle(Color.colorLetras)
-                
+
                 generalButtonComponent(
                     onClickInSitioWeb: {
-                        
                         onClickSignUp()
-                        
+
                     },
                     textoDelButton: "SIGN UP"
                 )
-                .padding(.top,70)
-                
+                .padding(.top, 70)
+
                 HStack {
                     Text("ALREADY HAVE AN ACCOUNT?")
                         .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                         .foregroundStyle(Color.colorLetras)
                     Button(action: {
-                        
                         onClickSignIn()
-                        
+
                     }, label: {
                         Text("LOG IN")
                             .font(.custom("HelveticaNeueCyr-Medium", size: 16))
@@ -79,6 +76,12 @@ struct SilentMoonView: View {
     }
 }
 
-#Preview {
-    SilentMoonView(onClickSignUp: {}, onClickSignIn: {})
-}
+#if DEBUG
+    struct SilentMoonView_Previews: PreviewProvider {
+        static var previews: some View {
+            Preview {
+                SilentMoonView(onClickSignUp: {}, onClickSignIn: {})
+            }
+        }
+    }
+#endif

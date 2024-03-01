@@ -2,12 +2,12 @@
 // Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
 
 #if os(macOS)
-  import AppKit.NSFont
+    import AppKit.NSFont
 #elseif os(iOS) || os(tvOS) || os(watchOS)
-  import UIKit.UIFont
+    import UIKit.UIFont
 #endif
 #if canImport(SwiftUI)
-  import SwiftUI
+    import SwiftUI
 #endif
 
 // Deprecated typealiases
@@ -20,140 +20,144 @@ public typealias Font = FontConvertible.Font
 
 // swiftlint:disable identifier_name line_length type_body_length
 public enum Fonts {
-  public enum HelveticaNeue {
-    public static let condensedBlack = FontConvertible(name: "HelveticaNeueBlackCondensed", family: "Helvetica Neue", path: "HelveticaNeueBlackCondensed.ttf")
-    public static let condensedBold = FontConvertible(name: "HelveticaNeueBoldCondensed", family: "Helvetica Neue", path: "HelveticaNeueBoldCondensed.ttf")
-    public static let all: [FontConvertible] = [condensedBlack, condensedBold]
-  }
-  public enum HelveticaNeueCyr {
-    public static let black = FontConvertible(name: "HelveticaNeueCyr-Black", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Black.ttf")
-    public static let blackItalic = FontConvertible(name: "HelveticaNeueCyr-BlackItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-BlackItalic.ttf")
-    public static let bold = FontConvertible(name: "HelveticaNeueCyr-Bold", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Bold.ttf")
-    public static let boldItalic = FontConvertible(name: "HelveticaNeueCyr-BoldItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-BoldItalic.ttf")
-    public static let heavy = FontConvertible(name: "HelveticaNeueCyr-Heavy", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Heavy.ttf")
-    public static let heavyItalic = FontConvertible(name: "HelveticaNeueCyr-HeavyItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-HeavyItalic.ttf")
-    public static let italic = FontConvertible(name: "HelveticaNeueCyr-Italic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Italic.ttf")
-    public static let light = FontConvertible(name: "HelveticaNeueCyr-Light", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Light.ttf")
-    public static let lightItalic = FontConvertible(name: "HelveticaNeueCyr-LightItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-LightItalic.ttf")
-    public static let medium = FontConvertible(name: "HelveticaNeueCyr-Medium", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Medium.ttf")
-    public static let mediumItalic = FontConvertible(name: "HelveticaNeueCyr-MediumItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-MediumItalic.ttf")
-    public static let roman = FontConvertible(name: "HelveticaNeueCyr-Roman", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Roman.ttf")
-    public static let thin = FontConvertible(name: "HelveticaNeueCyr-Thin", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Thin.ttf")
-    public static let thinItalic = FontConvertible(name: "HelveticaNeueCyr-ThinItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-ThinItalic.ttf")
-    public static let ultraLight = FontConvertible(name: "HelveticaNeueCyr-UltraLight", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-UltraLight.ttf")
-    public static let ultraLightItalic = FontConvertible(name: "HelveticaNeueCyr-UltraLightItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-UltraLightItalic.ttf")
-    public static let all: [FontConvertible] = [black, blackItalic, bold, boldItalic, heavy, heavyItalic, italic, light, lightItalic, medium, mediumItalic, roman, thin, thinItalic, ultraLight, ultraLightItalic]
-  }
-  public static let allCustomFonts: [FontConvertible] = [HelveticaNeue.all, HelveticaNeueCyr.all].flatMap { $0 }
-  public static func registerAllCustomFonts() {
-    allCustomFonts.forEach { $0.register() }
-  }
+    public enum HelveticaNeue {
+        public static let condensedBlack = FontConvertible(name: "HelveticaNeueBlackCondensed", family: "Helvetica Neue", path: "HelveticaNeueBlackCondensed.ttf")
+        public static let condensedBold = FontConvertible(name: "HelveticaNeueBoldCondensed", family: "Helvetica Neue", path: "HelveticaNeueBoldCondensed.ttf")
+        public static let all: [FontConvertible] = [condensedBlack, condensedBold]
+    }
+
+    public enum HelveticaNeueCyr {
+        public static let black = FontConvertible(name: "HelveticaNeueCyr-Black", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Black.ttf")
+        public static let blackItalic = FontConvertible(name: "HelveticaNeueCyr-BlackItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-BlackItalic.ttf")
+        public static let bold = FontConvertible(name: "HelveticaNeueCyr-Bold", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Bold.ttf")
+        public static let boldItalic = FontConvertible(name: "HelveticaNeueCyr-BoldItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-BoldItalic.ttf")
+        public static let heavy = FontConvertible(name: "HelveticaNeueCyr-Heavy", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Heavy.ttf")
+        public static let heavyItalic = FontConvertible(name: "HelveticaNeueCyr-HeavyItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-HeavyItalic.ttf")
+        public static let italic = FontConvertible(name: "HelveticaNeueCyr-Italic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Italic.ttf")
+        public static let light = FontConvertible(name: "HelveticaNeueCyr-Light", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Light.ttf")
+        public static let lightItalic = FontConvertible(name: "HelveticaNeueCyr-LightItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-LightItalic.ttf")
+        public static let medium = FontConvertible(name: "HelveticaNeueCyr-Medium", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Medium.ttf")
+        public static let mediumItalic = FontConvertible(name: "HelveticaNeueCyr-MediumItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-MediumItalic.ttf")
+        public static let roman = FontConvertible(name: "HelveticaNeueCyr-Roman", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Roman.ttf")
+        public static let thin = FontConvertible(name: "HelveticaNeueCyr-Thin", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-Thin.ttf")
+        public static let thinItalic = FontConvertible(name: "HelveticaNeueCyr-ThinItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-ThinItalic.ttf")
+        public static let ultraLight = FontConvertible(name: "HelveticaNeueCyr-UltraLight", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-UltraLight.ttf")
+        public static let ultraLightItalic = FontConvertible(name: "HelveticaNeueCyr-UltraLightItalic", family: "HelveticaNeueCyr", path: "HelveticaNeueCyr-UltraLightItalic.ttf")
+        public static let all: [FontConvertible] = [black, blackItalic, bold, boldItalic, heavy, heavyItalic, italic, light, lightItalic, medium, mediumItalic, roman, thin, thinItalic, ultraLight, ultraLightItalic]
+    }
+
+    public static let allCustomFonts: [FontConvertible] = [HelveticaNeue.all, HelveticaNeueCyr.all].flatMap { $0 }
+    public static func registerAllCustomFonts() {
+        allCustomFonts.forEach { $0.register() }
+    }
 }
+
 // swiftlint:enable identifier_name line_length type_body_length
 
 // MARK: - Implementation Details
 
 public struct FontConvertible {
-  public let name: String
-  public let family: String
-  public let path: String
+    public let name: String
+    public let family: String
+    public let path: String
 
-  #if os(macOS)
-  public typealias Font = NSFont
-  #elseif os(iOS) || os(tvOS) || os(watchOS)
-  public typealias Font = UIFont
-  #endif
-
-  public func font(size: CGFloat) -> Font {
-    guard let font = Font(font: self, size: size) else {
-      fatalError("Unable to initialize font '\(name)' (\(family))")
-    }
-    return font
-  }
-
-  #if canImport(SwiftUI)
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public func swiftUIFont(size: CGFloat) -> SwiftUI.Font {
-    return SwiftUI.Font.custom(self, size: size)
-  }
-
-  @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
-  public func swiftUIFont(fixedSize: CGFloat) -> SwiftUI.Font {
-    return SwiftUI.Font.custom(self, fixedSize: fixedSize)
-  }
-
-  @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
-  public func swiftUIFont(size: CGFloat, relativeTo textStyle: SwiftUI.Font.TextStyle) -> SwiftUI.Font {
-    return SwiftUI.Font.custom(self, size: size, relativeTo: textStyle)
-  }
-  #endif
-
-  public func register() {
-    // swiftlint:disable:next conditional_returns_on_newline
-    guard let url = url else { return }
-    CTFontManagerRegisterFontsForURL(url as CFURL, .process, nil)
-  }
-
-  fileprivate func registerIfNeeded() {
-    #if os(iOS) || os(tvOS) || os(watchOS)
-    if !UIFont.fontNames(forFamilyName: family).contains(name) {
-      register()
-    }
-    #elseif os(macOS)
-    if let url = url, CTFontManagerGetScopeForURL(url as CFURL) == .none {
-      register()
-    }
+    #if os(macOS)
+        public typealias Font = NSFont
+    #elseif os(iOS) || os(tvOS) || os(watchOS)
+        public typealias Font = UIFont
     #endif
-  }
 
-  fileprivate var url: URL? {
-    // swiftlint:disable:next implicit_return
-    return BundleToken.bundle.url(forResource: path, withExtension: nil)
-  }
+    public func font(size: CGFloat) -> Font {
+        guard let font = Font(font: self, size: size) else {
+            fatalError("Unable to initialize font '\(name)' (\(family))")
+        }
+        return font
+    }
+
+    #if canImport(SwiftUI)
+        @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+        public func swiftUIFont(size: CGFloat) -> SwiftUI.Font {
+            return SwiftUI.Font.custom(self, size: size)
+        }
+
+        @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+        public func swiftUIFont(fixedSize: CGFloat) -> SwiftUI.Font {
+            return SwiftUI.Font.custom(self, fixedSize: fixedSize)
+        }
+
+        @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+        public func swiftUIFont(size: CGFloat, relativeTo textStyle: SwiftUI.Font.TextStyle) -> SwiftUI.Font {
+            return SwiftUI.Font.custom(self, size: size, relativeTo: textStyle)
+        }
+    #endif
+
+    public func register() {
+        // swiftlint:disable:next conditional_returns_on_newline
+        guard let url = url else { return }
+        CTFontManagerRegisterFontsForURL(url as CFURL, .process, nil)
+    }
+
+    fileprivate func registerIfNeeded() {
+        #if os(iOS) || os(tvOS) || os(watchOS)
+            if !UIFont.fontNames(forFamilyName: family).contains(name) {
+                register()
+            }
+        #elseif os(macOS)
+            if let url = url, CTFontManagerGetScopeForURL(url as CFURL) == .none {
+                register()
+            }
+        #endif
+    }
+
+    fileprivate var url: URL? {
+        // swiftlint:disable:next implicit_return
+        BundleToken.bundle.url(forResource: path, withExtension: nil)
+    }
 }
 
 public extension FontConvertible.Font {
-  convenience init?(font: FontConvertible, size: CGFloat) {
-    font.registerIfNeeded()
-    self.init(name: font.name, size: size)
-  }
+    convenience init?(font: FontConvertible, size: CGFloat) {
+        font.registerIfNeeded()
+        self.init(name: font.name, size: size)
+    }
 }
 
 #if canImport(SwiftUI)
-@available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-public extension SwiftUI.Font {
-  static func custom(_ font: FontConvertible, size: CGFloat) -> SwiftUI.Font {
-    font.registerIfNeeded()
-    return custom(font.name, size: size)
-  }
-}
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    public extension SwiftUI.Font {
+        static func custom(_ font: FontConvertible, size: CGFloat) -> SwiftUI.Font {
+            font.registerIfNeeded()
+            return custom(font.name, size: size)
+        }
+    }
 
-@available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
-public extension SwiftUI.Font {
-  static func custom(_ font: FontConvertible, fixedSize: CGFloat) -> SwiftUI.Font {
-    font.registerIfNeeded()
-    return custom(font.name, fixedSize: fixedSize)
-  }
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    public extension SwiftUI.Font {
+        static func custom(_ font: FontConvertible, fixedSize: CGFloat) -> SwiftUI.Font {
+            font.registerIfNeeded()
+            return custom(font.name, fixedSize: fixedSize)
+        }
 
-  static func custom(
-    _ font: FontConvertible,
-    size: CGFloat,
-    relativeTo textStyle: SwiftUI.Font.TextStyle
-  ) -> SwiftUI.Font {
-    font.registerIfNeeded()
-    return custom(font.name, size: size, relativeTo: textStyle)
-  }
-}
+        static func custom(
+            _ font: FontConvertible,
+            size: CGFloat,
+            relativeTo textStyle: SwiftUI.Font.TextStyle
+        ) -> SwiftUI.Font {
+            font.registerIfNeeded()
+            return custom(font.name, size: size, relativeTo: textStyle)
+        }
+    }
 #endif
 
 // swiftlint:disable convenience_type
 private final class BundleToken {
-  static let bundle: Bundle = {
-    #if SWIFT_PACKAGE
-    return Bundle.module
-    #else
-    return Bundle(for: BundleToken.self)
-    #endif
-  }()
+    static let bundle: Bundle = {
+        #if SWIFT_PACKAGE
+            return Bundle.module
+        #else
+            return Bundle(for: BundleToken.self)
+        #endif
+    }()
 }
+
 // swiftlint:enable convenience_type

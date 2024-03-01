@@ -9,10 +9,9 @@ import Foundation
 import SwiftUI
 
 struct SheetModifier: ViewModifier {
-    
     var presentingView: AnyView
     @Binding var isPresented: Bool
-    
+
     func body(content: Content) -> some View {
         content
             .sheet(isPresented: $isPresented) {

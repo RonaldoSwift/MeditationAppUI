@@ -14,6 +14,12 @@ struct PrincipalRootView: View {
     }
 }
 
-#Preview {
-    PrincipalRootView()
-}
+#if DEBUG
+    struct PrincipalRootView_Previews: PreviewProvider {
+        static var previews: some View {
+            Preview {
+                PrincipalRootView()
+            }
+        }
+    }
+#endif

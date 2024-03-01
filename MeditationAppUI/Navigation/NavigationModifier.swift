@@ -9,15 +9,14 @@ import Foundation
 import SwiftUI
 
 struct NavigationModifier: ViewModifier {
-    
     var destinationView: AnyView
     @Binding var isActive: Bool
-    
+
     func body(content: Content) -> some View {
         content
             .background(
                 NavigationLink(
-                    destination: self.destinationView,
+                    destination: destinationView,
                     isActive: $isActive
                 ) {
                     EmptyView()

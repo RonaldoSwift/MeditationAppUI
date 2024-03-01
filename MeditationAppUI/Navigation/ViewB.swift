@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct ViewB: View {
-    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @State var isActiveB : Bool = false
+    @State var isActiveB: Bool = false
 
     var body: some View {
         VStack {
             Button("GO BACK") {
                 self.presentationMode.wrappedValue.dismiss()
             }
-           
+
             Button("GO TO C") {
                 isActiveB = true
             }
@@ -25,8 +24,4 @@ struct ViewB: View {
         .navigationTitle("B SCREEN")
         .navigation(ViewC(), $isActiveB)
     }
-}
-
-#Preview {
-    ViewB()
 }

@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct ViewA: View {
-    
-    @State var isActiveA : Bool = false
-    
+    @State var isActiveA: Bool = false
+
     var body: some View {
         NavigationView {
             Button("GO TO B") {
@@ -20,10 +19,6 @@ struct ViewA: View {
             .navigation(
                 ViewB(), $isActiveA
             )
-        }.environment(\.rootPresentationMode, self.$isActiveA)
+        }.environment(\.rootPresentationMode, $isActiveA)
     }
-}
-
-#Preview {
-    ViewA()
 }

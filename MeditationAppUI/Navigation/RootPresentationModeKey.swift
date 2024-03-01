@@ -1,5 +1,5 @@
 //
-//  Veamos.swift
+//  RootPresentationModeKey.swift
 //  DemoSwiftUI
 //
 //  Created by Carlos Leonardo Camilo Vargas Huaman on 8/02/24.
@@ -14,14 +14,13 @@ struct RootPresentationModeKey: EnvironmentKey {
 
 extension EnvironmentValues {
     var rootPresentationMode: Binding<Bool> {
-        get { return self[RootPresentationModeKey.self] }
+        get { self[RootPresentationModeKey.self] }
         set { self[RootPresentationModeKey.self] = newValue }
     }
 }
 
-extension Bool {
-    
-    public mutating func dismiss() {
-        self.toggle()
+public extension Bool {
+    mutating func dismiss() {
+        toggle()
     }
 }

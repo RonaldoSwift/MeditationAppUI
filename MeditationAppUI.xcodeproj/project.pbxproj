@@ -54,6 +54,8 @@
 		24A5B6602B9108CF0041D7FA /* HelveticaNeueCyr-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6992B71B86300B7796E /* HelveticaNeueCyr-Light.ttf */; };
 		24A5B6612B9108CF0041D7FA /* HelveticaNeueCyr-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6A12B71B86300B7796E /* HelveticaNeueCyr-UltraLight.ttf */; };
 		24A5B6622B910BFF0041D7FA /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B6472B90F12D0041D7FA /* PrimaryButton.swift */; };
+		24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B66C2B916AAF0041D7FA /* Preview.swift */; };
+		24A5B66E2B916CEF0041D7FA /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B66C2B916AAF0041D7FA /* Preview.swift */; };
 		FA5F00B62B79A70500F2AD0F /* ViewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246717282B75A3A4002570DC /* ViewD.swift */; };
 		FA5F00B72B79A76700F2AD0F /* MeditationDarkAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */; };
 		FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71AEA62B72EBE9009820E0 /* SignInView.swift */; };
@@ -85,7 +87,6 @@
 		FA80F6D52B71B86400B7796E /* HelveticaNeueCyr-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6A52B71B86300B7796E /* HelveticaNeueCyr-BlackItalic.ttf */; };
 		FA80F6D82B71B86400B7796E /* HelveticaNeueCyr-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6A62B71B86300B7796E /* HelveticaNeueCyr-UltraLightItalic.ttf */; };
 		FA80F6DB2B71B86400B7796E /* HelveticaNeueCyr-Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6A72B71B86300B7796E /* HelveticaNeueCyr-Roman.ttf */; };
-		FAB1060C2B79A06300D1C783 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1060B2B79A06300D1C783 /* ContentView.swift */; };
 		FAB1060E2B79A06400D1C783 /* Imagenes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1060D2B79A06400D1C783 /* Imagenes.xcassets */; };
 		FAB106112B79A06400D1C783 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB106102B79A06400D1C783 /* Preview Assets.xcassets */; };
 		FAB106132B79A06400D1C783 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB106122B79A06400D1C783 /* Persistence.swift */; };
@@ -157,7 +158,11 @@
 		24A5B6472B90F12D0041D7FA /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		24A5B64B2B90F2430041D7FA /* SharedColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedColors.xcassets; sourceTree = "<group>"; };
 		24A5B64E2B9107850041D7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		24A5B6642B9118EC0041D7FA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		24A5B66A2B911D190041D7FA /* swift.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swift.yml; sourceTree = "<group>"; };
+		24A5B66C2B916AAF0041D7FA /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		24A5B6702B9189F50041D7FA /* MainLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainLogo.png; sourceTree = "<group>"; };
+		24A5B6722B918EC70041D7FA /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 		FA4DB2382B859B4700EFBB38 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		FA71AEA62B72EBE9009820E0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -195,7 +200,6 @@
 		FA80F6DE2B71B90600B7796E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FAB106072B79A06300D1C783 /* MeditationDarkAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationDarkAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationDarkAppUIApp.swift; sourceTree = "<group>"; };
-		FAB1060B2B79A06300D1C783 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FAB1060D2B79A06400D1C783 /* Imagenes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagenes.xcassets; sourceTree = "<group>"; };
 		FAB106102B79A06400D1C783 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAB106122B79A06400D1C783 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -412,6 +416,22 @@
 			path = workflows;
 			sourceTree = "<group>";
 		};
+		24A5B66B2B916AA00041D7FA /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				24A5B66C2B916AAF0041D7FA /* Preview.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		24A5B66F2B9189780041D7FA /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				24A5B6702B9189F50041D7FA /* MainLogo.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		FA71AEA52B72EBCB009820E0 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,7 +486,10 @@
 		FA7BAA5B2B6C62C200B49752 = {
 			isa = PBXGroup;
 			children = (
+				24A5B66F2B9189780041D7FA /* Screenshots */,
 				24A5B6682B911D190041D7FA /* .github */,
+				24A5B6722B918EC70041D7FA /* .swiftformat */,
+				24A5B6642B9118EC0041D7FA /* .swiftlint.yml */,
 				FA4DB2382B859B4700EFBB38 /* swiftgen.yml */,
 				246068592B75F031003FD34E /* .gitignore */,
 				FA7BAA962B6C71BF00B49752 /* README.md */,
@@ -545,6 +568,7 @@
 		FA80F6902B718D8600B7796E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				24A5B66B2B916AA00041D7FA /* Preview */,
 				24A5B64A2B90F20B0041D7FA /* SharedResources */,
 				24A5B6352B90E84A0041D7FA /* Components */,
 				FA80F6912B718D9400B7796E /* ButtonStyle */,
@@ -612,7 +636,6 @@
 				24A5B6392B90EA1B0041D7FA /* App */,
 				24A5B6312B90E67C0041D7FA /* Resources */,
 				24A5B62D2B90E2200041D7FA /* Presentation */,
-				FAB1060B2B79A06300D1C783 /* ContentView.swift */,
 				FAB106122B79A06400D1C783 /* Persistence.swift */,
 				FAB106142B79A06400D1C783 /* MeditationDarkAppUI.xcdatamodeld */,
 				FAB1060F2B79A06400D1C783 /* Preview Content */,
@@ -665,6 +688,8 @@
 				FA7BAA602B6C62C200B49752 /* Sources */,
 				FA7BAA612B6C62C200B49752 /* Frameworks */,
 				FA7BAA622B6C62C200B49752 /* Resources */,
+				24A5B6632B9117CB0041D7FA /* Run SwiftLint */,
+				24A5B6712B918B050041D7FA /* Run SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -913,6 +938,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24A5B6632B9117CB0041D7FA /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		24A5B6712B918B050041D7FA /* Run SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftformat > /dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA7BAA602B6C62C200B49752 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -934,6 +998,7 @@
 				FAB987A02B8D4738007292EB /* JSON.swift in Sources */,
 				FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */,
 				246717312B75A3A5002570DC /* ViewA.swift in Sources */,
+				24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */,
 				24A5B6372B90E87B0041D7FA /* SilentMoonLogoView.swift in Sources */,
 				246717372B75A406002570DC /* RootPresentationModeKey.swift in Sources */,
 				24A5B6482B90F12D0041D7FA /* PrimaryButton.swift in Sources */,
@@ -970,8 +1035,8 @@
 			files = (
 				FAB106132B79A06400D1C783 /* Persistence.swift in Sources */,
 				24A5B6302B90E26E0041D7FA /* DarkWelcomeView.swift in Sources */,
-				FAB1060C2B79A06300D1C783 /* ContentView.swift in Sources */,
 				24A5B63A2B90EA420041D7FA /* SilentMoonLogoView.swift in Sources */,
+				24A5B66E2B916CEF0041D7FA /* Preview.swift in Sources */,
 				24A5B6462B90EE880041D7FA /* Fonts.swift in Sources */,
 				24A5B6622B910BFF0041D7FA /* PrimaryButton.swift in Sources */,
 				FA5F00B72B79A76700F2AD0F /* MeditationDarkAppUIApp.swift in Sources */,
@@ -1168,6 +1233,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MeditationAppUI/Preview Content\"";
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MeditationAppUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1201,6 +1267,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MeditationAppUI/Preview Content\"";
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MeditationAppUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
