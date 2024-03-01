@@ -111,7 +111,7 @@ public struct FontConvertible {
 
     fileprivate var url: URL? {
         // swiftlint:disable:next implicit_return
-        return BundleToken.bundle.url(forResource: path, withExtension: nil)
+        BundleToken.bundle.url(forResource: path, withExtension: nil)
     }
 }
 

@@ -5,8 +5,8 @@
 //  Created by Ronaldo Andre on 1/02/24.
 //
 
-@testable import MeditationAppUI
 import XCTest
+@testable import MeditationAppUI
 
 final class MeditationAppUITests: XCTestCase {
     override func setUpWithError() throws {

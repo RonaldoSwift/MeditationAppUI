@@ -50,8 +50,12 @@ swiftlint --version
 brew install swiftformat
 ```
 
+8. See list of rules
+```
+swiftformat --ruleinfo
+```
 
-8. Instala Sourcery
+9. Instala Sourcery
 
 ```sh
 brew install sourcery

@@ -14,7 +14,7 @@ struct RootPresentationModeKey: EnvironmentKey {
 
 extension EnvironmentValues {
     var rootPresentationMode: Binding<Bool> {
-        get { return self[RootPresentationModeKey.self] }
+        get { self[RootPresentationModeKey.self] }
         set { self[RootPresentationModeKey.self] = newValue }
     }
 }
