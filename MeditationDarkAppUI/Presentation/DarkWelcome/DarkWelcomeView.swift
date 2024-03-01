@@ -12,7 +12,7 @@ struct DarkWelcomeView: View {
 
     var body: some View {
         ZStack {
-            Color.accentBackground1
+            Color.darkAccentBackground1
                 .ignoresSafeArea()
 
             Image(ImageResource.backgroundWelcome)
@@ -20,14 +20,14 @@ struct DarkWelcomeView: View {
             VStack(alignment: .center) {
                 Text("Welcome to Sleep")
                     .font(Fonts.HelveticaNeueCyr.bold.swiftUIFont(size: 30))
-                    .foregroundStyle(.primaryLabel)
+                    .foregroundStyle(Color.darkPrimaryLabel)
                     .padding(.all, 10)
 
                 Text("Explore the new king of sleep. It uses sound and visualization to create perfect conditions for refreshing sleep.")
                     .font(Fonts.HelveticaNeueCyr.light.swiftUIFont(size: 16))
                     .multilineTextAlignment(.center)
                     .lineSpacing(5)
-                    .foregroundStyle(.secondaryLabel)
+                    .foregroundStyle(Color.darkSecondaryLabel)
                     .padding(.all, 10)
 
                 Image(ImageResource.sleepingBirds)
