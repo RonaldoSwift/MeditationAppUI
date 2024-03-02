@@ -29,16 +29,17 @@ struct HomeView: View {
                 }
                 Spacer()
             }
-            
+
             HStack {
                 Button(action: {}, label: {
                     ZStack {
                         LinearGradient(
-                            gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                            gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing
+                        )
                         .mask(RoundedRectangle(cornerRadius: 12))
                         .frame(width: 177, height: 210)
                         .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 0)
-                        
+
                         VStack(alignment: .leading) {
                             Image(ImageResource.basicsCourse)
                                 .frame(width: 20, height: 20)
@@ -49,14 +50,14 @@ struct HomeView: View {
                             Text("COURSE")
                                 .padding(.top, 5)
                                 .font(.custom("HelveticaNeueCyr-Medium", size: 15))
-                            
+
                             Spacer()
                             HStack {
                                 Text("3-10 MIN")
                                 Button(action: {}, label: {
                                     Text("START")
                                         .font(.custom("HelveticaNeueCyr-Light", size: 15))
-                                    
+
                                 })
                                 .padding(10)
                                 .foregroundColor(.black)
@@ -72,21 +73,22 @@ struct HomeView: View {
                         .cornerRadius(12)
                     }
                 })
-                
+
                 Button(action: {}, label: {
                     ZStack {
                         LinearGradient(
-                            gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                            gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing
+                        )
                         .mask(RoundedRectangle(cornerRadius: 12))
                         .frame(width: 177, height: 210)
                         .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 0)
-                        
+
                         VStack(alignment: .leading) {
                             Image(ImageResource.relaxion)
                                 .frame(width: 20, height: 50)
                                 .padding(.leading, 65)
                                 .padding(.top, 80)
-                            
+
                             VStack(alignment: .leading) {
                                 Text("Relaxation")
                                     .font(.custom("HelveticaNeueCyr-Bold", size: 20))
@@ -94,13 +96,13 @@ struct HomeView: View {
                                     .font(.custom("HelveticaNeueCyr-Medium", size: 15))
                             }
                             .padding(.bottom, 10)
-                            
+
                             HStack {
                                 Text("3-10 MIN")
                                 Button(action: {}, label: {
                                     Text("START")
                                         .font(.custom("HelveticaNeueCyr-Light", size: 15))
-                                    
+
                                 })
                                 .padding(10)
                                 .foregroundColor(.white)
@@ -117,14 +119,15 @@ struct HomeView: View {
                     }
                 })
             }
-            
+
             ZStack {
                 LinearGradient(
-                    gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                    gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing
+                )
                 .mask(RoundedRectangle(cornerRadius: 12))
                 .frame(width: 374, height: 95)
                 .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 0)
-                
+
                 VStack(alignment: .leading) {
                     ZStack {
                         Image(ImageResource.dailyCard)
@@ -133,15 +136,14 @@ struct HomeView: View {
                             VStack(alignment: .leading) {
                                 Text("Daily Thought")
                                     .font(.custom("HelveticaNeueCyr-Bold", size: 20))
-                                
+
                                 HStack {
                                     Text("MEDITATION *")
                                     Text("3-10 MIN")
                                 }
-                                
                             }
                             .padding(.trailing, 70)
-                            
+
                             Button(action: {}, label: {
                                 Image(ImageResource.play)
                             })
@@ -156,22 +158,21 @@ struct HomeView: View {
                 .foregroundColor(Color.white)
                 .cornerRadius(12)
             }
-            
+
             Text("Recomended for you")
                 .font(.custom("HelveticaNeueCyr-Bold", size: 25))
                 .padding(.trailing, 100)
-            
         }
         .padding()
     }
 }
 
 #if DEBUG
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        Preview<HomeView> {
-            HomeView()
+    struct HomeView_Previews: PreviewProvider {
+        static var previews: some View {
+            Preview<HomeView> {
+                HomeView()
+            }
         }
     }
-}
 #endif
