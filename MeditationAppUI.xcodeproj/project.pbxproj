@@ -58,6 +58,7 @@
 		24A5B66E2B916CEF0041D7FA /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B66C2B916AAF0041D7FA /* Preview.swift */; };
 		FA5F00B62B79A70500F2AD0F /* ViewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246717282B75A3A4002570DC /* ViewD.swift */; };
 		FA5F00B72B79A76700F2AD0F /* MeditationDarkAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */; };
+		FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA718AF42B92409800427EA6 /* PrincipalView.swift */; };
 		FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71AEA62B72EBE9009820E0 /* SignInView.swift */; };
 		FA744B2D2B8D0A3B00AE3DF4 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */; };
 		FA744B312B8D34AE00AE3DF4 /* Imagenes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA744B302B8D34AE00AE3DF4 /* Imagenes.xcassets */; };
@@ -164,6 +165,7 @@
 		24A5B6702B9189F50041D7FA /* MainLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainLogo.png; sourceTree = "<group>"; };
 		24A5B6722B918EC70041D7FA /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 		FA4DB2382B859B4700EFBB38 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		FA718AF42B92409800427EA6 /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		FA71AEA62B72EBE9009820E0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FA744B302B8D34AE00AE3DF4 /* Imagenes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagenes.xcassets; sourceTree = "<group>"; };
@@ -301,7 +303,6 @@
 		246717272B75A32F002570DC /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				246068562B75E786003FD34E /* Home */,
 				246068502B75E662003FD34E /* Splash */,
 				246068452B75DEBF003FD34E /* Root */,
 				246717362B75A406002570DC /* RootPresentationModeKey.swift */,
@@ -432,6 +433,14 @@
 			path = Screenshots;
 			sourceTree = "<group>";
 		};
+		FA718AF32B92407E00427EA6 /* Principal */ = {
+			isa = PBXGroup;
+			children = (
+				FA718AF42B92409800427EA6 /* PrincipalView.swift */,
+			);
+			path = Principal;
+			sourceTree = "<group>";
+		};
 		FA71AEA52B72EBCB009820E0 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +476,8 @@
 		FA7841A82B6D8A6F00322926 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				246068562B75E786003FD34E /* Home */,
+				FA718AF32B92407E00427EA6 /* Principal */,
 				2496130D2B8FA96B003FF94E /* Welcome */,
 				FA9AC7082B755E7E008945AA /* SignUp */,
 				FA71AEA52B72EBCB009820E0 /* SignIn */,
@@ -1001,6 +1012,7 @@
 				24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */,
 				24A5B6372B90E87B0041D7FA /* SilentMoonLogoView.swift in Sources */,
 				246717372B75A406002570DC /* RootPresentationModeKey.swift in Sources */,
+				FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */,
 				24A5B6482B90F12D0041D7FA /* PrimaryButton.swift in Sources */,
 				246717322B75A3A5002570DC /* ViewC.swift in Sources */,
 				246717332B75A3A5002570DC /* SheetModifier.swift in Sources */,
