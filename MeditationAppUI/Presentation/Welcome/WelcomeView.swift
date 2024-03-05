@@ -11,6 +11,14 @@ struct WelcomeView: View {
     @EnvironmentObject private var appRootManager: AppRootManager
 
     var body: some View {
+        #if DEBUG
+            let isMessageDisabled = true
+        #elseif QA
+            let isMessageDisabled = false
+        #elseif STORE
+            let isMessageDisabled = false
+        #endif
+
         ZStack {
             Color.accentBackground1
                 .ignoresSafeArea()
@@ -49,6 +57,10 @@ struct WelcomeView: View {
                 }
             }
             .padding(EdgeInsets(top: 5, leading: 30, bottom: 30, trailing: 30))
+
+            if isMessageDisabled {
+                Text("Este es un mensaje DEBUG")
+            }
         }
     }
 }
