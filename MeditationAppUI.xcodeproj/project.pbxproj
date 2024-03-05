@@ -172,7 +172,9 @@
 		24A5B6702B9189F50041D7FA /* MainLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainLogo.png; sourceTree = "<group>"; };
 		24A5B6722B918EC70041D7FA /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 		2C421214BCDB61BF82AFF1FF /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.release.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2CE3556745F5BA1A96074269 /* Pods-MeditationAppUI-MeditationAppUIUITests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUI-MeditationAppUIUITests.qa.xcconfig"; path = "Target Support Files/Pods-MeditationAppUI-MeditationAppUIUITests/Pods-MeditationAppUI-MeditationAppUIUITests.qa.xcconfig"; sourceTree = "<group>"; };
 		41689FA8026EC367C62B285F /* Pods_MeditationAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeditationAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		616C8CB7E9C4079015FA47E3 /* Pods-MeditationDarkAppUITests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUITests.qa.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUITests/Pods-MeditationDarkAppUITests.qa.xcconfig"; sourceTree = "<group>"; };
 		62A5BDCCDDC0FB0763C22BE8 /* Pods-MeditationAppUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUI.debug.xcconfig"; path = "Target Support Files/Pods-MeditationAppUI/Pods-MeditationAppUI.debug.xcconfig"; sourceTree = "<group>"; };
 		68D6BEECF96624D46A0597AC /* Pods-MeditationAppUI-MeditationAppUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUI-MeditationAppUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationAppUI-MeditationAppUIUITests/Pods-MeditationAppUI-MeditationAppUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		69071E838A8EA94BB3E711F3 /* Pods-MeditationDarkAppUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI.release.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI/Pods-MeditationDarkAppUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,8 +185,12 @@
 		C0C092799ACB6993EDF9F763 /* Pods-MeditationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC375875ECDA344097934418 /* Pods_MeditationAppUI_MeditationAppUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeditationAppUI_MeditationAppUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE50F8C2755595F51A34BD8 /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD3425F2B6C3A4747AF02A6D /* Pods-MeditationDarkAppUI.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI.qa.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI/Pods-MeditationDarkAppUI.qa.xcconfig"; sourceTree = "<group>"; };
 		DE76F8FF8F0E5DAB0E0432DC /* Pods-MeditationAppUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUI.release.xcconfig"; path = "Target Support Files/Pods-MeditationAppUI/Pods-MeditationAppUI.release.xcconfig"; sourceTree = "<group>"; };
 		E14DBD40879E92A1DC348C73 /* Pods_MeditationAppUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeditationAppUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E378E4F1A55AE75C1794D12E /* Pods-MeditationAppUITests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.qa.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.qa.xcconfig"; sourceTree = "<group>"; };
+		ECBF62706D4E3CCED4667C2F /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.qa.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.qa.xcconfig"; sourceTree = "<group>"; };
+		EE65F02ECE629535268A6CC3 /* Pods-MeditationAppUI.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUI.qa.xcconfig"; path = "Target Support Files/Pods-MeditationAppUI/Pods-MeditationAppUI.qa.xcconfig"; sourceTree = "<group>"; };
 		F0C013C662541255E7689E5F /* Pods-MeditationDarkAppUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI.debug.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI/Pods-MeditationDarkAppUI.debug.xcconfig"; sourceTree = "<group>"; };
 		F8B9BFEE5F79711DF07CF65E /* Pods-MeditationAppUI-MeditationAppUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUI-MeditationAppUIUITests.release.xcconfig"; path = "Target Support Files/Pods-MeditationAppUI-MeditationAppUIUITests/Pods-MeditationAppUI-MeditationAppUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA18979423A0E878C723B250 /* Pods_MeditationDarkAppUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeditationDarkAppUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -491,6 +497,12 @@
 				2C421214BCDB61BF82AFF1FF /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.release.xcconfig */,
 				9EC0A012FDA4D4A0AEB9A169 /* Pods-MeditationDarkAppUITests.debug.xcconfig */,
 				A090718BDB9E5ADAC7713037 /* Pods-MeditationDarkAppUITests.release.xcconfig */,
+				EE65F02ECE629535268A6CC3 /* Pods-MeditationAppUI.qa.xcconfig */,
+				2CE3556745F5BA1A96074269 /* Pods-MeditationAppUI-MeditationAppUIUITests.qa.xcconfig */,
+				E378E4F1A55AE75C1794D12E /* Pods-MeditationAppUITests.qa.xcconfig */,
+				DD3425F2B6C3A4747AF02A6D /* Pods-MeditationDarkAppUI.qa.xcconfig */,
+				ECBF62706D4E3CCED4667C2F /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.qa.xcconfig */,
+				616C8CB7E9C4079015FA47E3 /* Pods-MeditationDarkAppUITests.qa.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -766,7 +778,7 @@
 				FA7BAA622B6C62C200B49752 /* Resources */,
 				24A5B6632B9117CB0041D7FA /* Run SwiftLint */,
 				24A5B6712B918B050041D7FA /* Run SwiftFormat */,
-				42224E47CFB8D10F80915371 /* [CP] Embed Pods Frameworks */,
+				6E3A39E683AD88C36E9D6FEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -804,7 +816,7 @@
 				FA7BAA7F2B6C62C300B49752 /* Sources */,
 				FA7BAA802B6C62C300B49752 /* Frameworks */,
 				FA7BAA812B6C62C300B49752 /* Resources */,
-				970292E3EDA199F0A7AA3831 /* [CP] Embed Pods Frameworks */,
+				DF1DDF4B86D2488972AC65BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1080,7 +1092,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftformat > /dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
-		42224E47CFB8D10F80915371 /* [CP] Embed Pods Frameworks */ = {
+		6E3A39E683AD88C36E9D6FEA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1141,23 +1153,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		970292E3EDA199F0A7AA3831 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MeditationAppUI-MeditationAppUIUITests/Pods-MeditationAppUI-MeditationAppUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MeditationAppUI-MeditationAppUIUITests/Pods-MeditationAppUI-MeditationAppUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeditationAppUI-MeditationAppUIUITests/Pods-MeditationAppUI-MeditationAppUIUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9BB2CFD202FFB969541D1025 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1178,6 +1173,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF1DDF4B86D2488972AC65BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeditationAppUI-MeditationAppUIUITests/Pods-MeditationAppUI-MeditationAppUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeditationAppUI-MeditationAppUIUITests/Pods-MeditationAppUI-MeditationAppUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeditationAppUI-MeditationAppUIUITests/Pods-MeditationAppUI-MeditationAppUIUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E76920353AAD1BBB2605C406 /* [CP] Check Pods Manifest.lock */ = {
@@ -1419,7 +1431,7 @@
 		};
 		246323782B96F198008A0808 /* QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62A5BDCCDDC0FB0763C22BE8 /* Pods-MeditationAppUI.debug.xcconfig */;
+			baseConfigurationReference = EE65F02ECE629535268A6CC3 /* Pods-MeditationAppUI.qa.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1455,7 +1467,7 @@
 		};
 		246323792B96F198008A0808 /* QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0C092799ACB6993EDF9F763 /* Pods-MeditationAppUITests.debug.xcconfig */;
+			baseConfigurationReference = E378E4F1A55AE75C1794D12E /* Pods-MeditationAppUITests.qa.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1479,7 +1491,7 @@
 		};
 		2463237A2B96F198008A0808 /* QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68D6BEECF96624D46A0597AC /* Pods-MeditationAppUI-MeditationAppUIUITests.debug.xcconfig */;
+			baseConfigurationReference = 2CE3556745F5BA1A96074269 /* Pods-MeditationAppUI-MeditationAppUIUITests.qa.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1501,7 +1513,7 @@
 		};
 		2463237B2B96F198008A0808 /* QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0C013C662541255E7689E5F /* Pods-MeditationDarkAppUI.debug.xcconfig */;
+			baseConfigurationReference = DD3425F2B6C3A4747AF02A6D /* Pods-MeditationDarkAppUI.qa.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1533,7 +1545,7 @@
 		};
 		2463237C2B96F198008A0808 /* QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EC0A012FDA4D4A0AEB9A169 /* Pods-MeditationDarkAppUITests.debug.xcconfig */;
+			baseConfigurationReference = 616C8CB7E9C4079015FA47E3 /* Pods-MeditationDarkAppUITests.qa.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1554,7 +1566,7 @@
 		};
 		2463237D2B96F198008A0808 /* QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCE50F8C2755595F51A34BD8 /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig */;
+			baseConfigurationReference = ECBF62706D4E3CCED4667C2F /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.qa.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

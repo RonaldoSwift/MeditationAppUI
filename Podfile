@@ -6,9 +6,9 @@ target 'MeditationAppUI' do
   use_frameworks!
 
   # Pods for MeditationAppUI
+  pod 'FirebaseFirestore', '~> 10.22'
+  pod 'FirebaseAuth', '~> 10.22'
   pod 'FirebaseAnalytics'
-  pod 'FirebaseAuth'
-  pod 'FirebaseFirestore'
 
   target 'MeditationAppUITests' do
     inherit! :search_paths

@@ -805,8 +805,8 @@ PODS:
 
 DEPENDENCIES:
   - FirebaseAnalytics
-  - FirebaseAuth
-  - FirebaseFirestore
+  - FirebaseAuth (~> 10.22)
+  - FirebaseFirestore (~> 10.22)
 
 SPEC REPOS:
   trunk:
@@ -855,6 +855,6 @@ SPEC CHECKSUMS:
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
 
-PODFILE CHECKSUM: f1618d9cd14c3add44fcfceb7a0a299bf6809127
+PODFILE CHECKSUM: 652d63e96933085c7d75de7380c85d29899a1006
 
 COCOAPODS: 1.14.2
