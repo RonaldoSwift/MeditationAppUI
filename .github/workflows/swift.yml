@@ -33,10 +33,14 @@ jobs:
     - name: SwiftLint
       run: swiftlint lint --strict
 
-    - name: Build
+    - name: Build only a project
       run: |
         xcodebuild build -project MeditationAppUI.xcodeproj -scheme MeditationAppUI clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
-
+        
     #- name: Run tests
       #run: |
         #xcodebuild test -project MeditationAppUI.xcodeproj -scheme MeditationAppUI clean build -sdk iphoneos -destination "platform=iOS Simulator,OS=17.2,name=iPhone 14 Pro Max" CODE_SIGNING_ALLOWED=No
+        
+    - name: Build a workspace with cocoapods
+      run: |
+        xcodebuild build -project MeditationAppUI.xcodeproj -scheme MeditationAppUI clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
