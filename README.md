@@ -62,6 +62,9 @@ brew install sourcery
 2.1.2
 ```
 
+10. Change `User Script Sandboxing` to NO (to avoid problems with swiftlint and non-swift files from cocoapods)
+
+11. 
 
 ## Libraries
 
