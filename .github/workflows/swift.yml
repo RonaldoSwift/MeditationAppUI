@@ -60,8 +60,8 @@ jobs:
 #      run: |
 #        xcodebuild build -project MeditationAppUI.xcodeproj -scheme MeditationAppUI clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
 
-     - name: Build a workspace with cocoapods
-       run: |
-         xcodebuild -workspace MeditationAppUI.xcworkspace -scheme MeditationAppUI -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12' CODE_SIGNING_ALLOWED=No
+    - name: Build a workspace with cocoapods
+      run: |
+        xcodebuild -workspace MeditationAppUI.xcworkspace -scheme MeditationAppUI -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12' CODE_SIGNING_ALLOWED=No
 
 
