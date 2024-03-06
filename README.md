@@ -62,6 +62,10 @@ brew install sourcery
 2.1.2
 ```
 
+10. Change `User Script Sandboxing` to NO (to avoid problems with swiftlint and non-swift files from cocoapods)
+
+11. 
+
 
 ## Libraries
 
@@ -83,3 +87,9 @@ brew install sourcery
 
 * Avoid using names for colors like `secondaryLabel` because it already exists and you'll get an error in the `GeneratedAssetSymbols` file.
 * Remember to setup your `.github/workflow/swift` in a similar way as your local environment (same macos-version, same xcode-version, available emulators, etc) to avoid issues in github actions.
+* After adding a new configuration (like QA), there's was a common error `error: Unable to load contents of file list: '/Target Support Files/Pods-`. 
+I could fix it by running  
+```
+pod deintegrate
+pod install
+```
