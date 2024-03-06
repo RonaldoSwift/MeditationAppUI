@@ -65,4 +65,4 @@ jobs:
         xcodebuild build -workspace MeditationAppUI.xcworkspace -scheme MeditationAppUI -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12' CODE_SIGNING_ALLOWED=No
 
     - name: Test
-      run: xcodebuild test -workspace MeditationAppUI.xcworkspace -scheme MeditationAppUI -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12'
+      run: xcodebuild test -workspace MeditationAppUI.xcworkspace -scheme MeditationAppUI -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15'
