@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2426DD022B997FC3002BC40F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2426DD012B997FC3002BC40F /* GoogleService-Info.plist */; };
 		246068472B75DF57003FD34E /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246068462B75DF57003FD34E /* AppRootManager.swift */; };
 		2460684A2B75E3CC003FD34E /* SplashRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246068492B75E3CC003FD34E /* SplashRootView.swift */; };
 		2460684D2B75E415003FD34E /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460684C2B75E415003FD34E /* AuthenticationRootView.swift */; };
@@ -143,6 +144,7 @@
 		002458A01BFFBCC9C07AF31A /* Pods-MeditationDarkAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUITests/Pods-MeditationDarkAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		069B8BAC4DBAF427DA51D868 /* Pods-MeditationDarkAppUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI.release.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI/Pods-MeditationDarkAppUI.release.xcconfig"; sourceTree = "<group>"; };
 		0DE5A361638391D1C3A0E26C /* Pods-MeditationAppUI-MeditationAppUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUI-MeditationAppUIUITests.release.xcconfig"; path = "Target Support Files/Pods-MeditationAppUI-MeditationAppUIUITests/Pods-MeditationAppUI-MeditationAppUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2426DD012B997FC3002BC40F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		246068462B75DF57003FD34E /* AppRootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootManager.swift; sourceTree = "<group>"; };
 		246068492B75E3CC003FD34E /* SplashRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRootView.swift; sourceTree = "<group>"; };
 		2460684C2B75E415003FD34E /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
@@ -606,6 +608,7 @@
 		FA7BAA662B6C62C200B49752 /* MeditationAppUI */ = {
 			isa = PBXGroup;
 			children = (
+				2426DD012B997FC3002BC40F /* GoogleService-Info.plist */,
 				FAB9879B2B8D4651007292EB /* Generated */,
 				246717272B75A32F002570DC /* Navigation */,
 				FA80F6DE2B71B90600B7796E /* Info.plist */,
@@ -964,6 +967,7 @@
 				FA80F6A82B71B86300B7796E /* HelveticaNeueCyr-Italic.ttf in Resources */,
 				FA80F6C92B71B86400B7796E /* HelveticaNeueCyr-UltraLight.ttf in Resources */,
 				24A5B64C2B90F2430041D7FA /* SharedColors.xcassets in Resources */,
+				2426DD022B997FC3002BC40F /* GoogleService-Info.plist in Resources */,
 				FA80F6B72B71B86300B7796E /* HelveticaNeueBlackCondensed.ttf in Resources */,
 				FA80F6DB2B71B86400B7796E /* HelveticaNeueCyr-Roman.ttf in Resources */,
 				FA80F6B12B71B86300B7796E /* HelveticaNeueCyr-Light.ttf in Resources */,

@@ -7,6 +7,9 @@ target 'MeditationAppUI' do
 
   # Pods for MeditationAppUI
   pod 'Alamofire'
+  pod 'FirebaseFirestore', '~> 10.22'
+  pod 'FirebaseAuth', '~> 10.22'
+  pod 'FirebaseAnalytics'
 
   target 'MeditationAppUITests' do
     inherit! :search_paths
