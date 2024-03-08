@@ -7,31 +7,34 @@ target 'MeditationAppUI' do
   
   # Pods for MeditationAppUI
   pod 'Alamofire', '~> 5.9'
+  pod 'FirebaseFirestore', '~> 10.22'
+  pod 'FirebaseAuth', '~> 10.22'
+  pod 'FirebaseAnalytics'
   
   target 'MeditationAppUITests' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
   target 'MeditationAppUIUITests' do
     # Pods for testing
   end
-
+  
 end
 
 target 'MeditationDarkAppUI' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for MeditationDarkAppUI
-
+  
   target 'MeditationDarkAppUITests' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
   target 'MeditationDarkAppUIUITests' do
     # Pods for testing
   end
-
+  
 end
