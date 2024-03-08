@@ -22,6 +22,7 @@
 		246717342B75A3A5002570DC /* ViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467172D2B75A3A5002570DC /* ViewB.swift */; };
 		246717352B75A3A5002570DC /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467172E2B75A3A5002570DC /* View+Extension.swift */; };
 		246717372B75A406002570DC /* RootPresentationModeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246717362B75A406002570DC /* RootPresentationModeKey.swift */; };
+		248318F92B9A256100DD9823 /* PlayMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248318F82B9A256100DD9823 /* PlayMusicView.swift */; };
 		2496130F2B8FA97D003FF94E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496130E2B8FA97D003FF94E /* WelcomeView.swift */; };
 		24A5B6302B90E26E0041D7FA /* DarkWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B62F2B90E26E0041D7FA /* DarkWelcomeView.swift */; };
 		24A5B6342B90E6C60041D7FA /* Colores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A5B6332B90E6C60041D7FA /* Colores.xcassets */; };
@@ -57,6 +58,8 @@
 		24A5B6622B910BFF0041D7FA /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B6472B90F12D0041D7FA /* PrimaryButton.swift */; };
 		24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B66C2B916AAF0041D7FA /* Preview.swift */; };
 		24A5B66E2B916CEF0041D7FA /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B66C2B916AAF0041D7FA /* Preview.swift */; };
+		24C013622B9ADEDC00D44674 /* PlayerSliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C013612B9ADEDC00D44674 /* PlayerSliderViewModel.swift */; };
+		24E9695C2B9AC9BD00C1379D /* MusicMediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E9695B2B9AC9BD00C1379D /* MusicMediaPlayer.swift */; };
 		3BA2DE4F082AA2153CDB768D /* Pods_MeditationDarkAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454B998546D4FA61D8A14288 /* Pods_MeditationDarkAppUITests.framework */; };
 		6A9224CE46F05A07E19CD0EB /* Pods_MeditationAppUI_MeditationAppUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B344A021EC49443ABE4AAE /* Pods_MeditationAppUI_MeditationAppUIUITests.framework */; };
 		772FEBF5861014DAB96D56DE /* Pods_MeditationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC061C3BBAFDFA34B9665CE /* Pods_MeditationAppUITests.framework */; };
@@ -160,6 +163,7 @@
 		2467172D2B75A3A5002570DC /* ViewB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewB.swift; sourceTree = "<group>"; };
 		2467172E2B75A3A5002570DC /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		246717362B75A406002570DC /* RootPresentationModeKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresentationModeKey.swift; sourceTree = "<group>"; };
+		248318F82B9A256100DD9823 /* PlayMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicView.swift; sourceTree = "<group>"; };
 		2496130E2B8FA97D003FF94E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		24A5B62F2B90E26E0041D7FA /* DarkWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkWelcomeView.swift; sourceTree = "<group>"; };
 		24A5B6332B90E6C60041D7FA /* Colores.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colores.xcassets; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 		24A5B66C2B916AAF0041D7FA /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		24A5B6702B9189F50041D7FA /* MainLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainLogo.png; sourceTree = "<group>"; };
 		24A5B6722B918EC70041D7FA /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
+		24C013612B9ADEDC00D44674 /* PlayerSliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSliderViewModel.swift; sourceTree = "<group>"; };
+		24E9695B2B9AC9BD00C1379D /* MusicMediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMediaPlayer.swift; sourceTree = "<group>"; };
 		268564A27279E8F436076B88 /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.qa.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.qa.xcconfig"; sourceTree = "<group>"; };
 		2B6D4A1C75D112CCE0D5E7B4 /* Pods-MeditationAppUITests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.qa.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.qa.xcconfig"; sourceTree = "<group>"; };
 		454B998546D4FA61D8A14288 /* Pods_MeditationDarkAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeditationDarkAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -353,6 +359,16 @@
 				246717282B75A3A4002570DC /* ViewD.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		248318F72B9A253700DD9823 /* PlayMusic */ = {
+			isa = PBXGroup;
+			children = (
+				248318F82B9A256100DD9823 /* PlayMusicView.swift */,
+				24E9695B2B9AC9BD00C1379D /* MusicMediaPlayer.swift */,
+				24C013612B9ADEDC00D44674 /* PlayerSliderViewModel.swift */,
+			);
+			path = PlayMusic;
 			sourceTree = "<group>";
 		};
 		2496130D2B8FA96B003FF94E /* Welcome */ = {
@@ -552,6 +568,7 @@
 		FA7841A82B6D8A6F00322926 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				248318F72B9A253700DD9823 /* PlayMusic */,
 				246068562B75E786003FD34E /* Home */,
 				FA718AF32B92407E00427EA6 /* Principal */,
 				2496130D2B8FA96B003FF94E /* Welcome */,
@@ -1254,6 +1271,7 @@
 				2467172F2B75A3A5002570DC /* ViewD.swift in Sources */,
 				246717352B75A3A5002570DC /* View+Extension.swift in Sources */,
 				FAB987A92B8D4E1B007292EB /* Strings.swift in Sources */,
+				248318F92B9A256100DD9823 /* PlayMusicView.swift in Sources */,
 				2460684F2B75E4CD003FD34E /* PrincipalRootView.swift in Sources */,
 				FAB9879F2B8D4738007292EB /* Fonts.swift in Sources */,
 				246717302B75A3A5002570DC /* NavigationModifier.swift in Sources */,
@@ -1261,6 +1279,7 @@
 				FA744B2D2B8D0A3B00AE3DF4 /* SignUpView.swift in Sources */,
 				246068582B75E790003FD34E /* HomeView.swift in Sources */,
 				FAB987A02B8D4738007292EB /* JSON.swift in Sources */,
+				24C013622B9ADEDC00D44674 /* PlayerSliderViewModel.swift in Sources */,
 				FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */,
 				246717312B75A3A5002570DC /* ViewA.swift in Sources */,
 				24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */,
@@ -1272,6 +1291,7 @@
 				246717332B75A3A5002570DC /* SheetModifier.swift in Sources */,
 				2496130F2B8FA97D003FF94E /* WelcomeView.swift in Sources */,
 				246717342B75A3A5002570DC /* ViewB.swift in Sources */,
+				24E9695C2B9AC9BD00C1379D /* MusicMediaPlayer.swift in Sources */,
 				246068472B75DF57003FD34E /* AppRootManager.swift in Sources */,
 				FA80F68D2B7150C600B7796E /* SilentMoonView.swift in Sources */,
 				FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */,

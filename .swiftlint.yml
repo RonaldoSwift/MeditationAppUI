@@ -10,6 +10,8 @@ excluded:
 - MeditationAppUI/Generated/Strings.swift
 - MeditationAppUI/Generated/Fonts.swift
 - MeditationAppUI/Generated/JSON.swift
+identifier_name:
+  allowed_symbols: "_"
 line_length:
     warning: 150
     error: 200
