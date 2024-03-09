@@ -10,9 +10,10 @@ import Foundation
 
 class FireBaseAuthDataSource {
     func sigIn(correo: String, pasword: String, onError: @escaping (String) -> Void, onSuccess: @escaping (FireBaseUser) -> Void) {
+        print(pasword)
         Auth.auth().signIn(withEmail: correo, password: pasword) { authDataResult, error in
             if let errorNoNulo = error {
-                onError("\(errorNoNulo)")
+                onError("\(errorNoNulo.localizedDescription)")
             } else {
                 onSuccess(FireBaseUser(
                     displayName: authDataResult?.user.displayName,

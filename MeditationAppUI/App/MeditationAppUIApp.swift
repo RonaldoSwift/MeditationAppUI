@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct MeditationAppUIApp: App {
+    // register app delegate for Firebase setup
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     @StateObject private var appRootManager = AppRootManager()
 
     var body: some Scene {
@@ -16,7 +19,7 @@ struct MeditationAppUIApp: App {
             Group {
                 switch appRootManager.currentRoot {
                 case .splash:
-                    SplashRootView()
+                    PlayMusicView(musicMediaplayer: MusicMediaPlayer())
                 case .authentication:
                     AuthenticationRootView()
                 case .principal:
