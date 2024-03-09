@@ -19,7 +19,7 @@ struct MeditationAppUIApp: App {
             Group {
                 switch appRootManager.currentRoot {
                 case .splash:
-                    PlayMusicView(musicMediaplayer: MusicMediaPlayer())
+                    SplashRootView()
                 case .authentication:
                     AuthenticationRootView()
                 case .principal:

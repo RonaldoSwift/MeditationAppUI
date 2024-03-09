@@ -45,9 +45,7 @@ struct PlayMusicView: View {
                 .tint(.tint)
 
                 HStack(spacing: 40) {
-                    Button(action: {
-                        print("Rewind")
-                    }) {
+                    Button(action: {}) {
                         ZStack {
                             Image(ImageResource.fastRewind)
                                 .foregroundStyle(.tint2)
@@ -82,9 +80,7 @@ struct PlayMusicView: View {
                         }
                     }
 
-                    Button(action: {
-                        print("Skip")
-                    }) {
+                    Button(action: {}) {
                         ZStack(alignment: .center) {
                             Image(ImageResource.fastForward)
                                 .foregroundStyle(.tint2)
