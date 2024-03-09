@@ -62,6 +62,13 @@
 		4F5A5B73E8615E885F236F70 /* Pods_MeditationDarkAppUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4230E5DE2BE92DCEB995E88C /* Pods_MeditationDarkAppUI.framework */; };
 		B9F16422623F51576A22A6D9 /* Pods_MeditationDarkAppUI_MeditationDarkAppUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B45D2201B62412440239611 /* Pods_MeditationDarkAppUI_MeditationDarkAppUIUITests.framework */; };
 		CAB259D940B7D91B338CAB23 /* Pods_MeditationAppUI_MeditationAppUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F36FF9CD8060680039294A /* Pods_MeditationAppUI_MeditationAppUIUITests.framework */; };
+		FA5D770F2B9BF51C0001F101 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA5D770E2B9BF51C0001F101 /* GoogleService-Info.plist */; };
+		FA5D77132B9BF7120001F101 /* FireBaseAuthDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D77122B9BF7120001F101 /* FireBaseAuthDataSource.swift */; };
+		FA5D77162B9BFBE10001F101 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D77152B9BFBE10001F101 /* AuthenticationRepository.swift */; };
+		FA5D77192B9BFEAF0001F101 /* FireBaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D77182B9BFEAF0001F101 /* FireBaseUser.swift */; };
+		FA5D771C2B9BFFE40001F101 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D771B2B9BFFE40001F101 /* User.swift */; };
+		FA5D771E2B9C02120001F101 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D771D2B9C02120001F101 /* SignInViewModel.swift */; };
+		FA5D77202B9C037E0001F101 /* SignInUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D771F2B9C037E0001F101 /* SignInUiState.swift */; };
 		FA5F00B62B79A70500F2AD0F /* ViewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246717282B75A3A4002570DC /* ViewD.swift */; };
 		FA5F00B72B79A76700F2AD0F /* MeditationDarkAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */; };
 		FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA718AF42B92409800427EA6 /* PrincipalView.swift */; };
@@ -189,6 +196,13 @@
 		D3BF56BCB5408C23DD6E1B13 /* Pods-MeditationDarkAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUITests/Pods-MeditationDarkAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6C5EDA56157BCDB8458DE46 /* Pods_MeditationAppUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeditationAppUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4DB2382B859B4700EFBB38 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		FA5D770E2B9BF51C0001F101 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA5D77122B9BF7120001F101 /* FireBaseAuthDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseAuthDataSource.swift; sourceTree = "<group>"; };
+		FA5D77152B9BFBE10001F101 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		FA5D77182B9BFEAF0001F101 /* FireBaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseUser.swift; sourceTree = "<group>"; };
+		FA5D771B2B9BFFE40001F101 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA5D771D2B9C02120001F101 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		FA5D771F2B9C037E0001F101 /* SignInUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUiState.swift; sourceTree = "<group>"; };
 		FA718AF42B92409800427EA6 /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		FA71AEA62B72EBE9009820E0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -492,8 +506,49 @@
 				D3BF56BCB5408C23DD6E1B13 /* Pods-MeditationDarkAppUITests.debug.xcconfig */,
 				ABF37D7846034E1060A3FAB2 /* Pods-MeditationDarkAppUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA5D77102B9BF6720001F101 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FA5D77142B9BFB960001F101 /* Repositorio */,
+				FA5D771A2B9BFFCE0001F101 /* Modelo */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FA5D77112B9BF6CB0001F101 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				FA5D77122B9BF7120001F101 /* FireBaseAuthDataSource.swift */,
+				FA5D77172B9BFE630001F101 /* Modelo */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		FA5D77142B9BFB960001F101 /* Repositorio */ = {
+			isa = PBXGroup;
+			children = (
+				FA5D77152B9BFBE10001F101 /* AuthenticationRepository.swift */,
+			);
+			path = Repositorio;
+			sourceTree = "<group>";
+		};
+		FA5D77172B9BFE630001F101 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				FA5D77182B9BFEAF0001F101 /* FireBaseUser.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		FA5D771A2B9BFFCE0001F101 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				FA5D771B2B9BFFE40001F101 /* User.swift */,
+			);
+			path = Modelo;
 			sourceTree = "<group>";
 		};
 		FA718AF32B92407E00427EA6 /* Principal */ = {
@@ -508,6 +563,8 @@
 			isa = PBXGroup;
 			children = (
 				FA71AEA62B72EBE9009820E0 /* SignInView.swift */,
+				FA5D771D2B9C02120001F101 /* SignInViewModel.swift */,
+				FA5D771F2B9C037E0001F101 /* SignInUiState.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -531,6 +588,7 @@
 		FA7841A62B6D8A6200322926 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FA5D77112B9BF6CB0001F101 /* DataSource */,
 				FA7BAA722B6C62C300B49752 /* MeditationAppUI.xcdatamodeld */,
 			);
 			path = Data;
@@ -595,13 +653,15 @@
 		FA7BAA662B6C62C200B49752 /* MeditationAppUI */ = {
 			isa = PBXGroup;
 			children = (
-				FAB9879B2B8D4651007292EB /* Generated */,
-				246717272B75A32F002570DC /* Navigation */,
+				FA5D770E2B9BF51C0001F101 /* GoogleService-Info.plist */,
 				FA80F6DE2B71B90600B7796E /* Info.plist */,
-				FA80F6942B71B7EE00B7796E /* Resources */,
 				FA7841A92B6D8A7500322926 /* App */,
 				FA80F6902B718D8600B7796E /* Core */,
+				FA80F6942B71B7EE00B7796E /* Resources */,
+				246717272B75A32F002570DC /* Navigation */,
+				FAB9879B2B8D4651007292EB /* Generated */,
 				FA7841A82B6D8A6F00322926 /* Presentation */,
+				FA5D77102B9BF6720001F101 /* Domain */,
 				FA7841A62B6D8A6200322926 /* Data */,
 				FA7BAA6D2B6C62C300B49752 /* Preview Content */,
 			);
@@ -953,6 +1013,7 @@
 				FA80F6A82B71B86300B7796E /* HelveticaNeueCyr-Italic.ttf in Resources */,
 				FA80F6C92B71B86400B7796E /* HelveticaNeueCyr-UltraLight.ttf in Resources */,
 				24A5B64C2B90F2430041D7FA /* SharedColors.xcassets in Resources */,
+				FA5D770F2B9BF51C0001F101 /* GoogleService-Info.plist in Resources */,
 				FA80F6B72B71B86300B7796E /* HelveticaNeueBlackCondensed.ttf in Resources */,
 				FA80F6DB2B71B86400B7796E /* HelveticaNeueCyr-Roman.ttf in Resources */,
 				FA80F6B12B71B86300B7796E /* HelveticaNeueCyr-Light.ttf in Resources */,
@@ -1235,9 +1296,12 @@
 				2460684D2B75E415003FD34E /* AuthenticationRootView.swift in Sources */,
 				246068522B75E66D003FD34E /* SplashView.swift in Sources */,
 				FA80F6932B718E1100B7796E /* GeneralButtonComponent.swift in Sources */,
+				FA5D77162B9BFBE10001F101 /* AuthenticationRepository.swift in Sources */,
+				FA5D771C2B9BFFE40001F101 /* User.swift in Sources */,
 				FA7BAA742B6C62C300B49752 /* MeditationAppUI.xcdatamodeld in Sources */,
 				2467172F2B75A3A5002570DC /* ViewD.swift in Sources */,
 				246717352B75A3A5002570DC /* View+Extension.swift in Sources */,
+				FA5D771E2B9C02120001F101 /* SignInViewModel.swift in Sources */,
 				FAB987A92B8D4E1B007292EB /* Strings.swift in Sources */,
 				2460684F2B75E4CD003FD34E /* PrincipalRootView.swift in Sources */,
 				FAB9879F2B8D4738007292EB /* Fonts.swift in Sources */,
@@ -1247,14 +1311,17 @@
 				246068582B75E790003FD34E /* HomeView.swift in Sources */,
 				FAB987A02B8D4738007292EB /* JSON.swift in Sources */,
 				FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */,
+				FA5D77132B9BF7120001F101 /* FireBaseAuthDataSource.swift in Sources */,
 				246717312B75A3A5002570DC /* ViewA.swift in Sources */,
 				24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */,
 				24A5B6372B90E87B0041D7FA /* SilentMoonLogoView.swift in Sources */,
 				246717372B75A406002570DC /* RootPresentationModeKey.swift in Sources */,
 				FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */,
 				24A5B6482B90F12D0041D7FA /* PrimaryButton.swift in Sources */,
+				FA5D77202B9C037E0001F101 /* SignInUiState.swift in Sources */,
 				246717322B75A3A5002570DC /* ViewC.swift in Sources */,
 				246717332B75A3A5002570DC /* SheetModifier.swift in Sources */,
+				FA5D77192B9BFEAF0001F101 /* FireBaseUser.swift in Sources */,
 				2496130F2B8FA97D003FF94E /* WelcomeView.swift in Sources */,
 				246717342B75A3A5002570DC /* ViewB.swift in Sources */,
 				246068472B75DF57003FD34E /* AppRootManager.swift in Sources */,

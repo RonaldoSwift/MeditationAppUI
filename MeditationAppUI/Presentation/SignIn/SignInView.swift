@@ -12,8 +12,16 @@ struct SignInView: View {
     @State var passwordTextField: String = ""
 
     @State var isActiveSignUp: Bool = false
+    @State private var showLoading: Bool = false
+    @State private var showAlert: Bool = false
 
     @EnvironmentObject private var appRootManager: AppRootManager
+
+    @StateObject private var signInViewModel = SignInViewModel(
+        authenticationRepository: AuthenticationRepository(
+            fireBaseAuthDataSource: FireBaseAuthDataSource()
+        )
+    )
 
     var body: some View {
         VStack(alignment: .center) {
@@ -62,6 +70,10 @@ struct SignInView: View {
                     .padding(.top, 10)
                 }
                 .padding(.top, 60)
+
+                if showLoading {
+                    ProgressView()
+                }
             }
 
             Spacer()
@@ -85,9 +97,12 @@ struct SignInView: View {
                     .padding(.bottom, 20)
 
                 generalButtonComponent(onClickInSitioWeb: {
-                    appRootManager.currentRoot = .principal
+                    signInViewModel.signIn(
+                        correo: emailTextField,
+                        pasword: passwordTextField
+                    )
 
-                }, textoDelButton: "Log In              ")
+                }, textoDelButton: "Log In")
 
                 Text("Forgot Password?")
                     .font(.custom("HelveticaNeueCyr-Medium", size: 14))
@@ -112,6 +127,31 @@ struct SignInView: View {
             .padding()
         }
         .navigation(SignUpView(), $isActiveSignUp)
+        .alert(isPresented: $showAlert) {
+            Alert(
+                title: Text("Transefrencia a otros bancos"),
+                message: Text("Esta operacion esta disponible por la App, de lunes a viernes de 6:00 am a 8:30 pm, excepto los sabados, domingos y feriados."),
+                dismissButton: .default(
+                    Text("Entendido"),
+                    action: {
+                        // Acción al presionar el botón "Entendido"
+                    }
+                )
+            )
+        }
+        .onReceive(signInViewModel.$signInState, perform: { signInState in
+            switch signInState {
+            case .initial:
+                break
+            case .loading:
+                showLoading = true
+            case let .error(error):
+                print("Error  \(error)")
+                showAlert = true
+            case let .success(user):
+                appRootManager.currentRoot = .principal
+            }
+        })
     }
 }
 
