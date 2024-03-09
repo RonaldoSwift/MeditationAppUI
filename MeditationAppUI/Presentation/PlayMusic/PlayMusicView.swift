@@ -45,7 +45,7 @@ struct PlayMusicView: View {
                 .tint(.tint)
 
                 HStack(spacing: 40) {
-                    Button(action: {}) {
+                    Button(action: {}, label: {
                         ZStack {
                             Image(ImageResource.fastRewind)
                                 .foregroundStyle(.tint2)
@@ -53,7 +53,7 @@ struct PlayMusicView: View {
                                 .foregroundStyle(.tint2)
                                 .font(.system(size: 12))
                         }
-                    }
+                    })
 
                     Button(action: {
                         isButtonPlayed.toggle()
@@ -62,7 +62,7 @@ struct PlayMusicView: View {
                         } else {
                             viewModel.musicMediaPlayer.pause()
                         }
-                    }) {
+                    }, label: {
                         ZStack {
                             Circle()
                                 .frame(width: 80, height: 80)
@@ -78,9 +78,9 @@ struct PlayMusicView: View {
                                     .font(.system(.title))
                             }
                         }
-                    }
+                    })
 
-                    Button(action: {}) {
+                    Button(action: {}, label: {
                         ZStack(alignment: .center) {
                             Image(ImageResource.fastForward)
                                 .foregroundStyle(.tint2)
@@ -88,7 +88,7 @@ struct PlayMusicView: View {
                                 .foregroundStyle(.tint2)
                                 .font(.system(size: 12))
                         }
-                    }
+                    })
                 }
 
             })
