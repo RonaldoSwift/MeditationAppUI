@@ -22,7 +22,7 @@ struct DiscView: View {
                         .fill(LinearGradient(gradient: Gradient(stops: [
                             .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), location: 0),
                             .init(color: Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)), location: 0.5),
-                            .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), location: 1),
+                            .init(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), location: 1)
                         ]), startPoint: UnitPoint(x: 0.2, y: 0), endPoint: UnitPoint(x: 0.7, y: 1)))
                         .frame(width: 130 + CGFloat(discIndex * 10), height: 130 + CGFloat(discIndex * 10))
                 }

@@ -130,7 +130,7 @@ struct SignInView: View {
         .alert(isPresented: $showAlert) {
             Alert(
                 title: Text("Transefrencia a otros bancos"),
-                message: Text("Esta operacion esta disponible por la App, de lunes a viernes de 6:00 am a 8:30 pm, excepto los sabados, domingos y feriados."),
+                message: Text("Error generico, usar el verdadero error."),
                 dismissButton: .default(
                     Text("Entendido"),
                     action: {
