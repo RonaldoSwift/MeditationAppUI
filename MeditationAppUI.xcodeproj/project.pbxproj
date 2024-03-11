@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0B96D1594C6A1AA0622C3784 /* Pods_MeditationAppUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C5EDA56157BCDB8458DE46 /* Pods_MeditationAppUI.framework */; };
 		20E3BC5D1A6DEF884033DEC8 /* Pods_MeditationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE927A3F73D50BD474EAE339 /* Pods_MeditationAppUITests.framework */; };
+		246055FC2B9D01D20016ACEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246055FB2B9D01D20016ACEA /* AppDelegate.swift */; };
+		246055FF2B9D09360016ACEA /* MusicMediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246055FE2B9D09360016ACEA /* MusicMediaPlayer.swift */; };
+		246056012B9D09640016ACEA /* PlayerSliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246056002B9D09640016ACEA /* PlayerSliderViewModel.swift */; };
+		246056032B9D0A470016ACEA /* PlayMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246056022B9D0A470016ACEA /* PlayMusicView.swift */; };
+		246056052B9D0A700016ACEA /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246056042B9D0A700016ACEA /* Song.swift */; };
+		246056072B9D119E0016ACEA /* DiscView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246056062B9D119E0016ACEA /* DiscView.swift */; };
 		246068472B75DF57003FD34E /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246068462B75DF57003FD34E /* AppRootManager.swift */; };
 		2460684A2B75E3CC003FD34E /* SplashRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246068492B75E3CC003FD34E /* SplashRootView.swift */; };
 		2460684D2B75E415003FD34E /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2460684C2B75E415003FD34E /* AuthenticationRootView.swift */; };
@@ -151,6 +157,12 @@
 		075476983E060833F06F5E87 /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2071FD1E787D4928419918FA /* Pods-MeditationAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2354AC3D0CAAEB26AD38095B /* Pods-MeditationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		246055FB2B9D01D20016ACEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		246055FE2B9D09360016ACEA /* MusicMediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMediaPlayer.swift; sourceTree = "<group>"; };
+		246056002B9D09640016ACEA /* PlayerSliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSliderViewModel.swift; sourceTree = "<group>"; };
+		246056022B9D0A470016ACEA /* PlayMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicView.swift; sourceTree = "<group>"; };
+		246056042B9D0A700016ACEA /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		246056062B9D119E0016ACEA /* DiscView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscView.swift; sourceTree = "<group>"; };
 		246068462B75DF57003FD34E /* AppRootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootManager.swift; sourceTree = "<group>"; };
 		246068492B75E3CC003FD34E /* SplashRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRootView.swift; sourceTree = "<group>"; };
 		2460684C2B75E415003FD34E /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
@@ -309,6 +321,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		246055FD2B9D09150016ACEA /* PlayMusic */ = {
+			isa = PBXGroup;
+			children = (
+				246055FE2B9D09360016ACEA /* MusicMediaPlayer.swift */,
+				246056002B9D09640016ACEA /* PlayerSliderViewModel.swift */,
+				246056022B9D0A470016ACEA /* PlayMusicView.swift */,
+				246056062B9D119E0016ACEA /* DiscView.swift */,
+			);
+			path = PlayMusic;
+			sourceTree = "<group>";
+		};
 		246068452B75DEBF003FD34E /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,6 +570,7 @@
 			isa = PBXGroup;
 			children = (
 				FA5D771B2B9BFFE40001F101 /* User.swift */,
+				246056042B9D0A700016ACEA /* Song.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -597,6 +621,7 @@
 		FA7841A82B6D8A6F00322926 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				246055FD2B9D09150016ACEA /* PlayMusic */,
 				246068562B75E786003FD34E /* Home */,
 				FA718AF32B92407E00427EA6 /* Principal */,
 				2496130D2B8FA96B003FF94E /* Welcome */,
@@ -611,6 +636,7 @@
 			isa = PBXGroup;
 			children = (
 				FA7BAA672B6C62C200B49752 /* MeditationAppUIApp.swift */,
+				246055FB2B9D01D20016ACEA /* AppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -1311,9 +1337,13 @@
 				246068582B75E790003FD34E /* HomeView.swift in Sources */,
 				FAB987A02B8D4738007292EB /* JSON.swift in Sources */,
 				FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */,
+				246055FC2B9D01D20016ACEA /* AppDelegate.swift in Sources */,
 				FA5D77132B9BF7120001F101 /* FireBaseAuthDataSource.swift in Sources */,
+				246056032B9D0A470016ACEA /* PlayMusicView.swift in Sources */,
 				246717312B75A3A5002570DC /* ViewA.swift in Sources */,
+				246056012B9D09640016ACEA /* PlayerSliderViewModel.swift in Sources */,
 				24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */,
+				246056052B9D0A700016ACEA /* Song.swift in Sources */,
 				24A5B6372B90E87B0041D7FA /* SilentMoonLogoView.swift in Sources */,
 				246717372B75A406002570DC /* RootPresentationModeKey.swift in Sources */,
 				FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */,
@@ -1323,10 +1353,12 @@
 				246717332B75A3A5002570DC /* SheetModifier.swift in Sources */,
 				FA5D77192B9BFEAF0001F101 /* FireBaseUser.swift in Sources */,
 				2496130F2B8FA97D003FF94E /* WelcomeView.swift in Sources */,
+				246055FF2B9D09360016ACEA /* MusicMediaPlayer.swift in Sources */,
 				246717342B75A3A5002570DC /* ViewB.swift in Sources */,
 				246068472B75DF57003FD34E /* AppRootManager.swift in Sources */,
 				FA80F68D2B7150C600B7796E /* SilentMoonView.swift in Sources */,
 				FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */,
+				246056072B9D119E0016ACEA /* DiscView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

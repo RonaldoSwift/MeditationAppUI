@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct MeditationAppUIApp: App {
+    // register app delegate for Firebase setup
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     @StateObject private var appRootManager = AppRootManager()
 
     var body: some Scene {

@@ -30,7 +30,7 @@ jobs:
     - name: setup-cocoapods
       uses: maxim-lobanov/setup-cocoapods@v1
       with:
-        version: 1.14.2
+        version: 1.15.2
 
     - uses: actions/cache@v2
       with:
@@ -60,9 +60,14 @@ jobs:
 #      run: |
 #        xcodebuild build -project MeditationAppUI.xcodeproj -scheme MeditationAppUI clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
 
+#    - name: Clean and build a workspace with cocoapods in Debug
+#      run: |
+#        xcodebuild -workspace MeditationAppUI.xcworkspace -scheme MeditationAppUI clean build -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15' CODE_SIGNING_ALLOWED=No
+
+
     - name: Build a workspace with cocoapods in Debug
       run: |
-        xcodebuild -workspace MeditationAppUI.xcworkspace -scheme MeditationAppUI clean build -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15' CODE_SIGNING_ALLOWED=No
+        xcodebuild -workspace MeditationAppUI.xcworkspace -scheme MeditationAppUI build -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15' CODE_SIGNING_ALLOWED=No
 
 #    - name: Test
 #      run: xcodebuild test -workspace MeditationAppUI.xcworkspace -scheme MeditationAppUI -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15'

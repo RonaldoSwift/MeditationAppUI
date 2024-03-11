@@ -12,9 +12,15 @@ Esta aplicación permite al usuario iniciar sesión, registrarse, verificar sald
     <img src="Screenshots/MainLogo.png" alt="icon" width="80%"/>
 </p>
 
-## Running the app
+## Important! (about cocoapods)
 
-### Prerequisites
+1. Los miembros del equipo tienen que tener la misma version de cocoapods (`brew upgrade cocoapods`).
+2. Por mas que tengas la misma version, aveces no se puede instalar una version especifica (pod 'Alamofire', '~> 5.9’), para eso necesitamos `pod search Alamofire —simple`
+3. Finalmente hacemos `pod update`
+4. Finalmente pod install 
+5. El desarrollador que tiene la computador con la arquitecture chip silicon, debería configurar e instalar las primeras libs en el proyecto.  
+
+## Prerequisites
 
 1. Go back to the root folder.
 2. Instala Homebrew.
@@ -77,6 +83,7 @@ brew install sourcery
 * ShowTime
 * Factory
 * Github Actions - https://medium.com/adessoturkey/github-actions-with-swift-5b3da0dbad00
+* iOS Design Guidelines - https://experience.sap.com/fiori-design-ios/article/colors/#horizon-theme
 
 ## Especificaciones
 
@@ -87,8 +94,8 @@ brew install sourcery
 
 * Avoid using names for colors like `secondaryLabel` because it already exists and you'll get an error in the `GeneratedAssetSymbols` file.
 * Remember to setup your `.github/workflow/swift` in a similar way as your local environment (same macos-version, same xcode-version, available emulators, etc) to avoid issues in github actions.
-* After adding a new configuration (like QA), there's was a common error `error: Unable to load contents of file list: '/Target Support Files/Pods-`. 
-I could fix it by running  
+* After adding a new configuration (like QA), there's was a common error `error: Unable to load contents of file list: '/Target Support Files/Pods-`. You can also find errors with firebase libs (init classes).
+I could fix it by running:
 ```
 pod deintegrate
 pod install
