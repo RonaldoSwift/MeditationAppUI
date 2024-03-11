@@ -16,6 +16,7 @@ struct SignUpView: View {
     @State var isActiveSignIn: Bool = false
     @State private var showLoading: Bool = false
     @State private var showAlert: Bool = false
+    @State private var alertMensaje: String = ""
 
     @EnvironmentObject private var appRootManager: AppRootManager
 
@@ -113,6 +114,7 @@ struct SignUpView: View {
                                 .padding(.trailing, 20)
                         }
                     )
+                    .keyboardType(.emailAddress)
 
                 SecureField("Password", text: $passwordTextField)
                     .padding()
@@ -169,8 +171,7 @@ struct SignUpView: View {
         .alert(isPresented: $showAlert) {
             Alert(
                 title: Text("Error SignUp"),
-                message: Text(
-                    "Esta operacion esta disponible por la App, de lunes a viernes de 6:00 am a 8:30 pm, excepto los sabados, domingos y feriados."),
+                message: Text(alertMensaje),
                 dismissButton: .default(
                     Text("Entendido"),
                     action: {
@@ -188,6 +189,7 @@ struct SignUpView: View {
             case let .error(error):
                 print("Error  \(error)")
                 showAlert = true
+                alertMensaje = error
             case let .success(user):
                 appRootManager.currentRoot = .principal
             }
