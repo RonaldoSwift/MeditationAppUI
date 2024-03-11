@@ -101,6 +101,9 @@
 		FA80F6D52B71B86400B7796E /* HelveticaNeueCyr-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6A52B71B86300B7796E /* HelveticaNeueCyr-BlackItalic.ttf */; };
 		FA80F6D82B71B86400B7796E /* HelveticaNeueCyr-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6A62B71B86300B7796E /* HelveticaNeueCyr-UltraLightItalic.ttf */; };
 		FA80F6DB2B71B86400B7796E /* HelveticaNeueCyr-Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA80F6A72B71B86300B7796E /* HelveticaNeueCyr-Roman.ttf */; };
+		FA849B442B9F67FB00D05092 /* FireBaseSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA849B432B9F67FB00D05092 /* FireBaseSignUp.swift */; };
+		FA849B462B9F6B3C00D05092 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA849B452B9F6B3C00D05092 /* SignUpViewModel.swift */; };
+		FA849B482B9F6B4C00D05092 /* SignUpUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA849B472B9F6B4C00D05092 /* SignUpUiState.swift */; };
 		FAB1060E2B79A06400D1C783 /* Imagenes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1060D2B79A06400D1C783 /* Imagenes.xcassets */; };
 		FAB106112B79A06400D1C783 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB106102B79A06400D1C783 /* Preview Assets.xcassets */; };
 		FAB106132B79A06400D1C783 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB106122B79A06400D1C783 /* Persistence.swift */; };
@@ -238,6 +241,9 @@
 		FA80F6A62B71B86300B7796E /* HelveticaNeueCyr-UltraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueCyr-UltraLightItalic.ttf"; sourceTree = "<group>"; };
 		FA80F6A72B71B86300B7796E /* HelveticaNeueCyr-Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueCyr-Roman.ttf"; sourceTree = "<group>"; };
 		FA80F6DE2B71B90600B7796E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA849B432B9F67FB00D05092 /* FireBaseSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseSignUp.swift; sourceTree = "<group>"; };
+		FA849B452B9F6B3C00D05092 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		FA849B472B9F6B4C00D05092 /* SignUpUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUiState.swift; sourceTree = "<group>"; };
 		FAB106072B79A06300D1C783 /* MeditationDarkAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationDarkAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationDarkAppUIApp.swift; sourceTree = "<group>"; };
 		FAB1060D2B79A06400D1C783 /* Imagenes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagenes.xcassets; sourceTree = "<group>"; };
@@ -539,6 +545,7 @@
 			isa = PBXGroup;
 			children = (
 				FA5D77182B9BFEAF0001F101 /* FireBaseUser.swift */,
+				FA849B432B9F67FB00D05092 /* FireBaseSignUp.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -760,6 +767,8 @@
 			isa = PBXGroup;
 			children = (
 				FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */,
+				FA849B452B9F6B3C00D05092 /* SignUpViewModel.swift */,
+				FA849B472B9F6B4C00D05092 /* SignUpUiState.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -1293,6 +1302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA849B482B9F6B4C00D05092 /* SignUpUiState.swift in Sources */,
 				2460684D2B75E415003FD34E /* AuthenticationRootView.swift in Sources */,
 				246068522B75E66D003FD34E /* SplashView.swift in Sources */,
 				FA80F6932B718E1100B7796E /* GeneralButtonComponent.swift in Sources */,
@@ -1315,10 +1325,12 @@
 				246717312B75A3A5002570DC /* ViewA.swift in Sources */,
 				24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */,
 				24A5B6372B90E87B0041D7FA /* SilentMoonLogoView.swift in Sources */,
+				FA849B462B9F6B3C00D05092 /* SignUpViewModel.swift in Sources */,
 				246717372B75A406002570DC /* RootPresentationModeKey.swift in Sources */,
 				FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */,
 				24A5B6482B90F12D0041D7FA /* PrimaryButton.swift in Sources */,
 				FA5D77202B9C037E0001F101 /* SignInUiState.swift in Sources */,
+				FA849B442B9F67FB00D05092 /* FireBaseSignUp.swift in Sources */,
 				246717322B75A3A5002570DC /* ViewC.swift in Sources */,
 				246717332B75A3A5002570DC /* SheetModifier.swift in Sources */,
 				FA5D77192B9BFEAF0001F101 /* FireBaseUser.swift in Sources */,

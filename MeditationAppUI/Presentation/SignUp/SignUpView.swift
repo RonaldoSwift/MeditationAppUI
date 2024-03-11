@@ -11,9 +11,20 @@ struct SignUpView: View {
     @State var nameTextField: String = ""
     @State var emailTextField: String = ""
     @State var passwordTextField: String = ""
-
+    
     @State private var precionarCkeck = false
-
+    @State var isActiveSignIn: Bool = false
+    @State private var showLoading: Bool = false
+    @State private var showAlert: Bool = false
+    
+    @EnvironmentObject private var appRootManager: AppRootManager
+    
+    @StateObject private var signUpViewModel = SignUpViewModel(
+        authenticationRepository: AuthenticationRepository(
+            fireBaseAuthDataSource: FireBaseAuthDataSource()
+        )
+    )
+    
     var body: some View {
         VStack(alignment: .center) {
             ZStack {
@@ -23,7 +34,7 @@ struct SignUpView: View {
                     Text("Create your account")
                         .font(.custom("HelveticaNeueCyr-Bold", size: 28))
                         .padding(.bottom, 10)
-
+                    
                     Button(action: {
                         print("Button Facebook")
                     }, label: {
@@ -37,12 +48,12 @@ struct SignUpView: View {
                         .foregroundColor(.white)
                         .background(Color.colorButtonFacebook)
                         .cornerRadius(40)
-
+                        
                     })
-
+                    
                     Button(action: {
                         print("Button Googler")
-
+                        
                     }, label: {
                         HStack {
                             Image(ImageResource.logoGoogle)
@@ -62,15 +73,15 @@ struct SignUpView: View {
                 }
                 .padding(.top, 100)
             }
-
+            
             Spacer()
-
+            
             VStack {
                 Text("OR LOG IN WITH EMAIL")
                     .font(.custom("HelveticaNeueCyr-Medium", size: 14))
                     .foregroundStyle(Color.colorLetras)
                     .padding(.bottom, 40)
-
+                
                 TextField("Name", text: $nameTextField)
                     .padding()
                     .background(Color.colorSignInTextField)
@@ -86,7 +97,7 @@ struct SignUpView: View {
                                 .padding(.trailing, 20)
                         }
                     )
-
+                
                 TextField("Email address", text: $emailTextField)
                     .padding()
                     .background(Color.colorSignInTextField)
@@ -102,7 +113,7 @@ struct SignUpView: View {
                                 .padding(.trailing, 20)
                         }
                     )
-
+                
                 SecureField("Password", text: $passwordTextField)
                     .padding()
                     .background(Color.colorSignInTextField)
@@ -117,7 +128,7 @@ struct SignUpView: View {
                                 .padding(.trailing, 20)
                         }
                     )
-
+                
                 HStack(alignment: .center) {
                     Text("i have read the")
                         .font(.custom("HelveticaNeueCyr-Medium", size: 16))
@@ -129,9 +140,9 @@ struct SignUpView: View {
                             .font(.custom("HelveticaNeueCyr-Medium", size: 16))
                             .foregroundColor(Color.colorButton)
                     })
-
+                    
                     Spacer()
-
+                    
                     Button(action: {
                         precionarCkeck.toggle()
                     }, label: {
@@ -143,23 +154,53 @@ struct SignUpView: View {
                 }
                 .padding(.top, 10)
                 .padding(.bottom, 35)
-
+                
                 generalButtonComponent(onClickInSitioWeb: {
-                    print("Get Stared")
+                    signUpViewModel.signUp(
+                        email: emailTextField,
+                        password: passwordTextField
+                    )
                 }, textoDelButton: "GET STARTED")
-                    .padding(.bottom, 60)
+                .padding(.bottom, 60)
             }
             .padding()
         }
+        .navigation(SignInView(), $isActiveSignIn)
+        .alert(isPresented: $showAlert) {
+            Alert(
+                title: Text("Error SignUp"),
+                message: Text(
+                    "Esta operacion esta disponible por la App, de lunes a viernes de 6:00 am a 8:30 pm, excepto los sabados, domingos y feriados."),
+                dismissButton: .default(
+                    Text("Entendido"),
+                    action: {
+                        // Acción al presionar el botón "Entendido"
+                    }
+                )
+            )
+        }
+        .onReceive(signUpViewModel.$signUpState, perform: { signUpState in
+            switch signUpState {
+            case .initial:
+                break
+            case .loading:
+                showLoading = true
+            case let .error(error):
+                print("Error  \(error)")
+                showAlert = true
+            case let .success(user):
+                appRootManager.currentRoot = .principal
+            }
+        })
     }
 }
 
 #if DEBUG
-    struct SignUpView_Previews: PreviewProvider {
-        static var previews: some View {
-            Preview {
-                SignUpView()
-            }
+struct SignUpView_Previews: PreviewProvider {
+    static var previews: some View {
+        Preview {
+            SignUpView()
         }
     }
+}
 #endif
