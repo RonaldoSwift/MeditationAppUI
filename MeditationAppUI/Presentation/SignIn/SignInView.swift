@@ -14,6 +14,7 @@ struct SignInView: View {
     @State var isActiveSignUp: Bool = false
     @State private var showLoading: Bool = false
     @State private var showAlert: Bool = false
+    @State private var textoDeAlert: String = ""
 
     @EnvironmentObject private var appRootManager: AppRootManager
 
@@ -30,7 +31,7 @@ struct SignInView: View {
                     .ignoresSafeArea()
                 VStack {
                     Text("Welcome Back!")
-                        .font(.custom("HelveticaNeueCyr-Bold", size: 28))
+                        .font(Fonts.HelveticaNeueCyr.bold.swiftUIFont(size: 28))
                         .padding(.bottom, 10)
 
                     Button(action: {
@@ -42,7 +43,7 @@ struct SignInView: View {
                             Text("CONTINUE WITH FACEBOOK")
                         }
                         .padding(EdgeInsets(top: 20, leading: 55, bottom: 20, trailing: 55))
-                        .font(.custom("HelveticaNeueCyr-Bold", size: 14))
+                        .font(Fonts.HelveticaNeueCyr.bold.swiftUIFont(size: 14))
                         .foregroundColor(.white)
                         .background(Color.colorButtonFacebook)
                         .cornerRadius(40)
@@ -60,7 +61,7 @@ struct SignInView: View {
                                 .padding(.trailing, 30)
                         }
                         .padding(EdgeInsets(top: 20, leading: 45, bottom: 20, trailing: 45))
-                        .font(.custom("HelveticaNeueCyr-Medium", size: 14))
+                        .font(Fonts.HelveticaNeueCyr.medium.swiftUIFont(size: 14))
                         .foregroundColor(.black)
                         .overlay(
                             Capsule(style: .circular)
@@ -80,7 +81,7 @@ struct SignInView: View {
 
             VStack {
                 Text("OR LOG IN WITH EMAIL")
-                    .font(.custom("HelveticaNeueCyr-Medium", size: 14))
+                    .font(Fonts.HelveticaNeueCyr.medium.swiftUIFont(size: 14))
                     .foregroundStyle(Color.colorLetras)
                     .padding(.bottom, 40)
 
@@ -105,19 +106,19 @@ struct SignInView: View {
                 }, textoDelButton: "Log In")
 
                 Text("Forgot Password?")
-                    .font(.custom("HelveticaNeueCyr-Medium", size: 14))
+                    .font(Fonts.HelveticaNeueCyr.medium.swiftUIFont(size: 14))
                     .padding(.top, 10)
 
                 HStack {
                     Text("ALREADY HAVE AN ACCOUNT?")
-                        .font(.custom("HelveticaNeueCyr-Medium", size: 16))
+                        .font(Fonts.HelveticaNeueCyr.medium.swiftUIFont(size: 16))
                         .foregroundStyle(Color.colorLetras)
                     Button(action: {
                         isActiveSignUp = true
 
                     }, label: {
                         Text("SIGN UP")
-                            .font(.custom("HelveticaNeueCyr-Medium", size: 16))
+                            .font(Fonts.HelveticaNeueCyr.medium.swiftUIFont(size: 16))
                             .foregroundColor(Color.colorButton)
                     })
                 }
@@ -130,8 +131,7 @@ struct SignInView: View {
         .alert(isPresented: $showAlert) {
             Alert(
                 title: Text("Error SignIn"),
-                message: Text(
-                    "Esta operacion esta disponible por la App, de lunes a viernes de 6:00 am a 8:30 pm, excepto los sabados, domingos y feriados."),
+                message: Text(textoDeAlert),
                 dismissButton: .default(
                     Text("Entendido"),
                     action: {
@@ -147,6 +147,7 @@ struct SignInView: View {
             case .loading:
                 showLoading = true
             case let .error(error):
+                textoDeAlert = error
                 print("Error  \(error)")
                 showAlert = true
             case let .success(user):
