@@ -20,9 +20,23 @@ class AuthenticationRepository {
             pasword: pasword,
             onError: onError
         ) { fireBaseUser in
-            var user = User(
+            let user = User(
                 name: fireBaseUser.displayName ?? "",
                 email: fireBaseUser.email ?? ""
+            )
+            onSuccess(user)
+        }
+    }
+
+    func signUp(email: String, pasword: String, onError: @escaping (String) -> Void, onSuccess: @escaping (User) -> Void) {
+        fireBaseAuthDataSource.signUp(
+            email: email,
+            pasword: pasword,
+            onError: onError
+        ) { fireBaseSignUp in
+            let user = User(
+                name: fireBaseSignUp.displayName ?? "",
+                email: fireBaseSignUp.email ?? ""
             )
             onSuccess(user)
         }

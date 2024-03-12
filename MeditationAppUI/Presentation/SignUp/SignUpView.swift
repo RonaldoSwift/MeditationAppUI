@@ -13,6 +13,18 @@ struct SignUpView: View {
     @State var passwordTextField: String = ""
 
     @State private var precionarCkeck = false
+    @State var isActiveSignIn: Bool = false
+    @State private var showLoading: Bool = false
+    @State private var showAlert: Bool = false
+    @State private var alertMensaje: String = ""
+
+    @EnvironmentObject private var appRootManager: AppRootManager
+
+    @StateObject private var signUpViewModel = SignUpViewModel(
+        authenticationRepository: AuthenticationRepository(
+            fireBaseAuthDataSource: FireBaseAuthDataSource()
+        )
+    )
 
     var body: some View {
         VStack(alignment: .center) {
@@ -102,6 +114,7 @@ struct SignUpView: View {
                                 .padding(.trailing, 20)
                         }
                     )
+                    .keyboardType(.emailAddress)
 
                 SecureField("Password", text: $passwordTextField)
                     .padding()
@@ -145,12 +158,42 @@ struct SignUpView: View {
                 .padding(.bottom, 35)
 
                 generalButtonComponent(onClickInSitioWeb: {
-                    print("Get Stared")
+                    signUpViewModel.signUp(
+                        email: emailTextField,
+                        password: passwordTextField
+                    )
                 }, textoDelButton: "GET STARTED")
                     .padding(.bottom, 60)
             }
             .padding()
         }
+        .navigation(SignInView(), $isActiveSignIn)
+        .alert(isPresented: $showAlert) {
+            Alert(
+                title: Text("Error SignUp"),
+                message: Text(alertMensaje),
+                dismissButton: .default(
+                    Text("Entendido"),
+                    action: {
+                        // Acción al presionar el botón "Entendido"
+                    }
+                )
+            )
+        }
+        .onReceive(signUpViewModel.$signUpState, perform: { signUpState in
+            switch signUpState {
+            case .initial:
+                break
+            case .loading:
+                showLoading = true
+            case let .error(error):
+                print("Error  \(error)")
+                showAlert = true
+                alertMensaje = error
+            case let .success(user):
+                appRootManager.currentRoot = .principal
+            }
+        })
     }
 }
 

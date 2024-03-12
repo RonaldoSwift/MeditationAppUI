@@ -23,4 +23,18 @@ class FireBaseAuthDataSource {
             }
         }
     }
+
+    func signUp(email: String, pasword: String, onError: @escaping (String) -> Void, onSuccess: @escaping (FireBaseSignUp) -> Void) {
+        Auth.auth().createUser(withEmail: email, password: pasword) { authDataResult, error in
+            if let errorNoNulo = error {
+                onError("\(errorNoNulo)")
+            } else {
+                onSuccess(FireBaseSignUp(
+                    displayName: authDataResult?.user.displayName,
+                    email: authDataResult?.user.email
+                )
+                )
+            }
+        }
+    }
 }
