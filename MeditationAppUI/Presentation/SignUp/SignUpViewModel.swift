@@ -18,8 +18,12 @@ final class SignUpViewModel: ObservableObject {
     }
 
     func signUp(email: String, password: String) {
-        signUpState = SignUpUiState.loading
+        guard email != "" && password != "" else {
+            signUpState = SignUpUiState.error("Error!!! email o pasword esta vacio")
+            return
+        }
 
+        signUpState = SignUpUiState.loading
         authenticationRepository.signUp(
             email: email,
             pasword: password
