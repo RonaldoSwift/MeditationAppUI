@@ -18,7 +18,7 @@ final class SignUpViewModel: ObservableObject {
     }
 
     func signUp(email: String, password: String) {
-        guard email != "" && password != "" else {
+        guard !email.isEmpty && !password.isEmpty else {
             signUpState = SignUpUiState.error("Error!!! email o pasword esta vacio")
             return
         }
