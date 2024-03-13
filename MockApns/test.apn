@@ -1,0 +1,9 @@
+{
+   "aps": {
+      "category" : "new_comment_category",
+      "alert" : {
+         "title" : "New comment on your post",
+         "body" : "Great work!"
+      }
+   }
+}
