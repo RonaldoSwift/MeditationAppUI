@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 15) {
             HStack {
                 Text("S i l e n t")
                     .font(.custom("HelveticaNeueCyr-Medium", size: 16))
@@ -162,6 +162,103 @@ struct HomeView: View {
             Text("Recomended for you")
                 .font(.custom("HelveticaNeueCyr-Bold", size: 25))
                 .padding(.trailing, 100)
+                .padding(.top, 20)
+
+            ScrollView(.horizontal) {
+                HStack {
+                    Button(action: {}, label: {
+                        VStack(alignment: .leading) {
+                            ZStack {
+                                LinearGradient(
+                                    gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing
+                                )
+                                .mask(RoundedRectangle(cornerRadius: 12))
+                                .frame(width: 162, height: 113)
+                                .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 0)
+
+                                VStack(alignment: .leading) {
+                                    Image(ImageResource.focus)
+                                        .padding(.bottom, 30)
+                                }
+                                .padding(.top, 38)
+                                .frame(width: 162, height: 113)
+                                .background(Color.accenteBackgroundCard3)
+                                .foregroundColor(Color.accentLabel1)
+                                .cornerRadius(12)
+                            }
+
+                            Text("Focus")
+                                .font(.custom("HelveticaNeueCyr-Bold", size: 25))
+                                .foregroundColor(Color.black)
+                            Text("MEDITATION * 3-10 MIN")
+                                .font(.custom("HelveticaNeueCyr-Light", size: 13))
+                                .foregroundStyle(Color.colorLetras)
+                        }
+                    })
+
+                    Button(action: {}, label: {
+                        VStack(alignment: .leading) {
+                            ZStack {
+                                LinearGradient(
+                                    gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing
+                                )
+                                .mask(RoundedRectangle(cornerRadius: 12))
+                                .frame(width: 162, height: 113)
+                                .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 0)
+
+                                VStack(alignment: .leading) {
+                                    Image(ImageResource.happiness)
+                                        .padding(.bottom, 40)
+                                }
+                                .padding(.top, 38)
+                                .frame(width: 162, height: 113)
+                                .background(Color.accenteBackgroundCard4)
+                                .foregroundColor(Color.accentLabel1)
+                                .cornerRadius(12)
+                            }
+
+                            Text("Happiness")
+                                .font(.custom("HelveticaNeueCyr-Bold", size: 25))
+                                .foregroundColor(Color.black)
+                            Text("MEDITATION * 3-10 MIN")
+                                .font(.custom("HelveticaNeueCyr-Light", size: 13))
+                                .foregroundStyle(Color.colorLetras)
+                        }
+
+                    })
+
+                    Button(action: {}, label: {
+                        VStack(alignment: .leading) {
+                            ZStack {
+                                LinearGradient(
+                                    gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing
+                                )
+                                .mask(RoundedRectangle(cornerRadius: 12))
+                                .frame(width: 162, height: 113)
+                                .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 0)
+
+                                VStack(alignment: .leading) {
+                                    Image(ImageResource.focus)
+                                        .padding(.bottom, 30)
+                                }
+                                .padding(.top, 38)
+                                .frame(width: 162, height: 113)
+                                .background(Color.accenteBackgroundCard3)
+                                .foregroundColor(Color.accentLabel1)
+                                .cornerRadius(12)
+                            }
+
+                            Text("Focus")
+                                .font(.custom("HelveticaNeueCyr-Bold", size: 25))
+                                .foregroundColor(Color.black)
+                            Text("MEDITATION * 3-10 MIN")
+                                .font(.custom("HelveticaNeueCyr-Light", size: 13))
+                                .foregroundStyle(Color.colorLetras)
+                        }
+
+                    })
+                }
+            }
         }
         .padding()
     }
