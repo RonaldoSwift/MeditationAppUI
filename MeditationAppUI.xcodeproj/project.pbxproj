@@ -29,6 +29,11 @@
 		246717342B75A3A5002570DC /* ViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467172D2B75A3A5002570DC /* ViewB.swift */; };
 		246717352B75A3A5002570DC /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467172E2B75A3A5002570DC /* View+Extension.swift */; };
 		246717372B75A406002570DC /* RootPresentationModeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246717362B75A406002570DC /* RootPresentationModeKey.swift */; };
+		248B33752BA133CB00611E93 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B33742BA133CB00611E93 /* NotificationManager.swift */; };
+		248B33772BA16DFD00611E93 /* AppDelegate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B33762BA16DFD00611E93 /* AppDelegate+Extensions.swift */; };
+		248B337B2BA177C000611E93 /* NotificationAttachment+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B337A2BA177C000611E93 /* NotificationAttachment+Extensions.swift */; };
+		248B33802BA1826200611E93 /* ronaldo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 248B337F2BA1826200611E93 /* ronaldo.jpeg */; };
+		248B33822BA188A300611E93 /* TriggerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B33812BA188A300611E93 /* TriggerType.swift */; };
 		2496130F2B8FA97D003FF94E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2496130E2B8FA97D003FF94E /* WelcomeView.swift */; };
 		24A5B6302B90E26E0041D7FA /* DarkWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A5B62F2B90E26E0041D7FA /* DarkWelcomeView.swift */; };
 		24A5B6342B90E6C60041D7FA /* Colores.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A5B6332B90E6C60041D7FA /* Colores.xcassets */; };
@@ -182,6 +187,12 @@
 		2467172D2B75A3A5002570DC /* ViewB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewB.swift; sourceTree = "<group>"; };
 		2467172E2B75A3A5002570DC /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		246717362B75A406002570DC /* RootPresentationModeKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresentationModeKey.swift; sourceTree = "<group>"; };
+		248B33742BA133CB00611E93 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		248B33762BA16DFD00611E93 /* AppDelegate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extensions.swift"; sourceTree = "<group>"; };
+		248B33792BA1738900611E93 /* test.apn */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.apn; sourceTree = "<group>"; };
+		248B337A2BA177C000611E93 /* NotificationAttachment+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationAttachment+Extensions.swift"; sourceTree = "<group>"; };
+		248B337F2BA1826200611E93 /* ronaldo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ronaldo.jpeg; sourceTree = "<group>"; };
+		248B33812BA188A300611E93 /* TriggerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerType.swift; sourceTree = "<group>"; };
 		2496130E2B8FA97D003FF94E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		24A5B62F2B90E26E0041D7FA /* DarkWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkWelcomeView.swift; sourceTree = "<group>"; };
 		24A5B6332B90E6C60041D7FA /* Colores.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colores.xcassets; sourceTree = "<group>"; };
@@ -390,6 +401,32 @@
 				246717282B75A3A4002570DC /* ViewD.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		248B33732BA133B700611E93 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				248B33742BA133CB00611E93 /* NotificationManager.swift */,
+				248B337A2BA177C000611E93 /* NotificationAttachment+Extensions.swift */,
+				248B33812BA188A300611E93 /* TriggerType.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		248B33782BA1734700611E93 /* MockApns */ = {
+			isa = PBXGroup;
+			children = (
+				248B33792BA1738900611E93 /* test.apn */,
+			);
+			path = MockApns;
+			sourceTree = "<group>";
+		};
+		248B337E2BA1824200611E93 /* ImagesForBundle */ = {
+			isa = PBXGroup;
+			children = (
+				248B337F2BA1826200611E93 /* ronaldo.jpeg */,
+			);
+			path = ImagesForBundle;
 			sourceTree = "<group>";
 		};
 		2496130D2B8FA96B003FF94E /* Welcome */ = {
@@ -655,6 +692,7 @@
 			children = (
 				FA7BAA672B6C62C200B49752 /* MeditationAppUIApp.swift */,
 				246055FB2B9D01D20016ACEA /* AppDelegate.swift */,
+				248B33762BA16DFD00611E93 /* AppDelegate+Extensions.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -662,6 +700,8 @@
 		FA7BAA5B2B6C62C200B49752 = {
 			isa = PBXGroup;
 			children = (
+				248B337E2BA1824200611E93 /* ImagesForBundle */,
+				248B33782BA1734700611E93 /* MockApns */,
 				24A5B66F2B9189780041D7FA /* Screenshots */,
 				24A5B6682B911D190041D7FA /* .github */,
 				24A5B6722B918EC70041D7FA /* .swiftformat */,
@@ -697,6 +737,7 @@
 		FA7BAA662B6C62C200B49752 /* MeditationAppUI */ = {
 			isa = PBXGroup;
 			children = (
+				248B33732BA133B700611E93 /* Notifications */,
 				FA5D770E2B9BF51C0001F101 /* GoogleService-Info.plist */,
 				FA80F6DE2B71B90600B7796E /* Info.plist */,
 				FA7841A92B6D8A7500322926 /* App */,
@@ -1064,6 +1105,7 @@
 				FA80F6DB2B71B86400B7796E /* HelveticaNeueCyr-Roman.ttf in Resources */,
 				FA80F6B12B71B86300B7796E /* HelveticaNeueCyr-Light.ttf in Resources */,
 				FA744B312B8D34AE00AE3DF4 /* Imagenes.xcassets in Resources */,
+				248B33802BA1826200611E93 /* ronaldo.jpeg in Resources */,
 				FA80F6D82B71B86400B7796E /* HelveticaNeueCyr-UltraLightItalic.ttf in Resources */,
 				FA80F6CF2B71B86400B7796E /* HelveticaNeueCyr-BoldItalic.ttf in Resources */,
 			);
@@ -1358,11 +1400,13 @@
 				246068582B75E790003FD34E /* HomeView.swift in Sources */,
 				FAB987A02B8D4738007292EB /* JSON.swift in Sources */,
 				FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */,
+				248B33822BA188A300611E93 /* TriggerType.swift in Sources */,
 				246055FC2B9D01D20016ACEA /* AppDelegate.swift in Sources */,
 				FA5D77132B9BF7120001F101 /* FireBaseAuthDataSource.swift in Sources */,
 				246056032B9D0A470016ACEA /* PlayMusicView.swift in Sources */,
 				246717312B75A3A5002570DC /* ViewA.swift in Sources */,
 				246056012B9D09640016ACEA /* PlayerSliderViewModel.swift in Sources */,
+				248B33752BA133CB00611E93 /* NotificationManager.swift in Sources */,
 				FA66BC2F2BA115C00007ED39 /* MeditationView.swift in Sources */,
 				24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */,
 				246056052B9D0A700016ACEA /* Song.swift in Sources */,
@@ -1372,8 +1416,10 @@
 				FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */,
 				24A5B6482B90F12D0041D7FA /* PrimaryButton.swift in Sources */,
 				FA5D77202B9C037E0001F101 /* SignInUiState.swift in Sources */,
+				248B337B2BA177C000611E93 /* NotificationAttachment+Extensions.swift in Sources */,
 				FA849B442B9F67FB00D05092 /* FireBaseSignUp.swift in Sources */,
 				246717322B75A3A5002570DC /* ViewC.swift in Sources */,
+				248B33772BA16DFD00611E93 /* AppDelegate+Extensions.swift in Sources */,
 				246717332B75A3A5002570DC /* SheetModifier.swift in Sources */,
 				FA5D77192B9BFEAF0001F101 /* FireBaseUser.swift in Sources */,
 				2496130F2B8FA97D003FF94E /* WelcomeView.swift in Sources */,
