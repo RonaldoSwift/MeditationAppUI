@@ -110,7 +110,9 @@ class NotificationManager {
         )
 
         // Category
-        let newCommentCategory = UNNotificationCategory(identifier: "new_comment_category", actions: [likeAction, dislikeAction], intentIdentifiers: [])
+        let newCommentCategory = UNNotificationCategory(
+            identifier: "new_comment_category", actions: [likeAction, dislikeAction], intentIdentifiers: []
+        )
         let notificationCenter = UNUserNotificationCenter.current()
         notificationCenter.setNotificationCategories([newCommentCategory])
         content.categoryIdentifier = "new_comment_category"
@@ -147,7 +149,9 @@ class NotificationManager {
         let action2 = UNNotificationAction(identifier: "cancelAction", title: "Cancel", options: [])
 
         // Category
-        let category = UNNotificationCategory(identifier: "general", actions: [action1, action2], intentIdentifiers: [], options: [.customDismissAction])
+        let category = UNNotificationCategory(
+            identifier: "general", actions: [action1, action2], intentIdentifiers: [], options: [.customDismissAction]
+        )
         UNUserNotificationCenter.current().setNotificationCategories([category])
         content.categoryIdentifier = "general"
 
