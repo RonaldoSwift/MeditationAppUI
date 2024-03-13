@@ -77,6 +77,7 @@
 		FA5D77202B9C037E0001F101 /* SignInUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D771F2B9C037E0001F101 /* SignInUiState.swift */; };
 		FA5F00B62B79A70500F2AD0F /* ViewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246717282B75A3A4002570DC /* ViewD.swift */; };
 		FA5F00B72B79A76700F2AD0F /* MeditationDarkAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */; };
+		FA66BC2F2BA115C00007ED39 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66BC2E2BA115C00007ED39 /* MeditationView.swift */; };
 		FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA718AF42B92409800427EA6 /* PrincipalView.swift */; };
 		FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71AEA62B72EBE9009820E0 /* SignInView.swift */; };
 		FA744B2D2B8D0A3B00AE3DF4 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */; };
@@ -218,6 +219,7 @@
 		FA5D771B2B9BFFE40001F101 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA5D771D2B9C02120001F101 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		FA5D771F2B9C037E0001F101 /* SignInUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUiState.swift; sourceTree = "<group>"; };
+		FA66BC2E2BA115C00007ED39 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		FA718AF42B92409800427EA6 /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		FA71AEA62B72EBE9009820E0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -582,6 +584,21 @@
 			path = Modelo;
 			sourceTree = "<group>";
 		};
+		FA66BC2D2BA115AD0007ED39 /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				FA66BC2E2BA115C00007ED39 /* MeditationView.swift */,
+			);
+			path = Meditation;
+			sourceTree = "<group>";
+		};
+		FA66BC302BA130000007ED39 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		FA718AF32B92407E00427EA6 /* Principal */ = {
 			isa = PBXGroup;
 			children = (
@@ -598,13 +615,6 @@
 				FA5D771F2B9C037E0001F101 /* SignInUiState.swift */,
 			);
 			path = SignIn;
-			sourceTree = "<group>";
-		};
-		FA744B2E2B8D333A00AE3DF4 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = JSON;
 			sourceTree = "<group>";
 		};
 		FA744B2F2B8D335000AE3DF4 /* Assets */ = {
@@ -628,6 +638,7 @@
 		FA7841A82B6D8A6F00322926 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FA66BC2D2BA115AD0007ED39 /* Meditation */,
 				246055FD2B9D09150016ACEA /* PlayMusic */,
 				246068562B75E786003FD34E /* Home */,
 				FA718AF32B92407E00427EA6 /* Principal */,
@@ -756,8 +767,8 @@
 		FA80F6942B71B7EE00B7796E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FA66BC302BA130000007ED39 /* JSON */,
 				FA80F6952B71B7FA00B7796E /* Fonts */,
-				FA744B2E2B8D333A00AE3DF4 /* JSON */,
 				FA744B2F2B8D335000AE3DF4 /* Assets */,
 				FAB987A62B8D4CA3007292EB /* Localizable.strings */,
 			);
@@ -1352,6 +1363,7 @@
 				246056032B9D0A470016ACEA /* PlayMusicView.swift in Sources */,
 				246717312B75A3A5002570DC /* ViewA.swift in Sources */,
 				246056012B9D09640016ACEA /* PlayerSliderViewModel.swift in Sources */,
+				FA66BC2F2BA115C00007ED39 /* MeditationView.swift in Sources */,
 				24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */,
 				246056052B9D0A700016ACEA /* Song.swift in Sources */,
 				24A5B6372B90E87B0041D7FA /* SilentMoonLogoView.swift in Sources */,
