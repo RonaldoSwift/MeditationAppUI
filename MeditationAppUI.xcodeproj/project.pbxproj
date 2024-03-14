@@ -1197,7 +1197,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp ./scripts/pre-commit ./.git/hooks\nchmod +x\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp ./scripts/pre-commit ./.git/hooks\n";
 		};
 		3C96CB79D113787DEAF9B919 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
