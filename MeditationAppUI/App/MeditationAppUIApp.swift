@@ -19,10 +19,12 @@ struct MeditationAppUIApp: App {
             Group {
                 switch appRootManager.currentRoot {
                 case .splash:
-                    SplashRootView()
+                                 SplashRootView()
                     
-                case .authentication:
-                    AuthenticationRootView()
+                    case .authentication:
+                    
+                            AuthenticationRootView()
+                    
                 case .principal:
                     PrincipalRootView()
                 }
