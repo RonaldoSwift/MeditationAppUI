@@ -20,6 +20,7 @@ struct MeditationAppUIApp: App {
                 switch appRootManager.currentRoot {
                 case .splash:
                     SplashRootView()
+                    
                 case .authentication:
                     AuthenticationRootView()
                 case .principal:
