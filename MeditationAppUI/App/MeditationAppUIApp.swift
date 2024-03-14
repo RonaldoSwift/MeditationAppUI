@@ -14,6 +14,8 @@ struct MeditationAppUIApp: App {
 
     @StateObject private var appRootManager = AppRootManager()
 
+    var hola 
+    
     var body: some Scene {
         WindowGroup {
             Group {
