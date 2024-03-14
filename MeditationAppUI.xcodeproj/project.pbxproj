@@ -194,6 +194,7 @@
 		248B337F2BA1826200611E93 /* ronaldo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ronaldo.jpeg; sourceTree = "<group>"; };
 		248B33812BA188A300611E93 /* TriggerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerType.swift; sourceTree = "<group>"; };
 		2496130E2B8FA97D003FF94E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		24A158E32BA3874400ABBF8A /* pre-commit */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "pre-commit"; sourceTree = "<group>"; };
 		24A5B62F2B90E26E0041D7FA /* DarkWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkWelcomeView.swift; sourceTree = "<group>"; };
 		24A5B6332B90E6C60041D7FA /* Colores.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colores.xcassets; sourceTree = "<group>"; };
 		24A5B6362B90E87B0041D7FA /* SilentMoonLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilentMoonLogoView.swift; sourceTree = "<group>"; };
@@ -435,6 +436,14 @@
 				2496130E2B8FA97D003FF94E /* WelcomeView.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		24A158E22BA3874400ABBF8A /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				24A158E32BA3874400ABBF8A /* pre-commit */,
+			);
+			path = scripts;
 			sourceTree = "<group>";
 		};
 		24A5B62D2B90E2200041D7FA /* Presentation */ = {
@@ -700,6 +709,7 @@
 		FA7BAA5B2B6C62C200B49752 = {
 			isa = PBXGroup;
 			children = (
+				24A158E22BA3874400ABBF8A /* scripts */,
 				248B337E2BA1824200611E93 /* ImagesForBundle */,
 				248B33782BA1734700611E93 /* MockApns */,
 				24A5B66F2B9189780041D7FA /* Screenshots */,
@@ -915,6 +925,7 @@
 				24A5B6632B9117CB0041D7FA /* Run SwiftLint */,
 				24A5B6712B918B050041D7FA /* Run SwiftFormat */,
 				472EA4A8CF9B45F7DFC8EA79 /* [CP] Embed Pods Frameworks */,
+				24A158E42BA387FB00ABBF8A /* Copy pre-commit to git hooks */,
 			);
 			buildRules = (
 			);
@@ -1172,6 +1183,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		24A158E42BA387FB00ABBF8A /* Copy pre-commit to git hooks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy pre-commit to git hooks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp ./scripts/pre-commit ./.git/hooks\n";
+		};
 		24A5B6632B9117CB0041D7FA /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
