@@ -14,19 +14,14 @@ struct MeditationAppUIApp: App {
 
     @StateObject private var appRootManager = AppRootManager()
 
-    var name: String = nil
-
     var body: some Scene {
         WindowGroup {
             Group {
                 switch appRootManager.currentRoot {
                 case .splash:
                     SplashRootView()
-
                 case .authentication:
-
                     AuthenticationRootView()
-
                 case .principal:
                     PrincipalRootView()
                 }

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 echo "*********************************************************"
 echo "Running git pre-commit hook. Making sure that its a valid branch..." 
 echo "*********************************************************"
@@ -36,6 +34,20 @@ echo ""
 
 
 echo "*********************************************************"
+echo "Running git pre-commit hook. Running Swift Format... "
+echo "*********************************************************"
+if [[ "$(uname -m)" == arm64 ]]; then
+    export PATH="/opt/homebrew/bin:$PATH"
+fi
+
+if which swiftformat > /dev/null; then
+  swiftformat .
+else
+  echo "warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat"
+fi
+
+
+echo "*********************************************************"
 echo "Running git pre-commit hook. Running Swift Lint... "
 echo "*********************************************************"
 
@@ -53,6 +65,7 @@ if which swiftlint >/dev/null; then
 else
   echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
 fi
+
 
 status=$?
 
