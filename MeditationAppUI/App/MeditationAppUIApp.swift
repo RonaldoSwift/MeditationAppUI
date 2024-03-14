@@ -13,7 +13,6 @@ struct MeditationAppUIApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
     @StateObject private var appRootManager = AppRootManager()
-    
 
     var body: some Scene {
         WindowGroup {
