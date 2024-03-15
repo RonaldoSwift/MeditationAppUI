@@ -19,7 +19,7 @@ Esta aplicación permite al usuario iniciar sesión, registrarse, verificar sald
 3. Finalmente hacemos `pod update`
 4. Finalmente pod install 
 5. El desarrollador que tiene la computador con la arquitecture chip silicon, debería configurar e instalar las primeras libs en el proyecto.
-6. Go to the root and run `chmod +x .git/hooks/pre-commit` if there's a problem when doing commits.
+6. Go to the root and run `chmod +x .git/hooks/pre-commit` if there's a problem when doing commits (`'The '.git/hooks/pre-commit' hook was ignored`)
 7. If you get an error message popup `Commit Failed` when commiting, just ignore it (xcode doesn't show a better title when using pre-commit hook).
 
 ## Prerequisites
