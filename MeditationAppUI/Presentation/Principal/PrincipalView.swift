@@ -25,7 +25,7 @@ struct PrincipalView: View {
                     Image(ImageResource.meditateIcon)
                     Text("Meditate")
                 }
-            HomeView()
+            HappyMorningView()
                 .tabItem {
                     Image(ImageResource.musicIcon)
                     Text("Music")
