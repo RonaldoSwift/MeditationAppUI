@@ -12,13 +12,15 @@ Esta aplicación permite al usuario iniciar sesión, registrarse, verificar sald
     <img src="Screenshots/MainLogo.png" alt="icon" width="80%"/>
 </p>
 
-## Important! (about cocoapods)
+## Important!
 
 1. Los miembros del equipo tienen que tener la misma version de cocoapods (`brew upgrade cocoapods`).
 2. Por mas que tengas la misma version, aveces no se puede instalar una version especifica (pod 'Alamofire', '~> 5.9’), para eso necesitamos `pod search Alamofire —simple`
 3. Finalmente hacemos `pod update`
 4. Finalmente pod install 
-5. El desarrollador que tiene la computador con la arquitecture chip silicon, debería configurar e instalar las primeras libs en el proyecto.  
+5. El desarrollador que tiene la computador con la arquitecture chip silicon, debería configurar e instalar las primeras libs en el proyecto.
+6. Go to the root and run `chmod +x .git/hooks/pre-commit` if there's a problem when doing commits (`'The '.git/hooks/pre-commit' hook was ignored`)
+7. If you get an error message popup `Commit Failed` when commiting, just ignore it (xcode doesn't show a better title when using pre-commit hook).
 
 ## Prerequisites
 
@@ -69,8 +71,6 @@ brew install sourcery
 ```
 
 10. Change `User Script Sandboxing` to NO (to avoid problems with swiftlint and non-swift files from cocoapods)
-
-11. 
 
 
 ## Libraries
