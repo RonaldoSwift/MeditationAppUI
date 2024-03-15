@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0B96D1594C6A1AA0622C3784 /* Pods_MeditationAppUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C5EDA56157BCDB8458DE46 /* Pods_MeditationAppUI.framework */; };
 		20E3BC5D1A6DEF884033DEC8 /* Pods_MeditationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE927A3F73D50BD474EAE339 /* Pods_MeditationAppUITests.framework */; };
+		24501B512BA4D36E00112F63 /* PHImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24501B502BA4D36E00112F63 /* PHImagePickerView.swift */; };
+		24501B532BA4F25400112F63 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24501B522BA4F25400112F63 /* ProfileView.swift */; };
 		246055FC2B9D01D20016ACEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246055FB2B9D01D20016ACEA /* AppDelegate.swift */; };
 		246055FF2B9D09360016ACEA /* MusicMediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246055FE2B9D09360016ACEA /* MusicMediaPlayer.swift */; };
 		246056012B9D09640016ACEA /* PlayerSliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246056002B9D09640016ACEA /* PlayerSliderViewModel.swift */; };
@@ -166,6 +168,8 @@
 		075476983E060833F06F5E87 /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2071FD1E787D4928419918FA /* Pods-MeditationAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2354AC3D0CAAEB26AD38095B /* Pods-MeditationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		24501B502BA4D36E00112F63 /* PHImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImagePickerView.swift; sourceTree = "<group>"; };
+		24501B522BA4F25400112F63 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		246055FB2B9D01D20016ACEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		246055FE2B9D09360016ACEA /* MusicMediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMediaPlayer.swift; sourceTree = "<group>"; };
 		246056002B9D09640016ACEA /* PlayerSliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSliderViewModel.swift; sourceTree = "<group>"; };
@@ -340,6 +344,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24501B4F2BA4D35700112F63 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				24501B502BA4D36E00112F63 /* PHImagePickerView.swift */,
+				24501B522BA4F25400112F63 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		246055FD2B9D09150016ACEA /* PlayMusic */ = {
 			isa = PBXGroup;
 			children = (
@@ -675,6 +688,7 @@
 		FA7841A82B6D8A6F00322926 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				24501B4F2BA4D35700112F63 /* Profile */,
 				FA66BC2D2BA115AD0007ED39 /* Meditation */,
 				246055FD2B9D09150016ACEA /* PlayMusic */,
 				246068562B75E786003FD34E /* Home */,
@@ -1407,11 +1421,13 @@
 				246717312B75A3A5002570DC /* ViewA.swift in Sources */,
 				246056012B9D09640016ACEA /* PlayerSliderViewModel.swift in Sources */,
 				248B33752BA133CB00611E93 /* NotificationManager.swift in Sources */,
+				24501B512BA4D36E00112F63 /* PHImagePickerView.swift in Sources */,
 				FA66BC2F2BA115C00007ED39 /* MeditationView.swift in Sources */,
 				24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */,
 				246056052B9D0A700016ACEA /* Song.swift in Sources */,
 				24A5B6372B90E87B0041D7FA /* SilentMoonLogoView.swift in Sources */,
 				FA849B462B9F6B3C00D05092 /* SignUpViewModel.swift in Sources */,
+				24501B532BA4F25400112F63 /* ProfileView.swift in Sources */,
 				246717372B75A406002570DC /* RootPresentationModeKey.swift in Sources */,
 				FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */,
 				24A5B6482B90F12D0041D7FA /* PrimaryButton.swift in Sources */,
