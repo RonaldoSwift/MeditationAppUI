@@ -30,7 +30,7 @@ struct PrincipalView: View {
                     Image(ImageResource.musicIcon)
                     Text("Music")
                 }
-            HomeView()
+            ProfileView()
                 .tabItem {
                     Image(ImageResource.personIcon)
                     Text("Afsar")

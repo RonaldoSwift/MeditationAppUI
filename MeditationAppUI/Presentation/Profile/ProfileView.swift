@@ -29,6 +29,12 @@ struct ProfileView: View {
                     Text("Edad: 20")
                 }
             }
+
+            Button(action: {
+                NotificationManager.shared.removeAllNotifications()
+            }, label: {
+                Text("Mostrar Notification")
+            })
             Spacer()
         }
         .onTapGesture {

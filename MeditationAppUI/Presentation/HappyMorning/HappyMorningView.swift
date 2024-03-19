@@ -14,22 +14,8 @@ struct HappyMorningView: View {
                 Image(ImageResource.happyMorning)
                     .ignoresSafeArea()
 
-                HStack(spacing: 150) {
-                    Button(action: /*@START_MENU_TOKEN@*/ {}/*@END_MENU_TOKEN@*/, label: {
-                        Image(ImageResource.back)
-                    })
-
-                    HStack {
-                        Button(action: /*@START_MENU_TOKEN@*/ {}/*@END_MENU_TOKEN@*/, label: {
-                            Image(ImageResource.like)
-                        })
-
-                        Button(action: /*@START_MENU_TOKEN@*/ {}/*@END_MENU_TOKEN@*/, label: {
-                            Image(ImageResource.dowload)
-                        })
-                    }
-                }
-                .padding(.bottom, 100)
+                HStack(spacing: 150) {}
+                    .padding(.bottom, 100)
             }
 
             Spacer()
@@ -116,6 +102,10 @@ struct HappyMorningView: View {
             .padding()
             .padding(.bottom, 80)
         }
+        .toolbar(content: {
+            TextToolbarContent()
+        })
+        .navigationBarBackButtonHidden(true)
     }
 }
 
