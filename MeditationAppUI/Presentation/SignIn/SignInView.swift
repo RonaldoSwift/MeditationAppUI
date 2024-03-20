@@ -20,7 +20,7 @@ struct SignInView: View {
 
     @StateObject private var signInViewModel = SignInViewModel(
         authenticationRepository: AuthenticationRepository(
-            fireBaseAuthDataSource: FireBaseAuthDataSource()
+            fireBaseAuthDataSource: FireBaseAuthDataSource(), memoriaLogin: MemoriaLogin()
         )
     )
 

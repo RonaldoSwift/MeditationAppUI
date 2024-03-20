@@ -14,12 +14,18 @@ struct MeditationAppUIApp: App {
 
     @StateObject private var appRootManager = AppRootManager()
 
+    var memoriaLogin = MemoriaLogin()
+
     var body: some Scene {
         WindowGroup {
             Group {
                 switch appRootManager.currentRoot {
                 case .splash:
-                    PrincipalView()
+                    if memoriaLogin.getUserLogged() == true {
+                        PrincipalRootView()
+                    } else {
+                        SplashRootView()
+                    }
                 case .authentication:
                     AuthenticationRootView()
                 case .principal:

@@ -1,4 +1,4 @@
-#  Aplicacion de Meditación
+#  Aplicacion de Meditación (iOS 15/SwiftUi)
 Esta aplicación permite al usuario iniciar sesión, registrarse, verificar saldo, cuentas, transferencias, etc. 
 
 <p align="center">
@@ -7,7 +7,7 @@ Esta aplicación permite al usuario iniciar sesión, registrarse, verificar sald
     <img src="Screenshots/ConsultasViewScreenshot.png" alt="icon" width="30%"/>
 </p>
 
-#  Arquitectura de la aplicación iOS
+#  Arquitectura de la aplicación 
 <p align="center">
     <img src="Screenshots/MainLogo.png" alt="icon" width="80%"/>
 </p>

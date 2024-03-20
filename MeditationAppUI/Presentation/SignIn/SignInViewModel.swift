@@ -25,7 +25,10 @@ final class SignInViewModel: ObservableObject {
             pasword: pasword
         ) { errorMensaje in
             self.signInState = SignInUiState.error(errorMensaje)
-        } onSuccess: { user in
+        } onSuccess: { (user: User) in
+
+            self.authenticationRepository.saveUserLoggedInCache(isLogged: true)
+
             self.signInState = SignInUiState.success(user)
         }
     }

@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct TextToolbarContent: ToolbarContent {
+    var image: Image = Image(ImageResource.back)
+
     @Environment(\.presentationMode) var presentationMode
 
     var body: some ToolbarContent {
@@ -16,19 +18,25 @@ struct TextToolbarContent: ToolbarContent {
             Button {
                 presentationMode.wrappedValue.dismiss()
             } label: {
-                Image(ImageResource.back)
+                image
+                    .resizable()
+                    .frame(width: 40, height: 40)
             }
         }
 
         ToolbarItem(placement: .navigationBarTrailing) {
             Button(action: /*@START_MENU_TOKEN@*/ {}/*@END_MENU_TOKEN@*/, label: {
                 Image(ImageResource.like)
+                    .resizable()
+                    .frame(width: 40, height: 40)
             })
         }
 
         ToolbarItem(placement: .navigationBarTrailing) {
             Button(action: /*@START_MENU_TOKEN@*/ {}/*@END_MENU_TOKEN@*/, label: {
                 Image(ImageResource.dowload)
+                    .resizable()
+                    .frame(width: 40, height: 40)
             })
         }
     }
