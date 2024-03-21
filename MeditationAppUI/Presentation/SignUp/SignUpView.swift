@@ -22,7 +22,7 @@ struct SignUpView: View {
 
     @StateObject private var signUpViewModel = SignUpViewModel(
         authenticationRepository: AuthenticationRepository(
-            fireBaseAuthDataSource: FireBaseAuthDataSource()
+            fireBaseAuthDataSource: FireBaseAuthDataSource(), memoriaLogin: MemoriaLogin()
         )
     )
 

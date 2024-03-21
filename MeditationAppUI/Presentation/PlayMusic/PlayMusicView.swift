@@ -16,6 +16,20 @@ struct PlayMusicView: View {
 
     init(musicMediaplayer: MusicMediaPlayer) {
         viewModel = .init(musicMediaPlayer: musicMediaplayer)
+
+        let navBarAppearence = UINavigationBarAppearance()
+        navBarAppearence.configureWithTransparentBackground()
+        navBarAppearence.largeTitleTextAttributes = [
+            .font: UIFont.systemFont(ofSize: 20),
+            .foregroundColor: UIColor.white,
+        ]
+        navBarAppearence.titleTextAttributes = [
+            .font: UIFont.systemFont(ofSize: 20),
+            .foregroundColor: UIColor.white,
+        ]
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearence
+        UINavigationBar.appearance().standardAppearance = navBarAppearence
+        UINavigationBar.appearance().tintColor = .white
     }
 
     var body: some View {
@@ -95,7 +109,7 @@ struct PlayMusicView: View {
             .padding(EdgeInsets(top: 30, leading: 30, bottom: 30, trailing: 30))
         }
         .toolbar(content: {
-            TextToolbarContent()
+            TextToolbarContent(image: Image(ImageResource.backX))
         })
         .navigationBarBackButtonHidden(true)
     }

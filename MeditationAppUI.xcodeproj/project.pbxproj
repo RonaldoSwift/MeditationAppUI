@@ -123,6 +123,7 @@
 		FA849B462B9F6B3C00D05092 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA849B452B9F6B3C00D05092 /* SignUpViewModel.swift */; };
 		FA849B482B9F6B4C00D05092 /* SignUpUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA849B472B9F6B4C00D05092 /* SignUpUiState.swift */; };
 		FA9397D42BA2AE0700988B1C /* HappyMorningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9397D32BA2AE0700988B1C /* HappyMorningView.swift */; };
+		FA99650D2BAA8A39005EDFB9 /* MemoriaLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99650C2BAA8A39005EDFB9 /* MemoriaLogin.swift */; };
 		FAB1060E2B79A06400D1C783 /* Imagenes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1060D2B79A06400D1C783 /* Imagenes.xcassets */; };
 		FAB106112B79A06400D1C783 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB106102B79A06400D1C783 /* Preview Assets.xcassets */; };
 		FAB106132B79A06400D1C783 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB106122B79A06400D1C783 /* Persistence.swift */; };
@@ -284,6 +285,7 @@
 		FA849B452B9F6B3C00D05092 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		FA849B472B9F6B4C00D05092 /* SignUpUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUiState.swift; sourceTree = "<group>"; };
 		FA9397D32BA2AE0700988B1C /* HappyMorningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyMorningView.swift; sourceTree = "<group>"; };
+		FA99650C2BAA8A39005EDFB9 /* MemoriaLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaLogin.swift; sourceTree = "<group>"; };
 		FAB106072B79A06300D1C783 /* MeditationDarkAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationDarkAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationDarkAppUIApp.swift; sourceTree = "<group>"; };
 		FAB1060D2B79A06400D1C783 /* Imagenes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagenes.xcassets; sourceTree = "<group>"; };
@@ -732,6 +734,7 @@
 		FA7841A62B6D8A6200322926 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FA803D7C2BAB89F100FD57BB /* Cache */,
 				FA5D77112B9BF6CB0001F101 /* DataSource */,
 				FA7BAA722B6C62C300B49752 /* MeditationAppUI.xcdatamodeld */,
 			);
@@ -847,6 +850,14 @@
 				FA7BAA892B6C62C300B49752 /* MeditationAppUIUITestsLaunchTests.swift */,
 			);
 			path = MeditationAppUIUITests;
+			sourceTree = "<group>";
+		};
+		FA803D7C2BAB89F100FD57BB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				FA99650C2BAA8A39005EDFB9 /* MemoriaLogin.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		FA80F68E2B71593000B7796E /* SilentMoon */ = {
@@ -1441,6 +1452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA99650D2BAA8A39005EDFB9 /* MemoriaLogin.swift in Sources */,
 				FA849B482B9F6B4C00D05092 /* SignUpUiState.swift in Sources */,
 				2460684D2B75E415003FD34E /* AuthenticationRootView.swift in Sources */,
 				246068522B75E66D003FD34E /* SplashView.swift in Sources */,

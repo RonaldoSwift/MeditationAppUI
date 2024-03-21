@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct ChooseTopicView: View {
+    init() {
+        let navBarAppearence = UINavigationBarAppearance() // use as global variable, otherwise SwiftUI may cause problems.
+        navBarAppearence.configureWithTransparentBackground()
+        navBarAppearence.titleTextAttributes = [.foregroundColor: UIColor.black]
+        navBarAppearence.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().standardAppearance = navBarAppearence
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearence
+    }
+
     var body: some View {
         VStack(alignment: .center) {
             ZStack {
@@ -16,6 +25,8 @@ struct ChooseTopicView: View {
                     VStack(alignment: .leading) {
                         Text("What Brings you")
                             .font(Fonts.HelveticaNeueCyr.bold.swiftUIFont(size: 25))
+                            .padding(.top, 55)
+                            .padding(.bottom, 5)
 
                         Text("to Silent Moon?")
                             .font(Fonts.HelveticaNeueCyr.light.swiftUIFont(size: 20))
@@ -209,6 +220,10 @@ struct ChooseTopicView: View {
                 }
             }
         }
+        .toolbar(content: {
+            TextToolbarContent()
+        })
+        .navigationBarBackButtonHidden(true)
     }
 }
 
