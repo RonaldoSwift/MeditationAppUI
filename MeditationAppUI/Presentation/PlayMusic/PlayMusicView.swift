@@ -94,6 +94,10 @@ struct PlayMusicView: View {
             })
             .padding(EdgeInsets(top: 30, leading: 30, bottom: 30, trailing: 30))
         }
+        .toolbar(content: {
+            TextToolbarContent()
+        })
+        .navigationBarBackButtonHidden(true)
     }
 }
 

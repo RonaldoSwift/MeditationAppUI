@@ -85,6 +85,10 @@
 		FA5F00B62B79A70500F2AD0F /* ViewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246717282B75A3A4002570DC /* ViewD.swift */; };
 		FA5F00B72B79A76700F2AD0F /* MeditationDarkAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */; };
 		FA66BC2F2BA115C00007ED39 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66BC2E2BA115C00007ED39 /* MeditationView.swift */; };
+		FA6A3A062BA8BE77003D014B /* TextToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A3A052BA8BE77003D014B /* TextToolbarContent.swift */; };
+		FA6A3A092BA8EA10003D014B /* ReminderesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A3A082BA8EA10003D014B /* ReminderesView.swift */; };
+		FA6A3A0C2BA8EEBA003D014B /* ButtonDaysReminderes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A3A0B2BA8EEBA003D014B /* ButtonDaysReminderes.swift */; };
+		FA6A3A102BA9203F003D014B /* ChooseTopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A3A0F2BA9203F003D014B /* ChooseTopicView.swift */; };
 		FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA718AF42B92409800427EA6 /* PrincipalView.swift */; };
 		FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71AEA62B72EBE9009820E0 /* SignInView.swift */; };
 		FA744B2D2B8D0A3B00AE3DF4 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */; };
@@ -237,6 +241,10 @@
 		FA5D771D2B9C02120001F101 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		FA5D771F2B9C037E0001F101 /* SignInUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUiState.swift; sourceTree = "<group>"; };
 		FA66BC2E2BA115C00007ED39 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
+		FA6A3A052BA8BE77003D014B /* TextToolbarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToolbarContent.swift; sourceTree = "<group>"; };
+		FA6A3A082BA8EA10003D014B /* ReminderesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderesView.swift; sourceTree = "<group>"; };
+		FA6A3A0B2BA8EEBA003D014B /* ButtonDaysReminderes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDaysReminderes.swift; sourceTree = "<group>"; };
+		FA6A3A0F2BA9203F003D014B /* ChooseTopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTopicView.swift; sourceTree = "<group>"; };
 		FA718AF42B92409800427EA6 /* PrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalView.swift; sourceTree = "<group>"; };
 		FA71AEA62B72EBE9009820E0 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FA744B2C2B8D0A3B00AE3DF4 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -660,9 +668,43 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		FA6A3A042BA8BE50003D014B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A3A052BA8BE77003D014B /* TextToolbarContent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		FA6A3A072BA8E9B9003D014B /* Reminderes */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A3A0A2BA8EE9C003D014B /* Component */,
+				FA6A3A082BA8EA10003D014B /* ReminderesView.swift */,
+			);
+			path = Reminderes;
+			sourceTree = "<group>";
+		};
+		FA6A3A0A2BA8EE9C003D014B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A3A0B2BA8EEBA003D014B /* ButtonDaysReminderes.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		FA6A3A0E2BA91FD0003D014B /* ChooseTopic */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A3A0F2BA9203F003D014B /* ChooseTopicView.swift */,
+			);
+			path = ChooseTopic;
+			sourceTree = "<group>";
+		};
 		FA718AF32B92407E00427EA6 /* Principal */ = {
 			isa = PBXGroup;
 			children = (
+				FA6A3A042BA8BE50003D014B /* Component */,
 				FA718AF42B92409800427EA6 /* PrincipalView.swift */,
 			);
 			path = Principal;
@@ -699,6 +741,8 @@
 		FA7841A82B6D8A6F00322926 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FA6A3A0E2BA91FD0003D014B /* ChooseTopic */,
+				FA6A3A072BA8E9B9003D014B /* Reminderes */,
 				FA9397D22BA2ADDA00988B1C /* HappyMorning */,
 				24501B4F2BA4D35700112F63 /* Profile */,
 				FA66BC2D2BA115AD0007ED39 /* Meditation */,
@@ -1415,6 +1459,7 @@
 				FA744B2D2B8D0A3B00AE3DF4 /* SignUpView.swift in Sources */,
 				246068582B75E790003FD34E /* HomeView.swift in Sources */,
 				FAB987A02B8D4738007292EB /* JSON.swift in Sources */,
+				FA6A3A102BA9203F003D014B /* ChooseTopicView.swift in Sources */,
 				FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */,
 				248B33822BA188A300611E93 /* TriggerType.swift in Sources */,
 				246055FC2B9D01D20016ACEA /* AppDelegate.swift in Sources */,
@@ -1423,6 +1468,9 @@
 				246717312B75A3A5002570DC /* ViewA.swift in Sources */,
 				246056012B9D09640016ACEA /* PlayerSliderViewModel.swift in Sources */,
 				248B33752BA133CB00611E93 /* NotificationManager.swift in Sources */,
+				FA6A3A092BA8EA10003D014B /* ReminderesView.swift in Sources */,
+				FA6A3A062BA8BE77003D014B /* TextToolbarContent.swift in Sources */,
+				FA6A3A0C2BA8EEBA003D014B /* ButtonDaysReminderes.swift in Sources */,
 				24501B512BA4D36E00112F63 /* PHImagePickerView.swift in Sources */,
 				FA66BC2F2BA115C00007ED39 /* MeditationView.swift in Sources */,
 				24A5B66D2B916AAF0041D7FA /* Preview.swift in Sources */,
