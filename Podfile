@@ -10,6 +10,7 @@ target 'MeditationAppUI' do
   pod 'FirebaseFirestore', '~> 10.22'
   pod 'FirebaseAuth', '~> 10.22'
   pod 'FirebaseAnalytics'
+  pod 'SDWebImageSwiftUI'
   
   target 'MeditationAppUITests' do
     inherit! :search_paths

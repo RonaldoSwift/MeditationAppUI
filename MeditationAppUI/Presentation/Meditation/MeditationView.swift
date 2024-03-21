@@ -5,10 +5,23 @@
 //  Created by Ronaldo Andre on 12/03/24.
 //
 
+import SDWebImageSwiftUI
 import SwiftUI
 
 struct MeditationView: View {
     @State var isActiveReminderes: Bool = false
+    @State private var showAlert: Bool = false
+    @State private var textoDeAlert: String = ""
+    @State private var showLoading: Bool = false
+    @State private var listCategory: [CategoryMeditation] = []
+    @State var url = URL(string: "https://via.placeholder.com/150x150.jpg")
+
+    var meditationViewModel = MeditationViewModel()
+
+    /**
+     imagen 1: https://atlas-content-cdn.pixelsquid.com/stock-images/simple-house-NxE5a78-600.jpg
+     imagen 2: https://png.pngtree.com/png-vector/20190114/ourmid/pngtree-vector-favorite-icon-png-image_313518.jpg
+     */
 
     var body: some View {
         NavigationView {
@@ -22,37 +35,15 @@ struct MeditationView: View {
 
                 ScrollView(.horizontal) {
                     HStack(spacing: 20) {
-                        Button(action: {}, label: {
-                            Image(ImageResource.alls)
-                                .padding()
-                                .background(Color.accentBackground1)
-                                .cornerRadius(10)
-                        })
-
-                        Button(action: {}, label: {
-                            Image(ImageResource.heart)
-                                .padding()
-                                .background(Color.accentBackground1)
-                                .cornerRadius(10)
-                        })
-                        Button(action: {}, label: {
-                            Image(ImageResource.anioxus)
-                                .padding()
-                                .background(Color.accentBackground1)
-                                .cornerRadius(10)
-                        })
-                        Button(action: {}, label: {
-                            Image(ImageResource.sleep)
-                                .padding()
-                                .background(Color.accentBackground1)
-                                .cornerRadius(10)
-                        })
-                        Button(action: {}, label: {
-                            Image(ImageResource.kids)
-                                .padding()
-                                .background(Color.accentBackground1)
-                                .cornerRadius(10)
-                        })
+                        ForEach(listCategory, id: \.id) { _ in
+                            Button(action: {}, label: {
+                                WebImage(
+                                    url: URL(string: "https://png.pngtree.com/png-vector/20190114/ourmid/pngtree-vector-favorite-icon-png-image_313518.jpg")
+                                )
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                            })
+                        }
                     }
                     .padding()
                 }
@@ -155,6 +146,34 @@ struct MeditationView: View {
             }
             .padding()
             .navigation(ReminderesView(), $isActiveReminderes)
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Error Category in FireBase"),
+                    message: Text(textoDeAlert),
+                    dismissButton: .default(
+                        Text("Entendido"),
+                        action: {
+                            // Acción al presionar el botón "Entendido"
+                        }
+                    )
+                )
+            }
+            .onReceive(meditationViewModel.$meditationUiState, perform: { meditationUiState in
+                switch meditationUiState {
+                case .initial:
+                    break
+                case .loading:
+                    break
+                case let .error(error):
+                    print("Error \(error)")
+
+                case let .success(listCategory):
+                    self.listCategory = listCategory
+                }
+            })
+            .onAppear(perform: {
+                meditationViewModel.getCategorias()
+            })
         }
     }
 }

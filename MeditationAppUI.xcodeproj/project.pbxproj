@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B96D1594C6A1AA0622C3784 /* Pods_MeditationAppUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C5EDA56157BCDB8458DE46 /* Pods_MeditationAppUI.framework */; };
 		20E3BC5D1A6DEF884033DEC8 /* Pods_MeditationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE927A3F73D50BD474EAE339 /* Pods_MeditationAppUITests.framework */; };
+		24489F572BACE3BE00E7AFD4 /* CategoryMeditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24489F562BACE3BE00E7AFD4 /* CategoryMeditation.swift */; };
+		24489F592BACE3DC00E7AFD4 /* MeditationUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24489F582BACE3DC00E7AFD4 /* MeditationUiState.swift */; };
+		24489F5B2BACE3EC00E7AFD4 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24489F5A2BACE3EC00E7AFD4 /* MeditationViewModel.swift */; };
 		24501B512BA4D36E00112F63 /* PHImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24501B502BA4D36E00112F63 /* PHImagePickerView.swift */; };
 		24501B532BA4F25400112F63 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24501B522BA4F25400112F63 /* ProfileView.swift */; };
 		246055FC2B9D01D20016ACEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246055FB2B9D01D20016ACEA /* AppDelegate.swift */; };
@@ -174,6 +177,9 @@
 		075476983E060833F06F5E87 /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2071FD1E787D4928419918FA /* Pods-MeditationAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2354AC3D0CAAEB26AD38095B /* Pods-MeditationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		24489F562BACE3BE00E7AFD4 /* CategoryMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMeditation.swift; sourceTree = "<group>"; };
+		24489F582BACE3DC00E7AFD4 /* MeditationUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationUiState.swift; sourceTree = "<group>"; };
+		24489F5A2BACE3EC00E7AFD4 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
 		24501B502BA4D36E00112F63 /* PHImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImagePickerView.swift; sourceTree = "<group>"; };
 		24501B522BA4F25400112F63 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		246055FB2B9D01D20016ACEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -651,6 +657,7 @@
 			children = (
 				FA5D771B2B9BFFE40001F101 /* User.swift */,
 				246056042B9D0A700016ACEA /* Song.swift */,
+				24489F562BACE3BE00E7AFD4 /* CategoryMeditation.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -659,6 +666,8 @@
 			isa = PBXGroup;
 			children = (
 				FA66BC2E2BA115C00007ED39 /* MeditationView.swift */,
+				24489F582BACE3DC00E7AFD4 /* MeditationUiState.swift */,
+				24489F5A2BACE3EC00E7AFD4 /* MeditationViewModel.swift */,
 			);
 			path = Meditation;
 			sourceTree = "<group>";
@@ -1459,6 +1468,7 @@
 				FA80F6932B718E1100B7796E /* GeneralButtonComponent.swift in Sources */,
 				FA5D77162B9BFBE10001F101 /* AuthenticationRepository.swift in Sources */,
 				FA5D771C2B9BFFE40001F101 /* User.swift in Sources */,
+				24489F5B2BACE3EC00E7AFD4 /* MeditationViewModel.swift in Sources */,
 				FA7BAA742B6C62C300B49752 /* MeditationAppUI.xcdatamodeld in Sources */,
 				2467172F2B75A3A5002570DC /* ViewD.swift in Sources */,
 				246717352B75A3A5002570DC /* View+Extension.swift in Sources */,
@@ -1469,11 +1479,13 @@
 				246717302B75A3A5002570DC /* NavigationModifier.swift in Sources */,
 				2460684A2B75E3CC003FD34E /* SplashRootView.swift in Sources */,
 				FA744B2D2B8D0A3B00AE3DF4 /* SignUpView.swift in Sources */,
+				24489F572BACE3BE00E7AFD4 /* CategoryMeditation.swift in Sources */,
 				246068582B75E790003FD34E /* HomeView.swift in Sources */,
 				FAB987A02B8D4738007292EB /* JSON.swift in Sources */,
 				FA6A3A102BA9203F003D014B /* ChooseTopicView.swift in Sources */,
 				FA7BAA682B6C62C200B49752 /* MeditationAppUIApp.swift in Sources */,
 				248B33822BA188A300611E93 /* TriggerType.swift in Sources */,
+				24489F592BACE3DC00E7AFD4 /* MeditationUiState.swift in Sources */,
 				246055FC2B9D01D20016ACEA /* AppDelegate.swift in Sources */,
 				FA5D77132B9BF7120001F101 /* FireBaseAuthDataSource.swift in Sources */,
 				246056032B9D0A470016ACEA /* PlayMusicView.swift in Sources */,
