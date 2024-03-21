@@ -823,7 +823,7 @@ DEPENDENCIES:
   - FirebaseAnalytics
   - FirebaseAuth (~> 10.22)
   - FirebaseFirestore (~> 10.22)
-  - SDWebImageSwiftUI
+  - SDWebImageSwiftUI (= 2.2.6)
 
 SPEC REPOS:
   trunk:
@@ -878,6 +878,6 @@ SPEC CHECKSUMS:
   SDWebImage: 981fd7e860af070920f249fd092420006014c3eb
   SDWebImageSwiftUI: 3a8448b76833ed0e954a651be6c6f45faceed29d
 
-PODFILE CHECKSUM: 0702c7acfad43988d8679fe82e413d24f3a2f672
+PODFILE CHECKSUM: f228be3cb942b90b0ac071baeee66df6a02a3465
 
 COCOAPODS: 1.15.2
