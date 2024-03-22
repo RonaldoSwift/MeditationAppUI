@@ -15,14 +15,9 @@ struct MeditationView: View {
     @State private var showLoading: Bool = false
     @State private var listCategory: [CategoryMeditation] = []
     @State var url = URL(string: "https://via.placeholder.com/150x150.jpg")
-
+    
     var meditationViewModel = MeditationViewModel()
-
-    /**
-     imagen 1: https://atlas-content-cdn.pixelsquid.com/stock-images/simple-house-NxE5a78-600.jpg
-     imagen 2: https://png.pngtree.com/png-vector/20190114/ourmid/pngtree-vector-favorite-icon-png-image_313518.jpg
-     */
-
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -32,22 +27,43 @@ struct MeditationView: View {
                 Text("We can learn how to recognize when our minds are doing their every acrobatics.")
                     .font(Fonts.HelveticaNeueCyr.medium.swiftUIFont(size: 15))
                     .foregroundStyle(Color.colorLetras)
-
+                
                 ScrollView(.horizontal) {
                     HStack(spacing: 20) {
-                        ForEach(listCategory, id: \.id) { _ in
-                            Button(action: {}, label: {
-                                WebImage(
-                                    url: URL(string: "https://png.pngtree.com/png-vector/20190114/ourmid/pngtree-vector-favorite-icon-png-image_313518.jpg")
-                                )
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                            })
+                        ForEach(listCategory, id: \.id) { (category: CategoryMeditation) in
+                            VStack{
+                                
+                                Button(action: {}, label: {
+                                    var colorFinal = if category.activo == true {
+                                        Color.colorButton
+                                    } else{
+                                        Color.colorLetras
+                                    }
+                                    
+                                    WebImage(
+                                        url: URL(string: category.icon)
+                                    )
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .padding()
+                                    .background(colorFinal)
+                                    .cornerRadius(25)
+                                })
+                                
+                                var colorText = if category.activo == true {
+                                    Color.black
+                                } else {
+                                    Color.colorLetras
+                                }
+                                
+                                Text(category.name)
+                                    .foregroundStyle(colorText)
+                            }
                         }
                     }
                     .padding()
                 }
-
+                
                 ZStack {
                     LinearGradient(
                         gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing
@@ -55,7 +71,7 @@ struct MeditationView: View {
                     .mask(RoundedRectangle(cornerRadius: 12))
                     .frame(width: 374, height: 95)
                     .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 0)
-
+                    
                     VStack(alignment: .leading) {
                         ZStack {
                             Image(ImageResource.fondDailyCalm)
@@ -65,7 +81,7 @@ struct MeditationView: View {
                                     Text("Daily Calm")
                                         .foregroundStyle(Color.black)
                                         .font(.custom("HelveticaNeueCyr-Bold", size: 20))
-
+                                    
                                     HStack {
                                         Text("APR 30 *")
                                         Text("PAUSE PRACTICE")
@@ -75,7 +91,7 @@ struct MeditationView: View {
                                     .padding(.top, 5)
                                 }
                                 .padding(.trailing, 120)
-
+                                
                                 Button(action: {}, label: {
                                     Image(ImageResource.playBlack)
                                 })
@@ -90,13 +106,13 @@ struct MeditationView: View {
                     .foregroundColor(Color.white)
                     .cornerRadius(12)
                 }
-
+                
                 ScrollView(.vertical) {
                     VStack {
                         HStack(spacing: 20) {
                             Button(action: {
                                 isActiveReminderes = true
-
+                                
                             }, label: {
                                 ZStack {
                                     Image(ImageResource.daysOfCalm)
@@ -108,7 +124,7 @@ struct MeditationView: View {
                                         .foregroundColor(Color.white)
                                 }
                             })
-
+                            
                             ZStack {
                                 Image(ImageResource.anxietRelease)
                                     .cornerRadius(10)
@@ -119,7 +135,7 @@ struct MeditationView: View {
                                     .foregroundColor(Color.white)
                             }
                         }
-
+                        
                         HStack(spacing: 20) {
                             ZStack {
                                 Image(ImageResource.dais)
@@ -130,7 +146,7 @@ struct MeditationView: View {
                                     .font(Fonts.HelveticaNeueCyr.medium.swiftUIFont(size: 22))
                                     .foregroundColor(Color.white)
                             }
-
+                            
                             ZStack {
                                 Image(ImageResource.ambiente)
                                     .cornerRadius(10)
@@ -166,7 +182,7 @@ struct MeditationView: View {
                     break
                 case let .error(error):
                     print("Error \(error)")
-
+                    
                 case let .success(listCategory):
                     self.listCategory = listCategory
                 }

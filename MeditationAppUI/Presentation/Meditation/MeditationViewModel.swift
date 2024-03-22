@@ -34,7 +34,8 @@ final class MeditationViewModel {
                     let data = document.data()
                     let name = data["name"] as? String
                     let icon = data["icon"] as? String
-                    listaDeCategorias.append(CategoryMeditation(name: name ?? "No trajo", icon: icon ?? "No trajo"))
+                    let activo = data["activo"] as? Bool
+                    listaDeCategorias.append(CategoryMeditation(name: name ?? "No trajo", icon: icon ?? "No trajo", activo: activo ?? false))
                 }
                 self.meditationUiState = MeditationUiState.success(listaDeCategorias)
             }

@@ -11,4 +11,5 @@ struct CategoryMeditation: Codable, Identifiable {
     var id: String = UUID().uuidString
     let name: String
     let icon: String
+    let activo: Bool
 }
