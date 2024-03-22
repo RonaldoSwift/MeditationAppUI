@@ -31,8 +31,7 @@ struct MeditationView: View {
                 ScrollView(.horizontal) {
                     HStack(spacing: 20) {
                         ForEach(listCategory, id: \.id) { (category: CategoryMeditation) in
-                            VStack{
-                                
+                            VStack {
                                 Button(action: {}, label: {
                                     var colorFinal = if category.activo == true {
                                         Color.colorButton
