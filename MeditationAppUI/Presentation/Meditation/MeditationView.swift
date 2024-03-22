@@ -35,7 +35,7 @@ struct MeditationView: View {
                                 Button(action: {}, label: {
                                     var colorFinal = if category.activo == true {
                                         Color.colorButton
-                                    } else{
+                                    } else {
                                         Color.colorLetras
                                     }
                                     
