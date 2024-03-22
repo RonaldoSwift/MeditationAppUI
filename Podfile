@@ -10,6 +10,7 @@ target 'MeditationAppUI' do
   pod 'FirebaseFirestore', '~> 10.22'
   pod 'FirebaseAuth', '~> 10.22'
   pod 'FirebaseAnalytics'
+  pod 'SDWebImageSwiftUI', '2.2.6'
   
   target 'MeditationAppUITests' do
     inherit! :search_paths
@@ -43,7 +44,7 @@ end
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
-            config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+            # config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64" -// CUIDADO!!! esto genera un error con FireStore
             config.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = ''
             config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
             config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
