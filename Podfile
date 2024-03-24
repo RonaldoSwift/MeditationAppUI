@@ -6,11 +6,12 @@ target 'MeditationAppUI' do
   use_frameworks!
   
   # Pods for MeditationAppUI
-  pod 'Alamofire', '~> 5.9'
-  pod 'FirebaseFirestore', '~> 10.22'
-  pod 'FirebaseAuth', '~> 10.22'
+  pod 'Alamofire', '5.9.0'
+  pod 'FirebaseFirestore', '10.22.0'
+  pod 'FirebaseAuth', '10.22.0'
   pod 'FirebaseAnalytics'
   pod 'SDWebImageSwiftUI', '2.2.6'
+  pod 'Swinject', '2.8.3'
   
   target 'MeditationAppUITests' do
     inherit! :search_paths

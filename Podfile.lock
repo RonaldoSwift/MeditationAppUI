@@ -817,13 +817,15 @@ PODS:
   - SDWebImage/Core (5.19.0)
   - SDWebImageSwiftUI (2.2.6):
     - SDWebImage (~> 5.10)
+  - Swinject (2.8.3)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.9)
+  - Alamofire (= 5.9.0)
   - FirebaseAnalytics
-  - FirebaseAuth (~> 10.22)
-  - FirebaseFirestore (~> 10.22)
+  - FirebaseAuth (= 10.22.0)
+  - FirebaseFirestore (= 10.22.0)
   - SDWebImageSwiftUI (= 2.2.6)
+  - Swinject (= 2.8.3)
 
 SPEC REPOS:
   trunk:
@@ -851,6 +853,7 @@ SPEC REPOS:
     - RecaptchaInterop
     - SDWebImage
     - SDWebImageSwiftUI
+    - Swinject
 
 SPEC CHECKSUMS:
   abseil: 926fb7a82dc6d2b8e1f2ed7f3a718bce691d1e46
@@ -877,7 +880,8 @@ SPEC CHECKSUMS:
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
   SDWebImage: 981fd7e860af070920f249fd092420006014c3eb
   SDWebImageSwiftUI: 3a8448b76833ed0e954a651be6c6f45faceed29d
+  Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
 
-PODFILE CHECKSUM: b12fd5d3fa3f80df0fda8e2503e43d422e195c01
+PODFILE CHECKSUM: 4214df9c0184176340420f7dbb8642976a5c32d2
 
 COCOAPODS: 1.15.2
