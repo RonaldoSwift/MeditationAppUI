@@ -20,11 +20,7 @@ struct SignUpView: View {
 
     @EnvironmentObject private var appRootManager: AppRootManager
 
-    @StateObject private var signUpViewModel = SignUpViewModel(
-        authenticationRepository: AuthenticationRepository(
-            fireBaseAuthDataSource: FireBaseAuthDataSource(), memoriaLogin: MemoriaLogin()
-        )
-    )
+    @StateObject private var signUpViewModel = Injector.container.resolve(SignUpViewModel.self)!
 
     var body: some View {
         VStack(alignment: .center) {

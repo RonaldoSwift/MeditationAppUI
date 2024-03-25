@@ -17,6 +17,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         // Local Notifications
         UNUserNotificationCenter.current().delegate = self
         NotificationManager.shared.requestPermissionForLocalNotification()
+
+        // Swinject
+        Injector.registerDependencies()
         return true
     }
 }

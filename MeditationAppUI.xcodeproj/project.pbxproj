@@ -14,6 +14,7 @@
 		24489F5B2BACE3EC00E7AFD4 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24489F5A2BACE3EC00E7AFD4 /* MeditationViewModel.swift */; };
 		24501B512BA4D36E00112F63 /* PHImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24501B502BA4D36E00112F63 /* PHImagePickerView.swift */; };
 		24501B532BA4F25400112F63 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24501B522BA4F25400112F63 /* ProfileView.swift */; };
+		24556DC62BAF8FA10046D20A /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24556DC52BAF8FA10046D20A /* Injector.swift */; };
 		246055FC2B9D01D20016ACEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246055FB2B9D01D20016ACEA /* AppDelegate.swift */; };
 		246055FF2B9D09360016ACEA /* MusicMediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246055FE2B9D09360016ACEA /* MusicMediaPlayer.swift */; };
 		246056012B9D09640016ACEA /* PlayerSliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246056002B9D09640016ACEA /* PlayerSliderViewModel.swift */; };
@@ -182,6 +183,7 @@
 		24489F5A2BACE3EC00E7AFD4 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
 		24501B502BA4D36E00112F63 /* PHImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImagePickerView.swift; sourceTree = "<group>"; };
 		24501B522BA4F25400112F63 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		24556DC52BAF8FA10046D20A /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		246055FB2B9D01D20016ACEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		246055FE2B9D09360016ACEA /* MusicMediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMediaPlayer.swift; sourceTree = "<group>"; };
 		246056002B9D09640016ACEA /* PlayerSliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSliderViewModel.swift; sourceTree = "<group>"; };
@@ -370,6 +372,14 @@
 				24501B522BA4F25400112F63 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		24556DC42BAF8F4A0046D20A /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				24556DC52BAF8FA10046D20A /* Injector.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		246055FD2B9D09150016ACEA /* PlayMusic */ = {
@@ -820,6 +830,7 @@
 		FA7BAA662B6C62C200B49752 /* MeditationAppUI */ = {
 			isa = PBXGroup;
 			children = (
+				24556DC42BAF8F4A0046D20A /* DI */,
 				248B33732BA133B700611E93 /* Notifications */,
 				FA6C4D272BAD249400832978 /* GoogleService-Info.plist */,
 				FA80F6DE2B71B90600B7796E /* Info.plist */,
@@ -1506,6 +1517,7 @@
 				FA718AF52B92409800427EA6 /* PrincipalView.swift in Sources */,
 				24A5B6482B90F12D0041D7FA /* PrimaryButton.swift in Sources */,
 				FA5D77202B9C037E0001F101 /* SignInUiState.swift in Sources */,
+				24556DC62BAF8FA10046D20A /* Injector.swift in Sources */,
 				FA9397D42BA2AE0700988B1C /* HappyMorningView.swift in Sources */,
 				248B337B2BA177C000611E93 /* NotificationAttachment+Extensions.swift in Sources */,
 				FA849B442B9F67FB00D05092 /* FireBaseSignUp.swift in Sources */,
