@@ -33,7 +33,7 @@ struct MeditationView: View {
                         ForEach(listCategory, id: \.id) { (category: CategoryMeditation) in
                             VStack {
                                 Button(action: {}, label: {
-                                    var colorFinal = if category.activo == true {
+                                    let colorFinal = if category.activo == true {
                                         Color.colorButton
                                     } else {
                                         Color.colorLetras
@@ -49,7 +49,7 @@ struct MeditationView: View {
                                     .cornerRadius(25)
                                 })
                                 
-                                var colorText = if category.activo == true {
+                                let colorText = if category.activo == true {
                                     Color.black
                                 } else {
                                     Color.colorLetras
