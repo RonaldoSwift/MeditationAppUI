@@ -16,7 +16,7 @@ struct MeditationView: View {
     @State private var listCategory: [CategoryMeditation] = []
     @State var url = URL(string: "https://via.placeholder.com/150x150.jpg")
 
-    var meditationViewModel = MeditationViewModel()
+    var meditationViewModel = Injector.container.resolve(MeditationViewModel.self)!
 
     var body: some View {
         NavigationView {

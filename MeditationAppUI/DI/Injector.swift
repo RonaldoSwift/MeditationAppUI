@@ -30,10 +30,20 @@ enum Injector {
         }
 
         // ViewModels
-        container._register(SignInViewModel.self) { (resolver: Resolver) in
+        container.register(SignInViewModel.self) { (resolver: Resolver) in
             SignInViewModel(
                 authenticationRepository: resolver.resolve(AuthenticationRepository.self)!
             )
+        }
+        
+        container.register(SignUpViewModel.self) { (resolver: Resolver) in
+            SignUpViewModel(
+                authenticationRepository: resolver.resolve(AuthenticationRepository.self)!
+            )
+        }
+        
+        container.register(MeditationViewModel.self) { (resolver: Resolver) in
+            MeditationViewModel()
         }
     }
 }
