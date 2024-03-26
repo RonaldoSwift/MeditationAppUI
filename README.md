@@ -84,6 +84,10 @@ brew install sourcery
 * Factory
 * Github Actions - https://medium.com/adessoturkey/github-actions-with-swift-5b3da0dbad00
 * iOS Design Guidelines - https://experience.sap.com/fiori-design-ios/article/colors/#horizon-theme
+* SDWebImageSwiftUI (Download images from URL) - https://github.com/SDWebImage/SDWebImageSwiftUI
+* Swinject (For dependency Injection) - https://github.com/Swinject/Swinject
+* Keychain (Store encrypted data) - https://github.com/kishikawakatsumi/KeychainAccess?tab=readme-ov-file
+
 
 ## Especificaciones
 

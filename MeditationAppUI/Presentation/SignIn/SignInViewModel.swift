@@ -10,6 +10,7 @@ import Foundation
 
 final class SignInViewModel: ObservableObject {
     let authenticationRepository: AuthenticationRepository
+    let keychainManager = Injector.container.resolve(KeychainManager.self)!
 
     @Published private(set) var signInState = SignInUiState.initial
 
@@ -29,6 +30,7 @@ final class SignInViewModel: ObservableObject {
 
             self.authenticationRepository.saveUserLoggedInCache(isLogged: true)
 
+            self.keychainManager.setUserEmail(email: user.email)
             self.signInState = SignInUiState.success(user)
         }
     }

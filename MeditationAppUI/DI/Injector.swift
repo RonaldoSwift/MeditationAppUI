@@ -13,6 +13,10 @@ enum Injector {
 
     static func registerDependencies() {
         // Data
+        container.register(KeychainManager.self) { _ in
+            KeychainManager()
+        }
+
         container.register(MemoriaLogin.self) { _ in
             MemoriaLogin()
         }
@@ -35,14 +39,14 @@ enum Injector {
                 authenticationRepository: resolver.resolve(AuthenticationRepository.self)!
             )
         }
-        
+
         container.register(SignUpViewModel.self) { (resolver: Resolver) in
             SignUpViewModel(
                 authenticationRepository: resolver.resolve(AuthenticationRepository.self)!
             )
         }
-        
-        container.register(MeditationViewModel.self) { (resolver: Resolver) in
+
+        container.register(MeditationViewModel.self) { (_: Resolver) in
             MeditationViewModel()
         }
     }

@@ -12,6 +12,7 @@ target 'MeditationAppUI' do
   pod 'FirebaseAnalytics'
   pod 'SDWebImageSwiftUI', '2.2.6'
   pod 'Swinject', '2.8.3'
+  pod 'KeychainAccess', '4.2.2'
   
   target 'MeditationAppUITests' do
     inherit! :search_paths
