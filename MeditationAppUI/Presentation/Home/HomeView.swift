@@ -5,12 +5,20 @@
 //  Created by Carlos Leonardo Camilo Vargas Huaman on 8/02/24.
 //
 
+import SDWebImageSwiftUI
 import SwiftUI
 
 struct HomeView: View {
     @State var isActivePlayMusic: Bool = false
     @State var isActiveHappyMorning: Bool = false
     @State var isActiveChooseTopic: Bool = false
+    @State private var showAlert: Bool = false
+    @State private var mensajeDeAlerta: String = ""
+    @State private var showLoading: Bool = false
+
+    @State private var listHomeCategory: [HomeMeditation] = []
+    var homeViewModel = Injector.container.resolve(HomeViewModel.self)!
+    @State var url = URL(string: "https://via.placeholder.com/150x150.jpg")
 
     var body: some View {
         NavigationView {
@@ -178,97 +186,31 @@ struct HomeView: View {
                     .padding(.trailing, 100)
                     .padding(.top, 20)
 
-                ScrollView(.horizontal) {
-                    HStack {
-                        Button(action: {}, label: {
-                            VStack(alignment: .leading) {
-                                ZStack {
-                                    LinearGradient(
-                                        gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing
-                                    )
-                                    .mask(RoundedRectangle(cornerRadius: 12))
-                                    .frame(width: 162, height: 113)
-                                    .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 0)
-
+                ZStack(alignment: .center) {
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(listHomeCategory, id: \.id) { (home: HomeMeditation) in
+                                Button(action: {}, label: {
                                     VStack(alignment: .leading) {
-                                        Image(ImageResource.focus)
-                                            .padding(.bottom, 30)
+                                        VStack(alignment: .leading) {
+                                            WebImage(
+                                                url: URL(string: home.icon)
+                                            )
+                                        }
+                                        Text(home.mame)
+                                            .font(.custom("HelveticaNeueCyr-Bold", size: 25))
+                                            .foregroundColor(Color.black)
+                                        Text(home.textMeditation)
+                                            .font(.custom("HelveticaNeueCyr-Light", size: 13))
+                                            .foregroundStyle(Color.colorLetras)
                                     }
-                                    .padding(.top, 38)
-                                    .frame(width: 162, height: 113)
-                                    .background(Color.accentBackgroundCard3)
-                                    .foregroundColor(Color.accentLabel1)
-                                    .cornerRadius(12)
-                                }
-
-                                Text("Focus")
-                                    .font(.custom("HelveticaNeueCyr-Bold", size: 25))
-                                    .foregroundColor(Color.black)
-                                Text("MEDITATION * 3-10 MIN")
-                                    .font(.custom("HelveticaNeueCyr-Light", size: 13))
-                                    .foregroundStyle(Color.colorLetras)
+                                })
                             }
-                        })
+                        }
+                    }
 
-                        Button(action: {}, label: {
-                            VStack(alignment: .leading) {
-                                ZStack {
-                                    LinearGradient(
-                                        gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing
-                                    )
-                                    .mask(RoundedRectangle(cornerRadius: 12))
-                                    .frame(width: 162, height: 113)
-                                    .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 0)
-
-                                    VStack(alignment: .leading) {
-                                        Image(ImageResource.happiness)
-                                            .padding(.bottom, 40)
-                                    }
-                                    .padding(.top, 38)
-                                    .frame(width: 162, height: 113)
-                                    .background(Color.accentBackgroundCard4)
-                                    .foregroundColor(Color.accentLabel1)
-                                    .cornerRadius(12)
-                                }
-
-                                Text("Happiness")
-                                    .font(.custom("HelveticaNeueCyr-Bold", size: 25))
-                                    .foregroundColor(Color.black)
-                                Text("MEDITATION * 3-10 MIN")
-                                    .font(.custom("HelveticaNeueCyr-Light", size: 13))
-                                    .foregroundStyle(Color.colorLetras)
-                            }
-                        })
-
-                        Button(action: {}, label: {
-                            VStack(alignment: .leading) {
-                                ZStack {
-                                    LinearGradient(
-                                        gradient: Gradient(colors: [Color.white, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing
-                                    )
-                                    .mask(RoundedRectangle(cornerRadius: 12))
-                                    .frame(width: 162, height: 113)
-                                    .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 0)
-
-                                    VStack(alignment: .leading) {
-                                        Image(ImageResource.focus)
-                                            .padding(.bottom, 30)
-                                    }
-                                    .padding(.top, 38)
-                                    .frame(width: 162, height: 113)
-                                    .background(Color.accentBackgroundCard3)
-                                    .foregroundColor(Color.accentLabel1)
-                                    .cornerRadius(12)
-                                }
-
-                                Text("Focus")
-                                    .font(.custom("HelveticaNeueCyr-Bold", size: 25))
-                                    .foregroundColor(Color.black)
-                                Text("MEDITATION * 3-10 MIN")
-                                    .font(.custom("HelveticaNeueCyr-Light", size: 13))
-                                    .foregroundStyle(Color.colorLetras)
-                            }
-                        })
+                    if showLoading == true {
+                        ProgressView()
                     }
                 }
             }
@@ -276,6 +218,37 @@ struct HomeView: View {
             .navigation(PlayMusicView(musicMediaplayer: MusicMediaPlayer()), $isActivePlayMusic)
             .navigation(HappyMorningView(), $isActiveHappyMorning)
             .navigation(ChooseTopicView(), $isActiveChooseTopic)
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Fallo"),
+                    message: Text(mensajeDeAlerta),
+                    dismissButton: .default(
+                        Text("Entendido"),
+                        action: {
+                            // Acción al presionar el botón "Entendido"
+                        }
+                    )
+                )
+            }
+            .onReceive(homeViewModel.$homeUiState, perform: { homeUiState in
+                switch homeUiState {
+                case .initial:
+                    break
+                case .loading:
+                    showLoading = true
+                case let .error(mensajeDeError):
+                    mensajeDeAlerta = mensajeDeError
+                    showLoading = false
+                    showAlert = true
+
+                case let .success(listHomeCategory):
+                    self.listHomeCategory = listHomeCategory
+                    showLoading = false
+                }
+            })
+            .onAppear(perform: {
+                homeViewModel.getCategorias()
+            })
         }
     }
 }

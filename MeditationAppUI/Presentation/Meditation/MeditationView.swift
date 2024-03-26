@@ -11,8 +11,8 @@ import SwiftUI
 struct MeditationView: View {
     @State var isActiveReminderes: Bool = false
     @State private var showAlert: Bool = false
-    @State private var textoDeAlert: String = ""
     @State private var showLoading: Bool = false
+    @State private var mensajeDeAlerta: String = ""
     @State private var listCategory: [CategoryMeditation] = []
     @State var url = URL(string: "https://via.placeholder.com/150x150.jpg")
 
@@ -28,39 +28,46 @@ struct MeditationView: View {
                     .font(Fonts.HelveticaNeueCyr.medium.swiftUIFont(size: 15))
                     .foregroundStyle(Color.colorLetras)
 
-                ScrollView(.horizontal) {
-                    HStack(spacing: 20) {
-                        ForEach(listCategory, id: \.id) { (category: CategoryMeditation) in
-                            VStack {
-                                Button(action: {}, label: {
-                                    var colorFinal = if category.activo == true {
-                                        Color.colorButton
+                ZStack(alignment: .center) {
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 20) {
+                            ForEach(listCategory, id: \.id) { (category: CategoryMeditation) in
+                                VStack {
+                                    Button(action: {}, label: {
+                                        let colorFinal = if category.activo == true {
+                                            Color.colorButton
+                                        } else {
+                                            Color.colorLetras
+                                        }
+
+                                        WebImage(
+                                            url: URL(string: category.icon)
+                                        )
+                                        .resizable()
+                                        .frame(width: 30, height: 30)
+                                        .padding()
+                                        .background(colorFinal)
+                                        .cornerRadius(25)
+                                    })
+
+                                    let colorText = if category.activo == true {
+                                        Color.black
                                     } else {
                                         Color.colorLetras
                                     }
 
-                                    WebImage(
-                                        url: URL(string: category.icon)
-                                    )
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding()
-                                    .background(colorFinal)
-                                    .cornerRadius(25)
-                                })
-
-                                var colorText = if category.activo == true {
-                                    Color.black
-                                } else {
-                                    Color.colorLetras
+                                    Text(category.name)
+                                        .foregroundStyle(colorText)
                                 }
-
-                                Text(category.name)
-                                    .foregroundStyle(colorText)
                             }
                         }
+                        .padding()
                     }
-                    .padding()
+
+                    // LOADING
+                    if showLoading == true {
+                        ProgressView()
+                    }
                 }
 
                 ZStack {
@@ -163,8 +170,8 @@ struct MeditationView: View {
             .navigation(ReminderesView(), $isActiveReminderes)
             .alert(isPresented: $showAlert) {
                 Alert(
-                    title: Text("Error Category in FireBase"),
-                    message: Text(textoDeAlert),
+                    title: Text("Fallo"),
+                    message: Text(mensajeDeAlerta),
                     dismissButton: .default(
                         Text("Entendido"),
                         action: {
@@ -178,12 +185,17 @@ struct MeditationView: View {
                 case .initial:
                     break
                 case .loading:
-                    break
-                case let .error(error):
-                    print("Error \(error)")
+
+                    showLoading = true
+
+                case let .error(mensajeDeError):
+                    mensajeDeAlerta = mensajeDeError
+                    showLoading = false
+                    showAlert = true
 
                 case let .success(listCategory):
                     self.listCategory = listCategory
+                    showLoading = false
                 }
             })
             .onAppear(perform: {

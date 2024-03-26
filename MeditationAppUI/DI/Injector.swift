@@ -49,5 +49,9 @@ enum Injector {
         container.register(MeditationViewModel.self) { (_: Resolver) in
             MeditationViewModel()
         }
+
+        container.register(HomeViewModel.self) { (_: Resolver) in
+            HomeViewModel()
+        }
     }
 }
