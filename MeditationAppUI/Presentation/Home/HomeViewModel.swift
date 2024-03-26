@@ -21,6 +21,7 @@ final class HomeViewModel {
         let collectionCategoria = firestore.collection("home_meditation")
         
         collectionCategoria.getDocuments { (querySnapshot:QuerySnapshot?, error:Error?) in
+            
             if let errorNoNull = error {
                 self.homeUiState = HomeUiState.error(errorNoNull.localizedDescription)
                 return

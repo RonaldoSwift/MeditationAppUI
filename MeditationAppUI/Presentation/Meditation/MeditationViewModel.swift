@@ -21,9 +21,7 @@ final class MeditationViewModel {
         collectionCategoria.getDocuments { (querySnapshot: QuerySnapshot?, error: Error?) in
 
             if let errornoNull = error {
-                self.meditationUiState = MeditationUiState.error("\(errornoNull)")
-
-                print("\(errornoNull.localizedDescription)")
+                self.meditationUiState = MeditationUiState.error("\(errornoNull.localizedDescription)")
                 return
             }
 
