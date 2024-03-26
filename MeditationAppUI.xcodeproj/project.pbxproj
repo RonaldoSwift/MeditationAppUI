@@ -184,6 +184,7 @@
 		075476983E060833F06F5E87 /* Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests/Pods-MeditationDarkAppUI-MeditationDarkAppUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2071FD1E787D4928419918FA /* Pods-MeditationAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2354AC3D0CAAEB26AD38095B /* Pods-MeditationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeditationAppUITests/Pods-MeditationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		240FF9A82BB272A2007C7631 /* MainLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainLogo.png; sourceTree = "<group>"; };
 		24489F562BACE3BE00E7AFD4 /* CategoryMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMeditation.swift; sourceTree = "<group>"; };
 		24489F582BACE3DC00E7AFD4 /* MeditationUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationUiState.swift; sourceTree = "<group>"; };
 		24489F5A2BACE3EC00E7AFD4 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
@@ -234,7 +235,6 @@
 		24A5B6642B9118EC0041D7FA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		24A5B66A2B911D190041D7FA /* swift.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swift.yml; sourceTree = "<group>"; };
 		24A5B66C2B916AAF0041D7FA /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
-		24A5B6702B9189F50041D7FA /* MainLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainLogo.png; sourceTree = "<group>"; };
 		24A5B6722B918EC70041D7FA /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
 		32058853FCAD98FEB2242201 /* Pods-MeditationAppUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeditationAppUI.release.xcconfig"; path = "Target Support Files/Pods-MeditationAppUI/Pods-MeditationAppUI.release.xcconfig"; sourceTree = "<group>"; };
 		36E0595308A370346E3716DF /* Pods_MeditationDarkAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeditationDarkAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -630,7 +630,7 @@
 		24A5B66F2B9189780041D7FA /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				24A5B6702B9189F50041D7FA /* MainLogo.png */,
+				240FF9A82BB272A2007C7631 /* MainLogo.png */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
