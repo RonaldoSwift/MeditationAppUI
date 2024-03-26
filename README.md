@@ -14,12 +14,12 @@ Esta aplicación permite al usuario iniciar sesión, registrarse, verificar sald
 
 ## Important!
 
-1. Los miembros del equipo tienen que tener la misma version de cocoapods (`brew upgrade cocoapods`).
-2. Por mas que tengas la misma version, aveces no se puede instalar una version especifica (pod 'Alamofire', '~> 5.9’), para eso necesitamos `pod search Alamofire —simple`
-3. Finalmente hacemos `pod update`
-4. Finalmente pod install 
-5. El desarrollador que tiene la computador con la arquitecture chip silicon, debería configurar e instalar las primeras libs en el proyecto.
-6. Go to the root and run `chmod +x .git/hooks/pre-commit` if there's a problem when doing commits (`'The '.git/hooks/pre-commit' hook was ignored`)
+1. Go to the root and run `chmod +x .git/hooks/pre-commit` if there's a problem when doing commits (`'The '.git/hooks/pre-commit' hook was ignored`)
+2. Los miembros del equipo tienen que tener la misma version de cocoapods (`brew upgrade cocoapods`).
+3. Por mas que tengas la misma version, aveces no se puede instalar una version especifica (pod 'Alamofire', '~> 5.9’), para eso necesitamos `pod search Alamofire —simple`
+4. Finalmente hacemos `pod update`
+5. Finalmente pod install 
+6. El desarrollador que tiene la computador con la arquitecture chip silicon, debería configurar e instalar las primeras libs en el proyecto.
 7. If you get an error message popup `Commit Failed` when commiting, just ignore it (xcode doesn't show a better title when using pre-commit hook).
 
 ## Prerequisites
