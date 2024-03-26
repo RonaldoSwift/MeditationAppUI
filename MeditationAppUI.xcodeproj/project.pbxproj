@@ -89,6 +89,9 @@
 		FA5D77202B9C037E0001F101 /* SignInUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D771F2B9C037E0001F101 /* SignInUiState.swift */; };
 		FA5F00B62B79A70500F2AD0F /* ViewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246717282B75A3A4002570DC /* ViewD.swift */; };
 		FA5F00B72B79A76700F2AD0F /* MeditationDarkAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB106092B79A06300D1C783 /* MeditationDarkAppUIApp.swift */; };
+		FA620FD12BB101FB00100192 /* HomeMeditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA620FD02BB101FB00100192 /* HomeMeditation.swift */; };
+		FA620FD32BB102FA00100192 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA620FD22BB102FA00100192 /* HomeViewModel.swift */; };
+		FA620FD52BB1031300100192 /* HomeUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA620FD42BB1031300100192 /* HomeUiState.swift */; };
 		FA66BC2F2BA115C00007ED39 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66BC2E2BA115C00007ED39 /* MeditationView.swift */; };
 		FA6A3A062BA8BE77003D014B /* TextToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A3A052BA8BE77003D014B /* TextToolbarContent.swift */; };
 		FA6A3A092BA8EA10003D014B /* ReminderesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A3A082BA8EA10003D014B /* ReminderesView.swift */; };
@@ -252,6 +255,9 @@
 		FA5D771B2B9BFFE40001F101 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA5D771D2B9C02120001F101 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		FA5D771F2B9C037E0001F101 /* SignInUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUiState.swift; sourceTree = "<group>"; };
+		FA620FD02BB101FB00100192 /* HomeMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMeditation.swift; sourceTree = "<group>"; };
+		FA620FD22BB102FA00100192 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FA620FD42BB1031300100192 /* HomeUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUiState.swift; sourceTree = "<group>"; };
 		FA66BC2E2BA115C00007ED39 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		FA6A3A052BA8BE77003D014B /* TextToolbarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToolbarContent.swift; sourceTree = "<group>"; };
 		FA6A3A082BA8EA10003D014B /* ReminderesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderesView.swift; sourceTree = "<group>"; };
@@ -446,6 +452,8 @@
 			isa = PBXGroup;
 			children = (
 				246068572B75E790003FD34E /* HomeView.swift */,
+				FA620FD22BB102FA00100192 /* HomeViewModel.swift */,
+				FA620FD42BB1031300100192 /* HomeUiState.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -690,6 +698,7 @@
 				FA5D771B2B9BFFE40001F101 /* User.swift */,
 				246056042B9D0A700016ACEA /* Song.swift */,
 				24489F562BACE3BE00E7AFD4 /* CategoryMeditation.swift */,
+				FA620FD02BB101FB00100192 /* HomeMeditation.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -1496,6 +1505,7 @@
 			files = (
 				FA99650D2BAA8A39005EDFB9 /* MemoriaLogin.swift in Sources */,
 				FA849B482B9F6B4C00D05092 /* SignUpUiState.swift in Sources */,
+				FA620FD52BB1031300100192 /* HomeUiState.swift in Sources */,
 				2460684D2B75E415003FD34E /* AuthenticationRootView.swift in Sources */,
 				246068522B75E66D003FD34E /* SplashView.swift in Sources */,
 				FA80F6932B718E1100B7796E /* GeneralButtonComponent.swift in Sources */,
@@ -1513,6 +1523,7 @@
 				2460684A2B75E3CC003FD34E /* SplashRootView.swift in Sources */,
 				FA744B2D2B8D0A3B00AE3DF4 /* SignUpView.swift in Sources */,
 				24556DD12BAFC3950046D20A /* CameraManager.swift in Sources */,
+				FA620FD12BB101FB00100192 /* HomeMeditation.swift in Sources */,
 				24489F572BACE3BE00E7AFD4 /* CategoryMeditation.swift in Sources */,
 				246068582B75E790003FD34E /* HomeView.swift in Sources */,
 				FAB987A02B8D4738007292EB /* JSON.swift in Sources */,
@@ -1552,6 +1563,7 @@
 				2496130F2B8FA97D003FF94E /* WelcomeView.swift in Sources */,
 				246055FF2B9D09360016ACEA /* MusicMediaPlayer.swift in Sources */,
 				246717342B75A3A5002570DC /* ViewB.swift in Sources */,
+				FA620FD32BB102FA00100192 /* HomeViewModel.swift in Sources */,
 				246068472B75DF57003FD34E /* AppRootManager.swift in Sources */,
 				FA80F68D2B7150C600B7796E /* SilentMoonView.swift in Sources */,
 				FA71AEA72B72EBE9009820E0 /* SignInView.swift in Sources */,
