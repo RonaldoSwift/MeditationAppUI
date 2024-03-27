@@ -18,6 +18,10 @@ struct ProfileView: View {
     @State private var image: Image = Image(ImageResource.profileCamera)
     @State private var inputUIImage: UIImage?
 
+    @EnvironmentObject private var appRootManager: AppRootManager
+
+    @StateObject private var profileViewModel = Injector.container.resolve(ProfileViewModel.self)!
+
     var body: some View {
         VStack {
             HStack {
@@ -56,7 +60,10 @@ struct ProfileView: View {
                 Text("Mostrar Notification con Imagen")
             })
 
-            Button(action: {}, label: {
+            Button(action: {
+                profileViewModel.logout()
+                appRootManager.currentRoot = .authentication
+            }, label: {
                 Text("Cerra Sesión")
             })
             Spacer()

@@ -23,6 +23,8 @@ struct MeditationAppUIApp: App {
                 case .splash:
                     if memoriaLogin.getUserLogged() == true {
                         PrincipalRootView()
+                    } else if memoriaLogin.getSplashVisto() == true {
+                        AuthenticationRootView()
                     } else {
                         SplashRootView()
                     }

@@ -92,6 +92,8 @@
 		FA620FD12BB101FB00100192 /* HomeMeditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA620FD02BB101FB00100192 /* HomeMeditation.swift */; };
 		FA620FD32BB102FA00100192 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA620FD22BB102FA00100192 /* HomeViewModel.swift */; };
 		FA620FD52BB1031300100192 /* HomeUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA620FD42BB1031300100192 /* HomeUiState.swift */; };
+		FA6660BF2BB36223000FD5A4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6660BE2BB36223000FD5A4 /* ProfileViewModel.swift */; };
+		FA6660C12BB39671000FD5A4 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6660C02BB39671000FD5A4 /* WelcomeViewModel.swift */; };
 		FA66BC2F2BA115C00007ED39 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66BC2E2BA115C00007ED39 /* MeditationView.swift */; };
 		FA6A3A062BA8BE77003D014B /* TextToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A3A052BA8BE77003D014B /* TextToolbarContent.swift */; };
 		FA6A3A092BA8EA10003D014B /* ReminderesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A3A082BA8EA10003D014B /* ReminderesView.swift */; };
@@ -258,6 +260,8 @@
 		FA620FD02BB101FB00100192 /* HomeMeditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMeditation.swift; sourceTree = "<group>"; };
 		FA620FD22BB102FA00100192 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FA620FD42BB1031300100192 /* HomeUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUiState.swift; sourceTree = "<group>"; };
+		FA6660BE2BB36223000FD5A4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FA6660C02BB39671000FD5A4 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		FA66BC2E2BA115C00007ED39 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		FA6A3A052BA8BE77003D014B /* TextToolbarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToolbarContent.swift; sourceTree = "<group>"; };
 		FA6A3A082BA8EA10003D014B /* ReminderesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderesView.swift; sourceTree = "<group>"; };
@@ -381,6 +385,7 @@
 				24556DCF2BAFC36D0046D20A /* Image */,
 				24556DCE2BAFC3660046D20A /* Camera */,
 				24501B522BA4F25400112F63 /* ProfileView.swift */,
+				FA6660BE2BB36223000FD5A4 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 			isa = PBXGroup;
 			children = (
 				2496130E2B8FA97D003FF94E /* WelcomeView.swift */,
+				FA6660C02BB39671000FD5A4 /* WelcomeViewModel.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -1521,9 +1527,11 @@
 				FAB9879F2B8D4738007292EB /* Fonts.swift in Sources */,
 				246717302B75A3A5002570DC /* NavigationModifier.swift in Sources */,
 				2460684A2B75E3CC003FD34E /* SplashRootView.swift in Sources */,
+				FA6660BF2BB36223000FD5A4 /* ProfileViewModel.swift in Sources */,
 				FA744B2D2B8D0A3B00AE3DF4 /* SignUpView.swift in Sources */,
 				24556DD12BAFC3950046D20A /* CameraManager.swift in Sources */,
 				FA620FD12BB101FB00100192 /* HomeMeditation.swift in Sources */,
+				FA6660C12BB39671000FD5A4 /* WelcomeViewModel.swift in Sources */,
 				24489F572BACE3BE00E7AFD4 /* CategoryMeditation.swift in Sources */,
 				246068582B75E790003FD34E /* HomeView.swift in Sources */,
 				FAB987A02B8D4738007292EB /* JSON.swift in Sources */,

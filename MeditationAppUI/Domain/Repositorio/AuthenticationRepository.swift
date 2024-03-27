@@ -21,6 +21,10 @@ class AuthenticationRepository {
         memoriaLogin.setUserLogged(isLogged: isLogged)
     }
 
+    func setSplashVisto(visto: Bool) {
+        memoriaLogin.setSplashVisto(visto: visto)
+    }
+
     func signIn(correo: String, pasword: String, onError: @escaping (String) -> Void, onSuccess: @escaping (User) -> Void) {
         fireBaseAuthDataSource.sigIn(
             correo: correo,

@@ -10,6 +10,8 @@ import SwiftUI
 struct WelcomeView: View {
     @EnvironmentObject private var appRootManager: AppRootManager
 
+    var welcomeViewModel = Injector.container.resolve(WelcomeViewModel.self)!
+
     var body: some View {
         ZStack {
             Color.accentBackground1
@@ -45,6 +47,7 @@ struct WelcomeView: View {
                     textColor: Color.primaryLabel,
                     backgroundColor: Color.accentBackground2
                 ) {
+                    welcomeViewModel.setSplashVisto(visto: true)
                     appRootManager.currentRoot = .authentication
                 }
             }
