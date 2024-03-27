@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SplashRootView: View {
     var body: some View {
+        
+        
         WelcomeView()
     }
 }

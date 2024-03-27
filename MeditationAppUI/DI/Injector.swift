@@ -35,19 +35,31 @@ enum Injector {
                 authenticationRepository: resolver.resolve(AuthenticationRepository.self)!
             )
         }
-        
+
         container.register(SignUpViewModel.self) { (resolver: Resolver) in
             SignUpViewModel(
                 authenticationRepository: resolver.resolve(AuthenticationRepository.self)!
             )
         }
-        
-        container.register(MeditationViewModel.self) { (resolver: Resolver) in
+
+        container.register(MeditationViewModel.self) { (_: Resolver) in
             MeditationViewModel()
         }
-        
-        container.register(HomeViewModel.self) { (resolver: Resolver) in
+
+        container.register(HomeViewModel.self) { (_: Resolver) in
             HomeViewModel()
+        }
+
+        container.register(ProfileViewModel.self) { (resolver: Resolver) in
+            ProfileViewModel(
+                authenticationRepository: resolver.resolve(AuthenticationRepository.self)!
+            )
+        }
+
+        container.register(WelcomeViewModel.self) { (resolver: Resolver) in
+            WelcomeViewModel(
+                authenticationRepository: resolver.resolve(AuthenticationRepository.self)!
+            )
         }
     }
 }
