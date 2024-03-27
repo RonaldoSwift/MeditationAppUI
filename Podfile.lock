@@ -804,6 +804,7 @@ PODS:
     - gRPC-Core/Interface (= 1.49.1)
   - gRPC-Core/Interface (1.49.1)
   - GTMSessionFetcher/Core (3.3.1)
+  - KeychainAccess (4.2.2)
   - leveldb-library (1.22.4)
   - nanopb (2.30910.0):
     - nanopb/decode (= 2.30910.0)
@@ -824,6 +825,7 @@ DEPENDENCIES:
   - FirebaseAnalytics
   - FirebaseAuth (= 10.22.0)
   - FirebaseFirestore (= 10.22.0)
+  - KeychainAccess (= 4.2.2)
   - SDWebImageSwiftUI (= 2.2.6)
   - Swinject (= 2.8.3)
 
@@ -847,6 +849,7 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - GTMSessionFetcher
+    - KeychainAccess
     - leveldb-library
     - nanopb
     - PromisesObjC
@@ -874,6 +877,7 @@ SPEC CHECKSUMS:
   "gRPC-C++": 2df8cba576898bdacd29f0266d5236fa0e26ba6a
   gRPC-Core: a21a60aefc08c68c247b439a9ef97174b0c54f96
   GTMSessionFetcher: 8a1b34ad97ebe6f909fb8b9b77fba99943007556
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   leveldb-library: 06a69cc7582d64b29424a63e085e683cc188230a
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
@@ -882,6 +886,6 @@ SPEC CHECKSUMS:
   SDWebImageSwiftUI: 3a8448b76833ed0e954a651be6c6f45faceed29d
   Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
 
-PODFILE CHECKSUM: 4214df9c0184176340420f7dbb8642976a5c32d2
+PODFILE CHECKSUM: 4be5c03154bb3c987f7a6f31a6904d7903ca4208
 
 COCOAPODS: 1.15.2

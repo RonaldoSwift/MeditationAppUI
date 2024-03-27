@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
+    let keychainManager = Injector.container.resolve(KeychainManager.self)!
     @StateObject var cameraManager = CameraManager()
     @State private var shouldPresentAlertPermissionMessage = false
     @State private var userClickOnCamera = false
@@ -35,7 +36,9 @@ struct ProfileView: View {
 
                 VStack {
                     Text("Nombre: Ronaldo Andre")
-                    Text("Edad: 20")
+                    if let userEmail = keychainManager.getUserEmail() {
+                        Text("Correo: \(userEmail)")
+                    }
                 }
             }
 

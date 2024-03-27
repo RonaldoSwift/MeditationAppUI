@@ -13,6 +13,10 @@ enum Injector {
 
     static func registerDependencies() {
         // Data
+        container.register(KeychainManager.self) { _ in
+            KeychainManager()
+        }
+
         container.register(MemoriaLogin.self) { _ in
             MemoriaLogin()
         }
