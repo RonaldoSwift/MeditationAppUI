@@ -21,11 +21,9 @@ struct MeditationAppUIApp: App {
             Group {
                 switch appRootManager.currentRoot {
                 case .splash:
-                    if memoriaLogin.getUserLogged() == true {
-                        PrincipalRootView()
-                    } else {
-                        SplashRootView()
-                    }
+
+                    SplashRootView(entries: Transaction.dataEntriesForYear())
+
                 case .authentication:
                     AuthenticationRootView()
                 case .principal:
